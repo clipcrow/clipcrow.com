@@ -16,6 +16,8 @@ export default (data: Data) => (
         </head>
         <body>
             { data.content }
+            <a href="/">Home</a>
+            <a href="/about">About</a>
         </body>
     </html>
 )
