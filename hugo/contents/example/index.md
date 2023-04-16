@@ -8,7 +8,7 @@ draft: false
 
 <div class="innerblock exapmle" id="step1">
 
-  <div class="stepheder left">
+<div class="stepheder left">
     <h2 class="num">
       <span class="num__inner">
         <span class="step">step</span>
@@ -18,9 +18,9 @@ draft: false
     </h2>
   </div>
 
-  <p>打刻の操作で勤務を開始します。新たなワークも容易に作成し割り当て。勤務終了の打刻でタイムシートが作成されます。</p>
+<p>打刻の操作で勤務を開始します。新たなワークも容易に作成し割り当て。勤務終了の打刻でタイムシートが作成されます。</p>
 
-  <div class="ex-case">
+<div class="ex-case">
     <div class="case right">
       <p class="roll">ワーカー</p>
       <div class="image ex_step01-1"><img src="ex_step01-1.png" alt=""></div>
@@ -43,7 +43,7 @@ draft: false
     </div>
   </div>
 
-  <div class="relation-link">
+<div class="relation-link">
     <h3>このステップで活用できる主な機能</h3>
 {{< render-link id="" class="" link="../function#case1-01" text="打刻管理" >}}
 {{< render-link id="" class="" link="../function#case1-02" text="業務指示" >}}
@@ -56,7 +56,7 @@ draft: false
 
 <div class="innerblock exapmle" id="step2">
 
-  <div class="stepheder right">
+<div class="stepheder right">
     <h2 class="num">
       <span class="num__inner">
         <span class="step">step</span>
@@ -66,9 +66,9 @@ draft: false
     </h2>
   </div>
 
-  <p>タイムシートと日報を自動生成。確認された証憑は人事会計システムに同期されます。</p>
+<p>タイムシートと日報を自動生成。確認された証憑は人事会計システムに同期されます。</p>
 
-  <div class="ex-case">
+<div class="ex-case">
     <div class="case left">
       <p class="roll">スタッフ</p>
       <div class="image ex_step02-1"><img src="ex_step02-1.png" alt=""></div>
@@ -81,7 +81,7 @@ draft: false
     </div>
   </div>
 
-  <div class="relation-link">
+<div class="relation-link">
     <h3>このステップで活用できる主な機能</h3>
 {{< render-link id="" class="" link="../function#burden" text="打刻管理" >}}
 {{< render-link id="" class="" link="../function#case1-03" text="ワークトラッキング" >}}
@@ -103,9 +103,9 @@ draft: false
   </h2>
 </div>
 
-  <p>チームビルディングと業務標準化を行います</p>
+<p>チームビルディングと業務標準化を行います</p>
 
-  <div class="ex-case">
+<div class="ex-case">
     <div class="case right">
       <p class="roll">スタッフ</p>
       <div class="image ex_step03-1"><img src="ex_step03-1.png" alt=""></div>
@@ -123,7 +123,7 @@ draft: false
     </div>
   </div>
 
-  <div class="relation-link">
+<div class="relation-link">
     <h3>このステップで活用できる主な機能</h3>
 {{< render-link id="" class="" link="../function#case2-03" text="キャリア指標" >}}
 {{< render-link id="" class="" link="../function#case3-01" text="ワークのテンプレート化" >}}
@@ -131,4 +131,3 @@ draft: false
   </div>
 
 </div>
-

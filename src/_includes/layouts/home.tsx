@@ -1,23 +1,18 @@
-type Data = {
-    title: string;
-    children: string;
-}
+import type { PageData, PageHelpers } from "lume/core.ts";
+// @import "styles/style.scss";
 
 function Title(props: { title: string }) {
-    return (
-        <title>{props.title}</title>
-    )
+  return <title>{props.title}</title>;
 }
 
-export default (data: Data) => (
-    <html>
-        <head>
-            <Title title={data.title}/>
-        </head>
-        <body>
-            { data.children }
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-        </body>
-    </html>
-)
+export default (data: PageData, filters: PageHelpers) => (
+  <html>
+    <head>
+      <Title title={data.title || "ClipCrow LLC"} />
+      <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+      {data.children}
+    </body>
+  </html>
+);

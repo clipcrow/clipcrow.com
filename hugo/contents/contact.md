@@ -8,6 +8,6 @@ layout: "no-title"
 
 <div class="innerblock contact">
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBcxX-lktkU8imL0SrGgU_8Nog4WERGEPgkfAYCDl73wEJfA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">読み込んでいます…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBcxX-lktkU8imL0SrGgU_8Nog4WERGEPgkfAYCDl73wEJfA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">読み込んでいます…</iframe>
 
 </div>

@@ -13,5 +13,7 @@ site.use(jsx());
 site.use(sass());
 
 site.copy("favicon.ico");
+site.copy("images");
+site.copy("styles/destyle.css");
 
 export default site;

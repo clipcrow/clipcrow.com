@@ -21,14 +21,14 @@
   });
 
   /* フローティングヘッダ分だけスクロールダウンさせてアンカー位置を適切にする */
-  $(window).on('load', function() {
-    const url = $(location).attr('href'),
-    headerHeight = $('header').outerHeight() + 0;
-    if(url.indexOf("#") != -1){
+  $(window).on("load", function () {
+    const url = $(location).attr("href"),
+      headerHeight = $("header").outerHeight() + 0;
+    if (url.indexOf("#") != -1) {
       const anchor = url.split("#"),
-      target = $('#' + anchor[anchor.length - 1]),
-      position = Math.floor(target.offset().top) - headerHeight;
-      $("html, body").animate({scrollTop:position}, 250);
+        target = $("#" + anchor[anchor.length - 1]),
+        position = Math.floor(target.offset().top) - headerHeight;
+      $("html, body").animate({ scrollTop: position }, 250);
     }
   });
 })();

@@ -6,7 +6,8 @@
 
 ## デプロイ方法
 
-サイトはFirebase Hostingを用いて運用し、masterブランチにプッシュを行うと、GitHub Actionsで自動デプロイを行う。
+サイトはFirebase Hostingを用いて運用し、masterブランチにプッシュを行うと、GitHub
+Actionsで自動デプロイを行う。
 
 ローカルでは、`hugo --minify && firebase deploy` を実行する。
 
