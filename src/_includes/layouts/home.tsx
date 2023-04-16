@@ -1,6 +1,6 @@
 type Data = {
     title: string;
-    content: string;
+    children: string;
 }
 
 function Title(props: { title: string }) {
@@ -15,7 +15,7 @@ export default (data: Data) => (
             <Title title={data.title}/>
         </head>
         <body>
-            { data.content }
+            { data.children }
             <a href="/">Home</a>
             <a href="/about">About</a>
         </body>

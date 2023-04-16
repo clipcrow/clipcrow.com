@@ -12,4 +12,6 @@ const site = lume({
 site.use(jsx());
 site.use(sass());
 
+site.copy("favicon.ico");
+
 export default site;

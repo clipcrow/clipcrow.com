@@ -12,7 +12,7 @@
 
   /* 画面スクロール時にフローティングするヘッダ効果 */
   $(window).on("load scroll resize", function () {
-    var scroll = $(this).scrollTop();
+    const scroll = $(this).scrollTop();
     if (scroll > 120) {
       $("header").addClass("is-float");
     } else {
