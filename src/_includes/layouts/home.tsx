@@ -1,5 +1,7 @@
 import type { PageData, PageHelpers } from "lume/core.ts";
-// @import "styles/style.scss";
+import SiteMetadata from "@/SiteMetadata.tsx";
+import SiteHeader from "@/SiteHeader.tsx";
+import SiteFooter from "@/SiteFooter.tsx";
 
 function Title(props: { title: string }) {
   return <title>{props.title}</title>;
@@ -7,12 +9,11 @@ function Title(props: { title: string }) {
 
 export default (data: PageData, filters: PageHelpers) => (
   <html>
-    <head>
-      <Title title={data.title || "ClipCrow LLC"} />
-      <link rel="stylesheet" href="/styles.css" />
-    </head>
+    <SiteMetadata title={data.title} />
     <body>
+      <SiteHeader />
       {data.children}
+      <SiteFooter />
     </body>
   </html>
 );
