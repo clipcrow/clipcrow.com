@@ -84,7 +84,7 @@ html{
   height: 100%;
 }
 body {
-  background-color: #fff;
+  background-color: $c-neutral-100;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-feature-settings: "palt" 1;
   display: grid;
@@ -114,7 +114,7 @@ section {
   text-align: center;
 }
 p {
-  color: #5b5b55;
+  color: $c-neutral-010;
   line-height: 1.5;
   font-size: 1rem;
 }
@@ -205,17 +205,13 @@ p {
     width: 100%;
     border: 1px solid #000;
     margin: 1rem 0;
-    caption {
-    }
+    //caption {}
     thead {
       background-color: $c-secondary-090;
     }
-    tbody {
-    }
-    tfoot {
-    }
-    tr {
-    }
+    //tbody {}
+    //tfoot {}
+    //tr {}
     th {
       padding: 0.3rem;
       border: 1px solid #000;
@@ -224,10 +220,8 @@ p {
       padding: 0.3rem;
       border: 1px solid #000;
     }
-    col {
-    }
-    colgroup {
-    }
+    //col {}
+    //colgroup {}
   }
 }
 
@@ -364,7 +358,7 @@ p {
         line-height: 1;
         margin-top: -9px;
       }
-      .title{}
+      //.title{}
       &.text{
         margin: 0.5rem 0 0.5rem 2rem;
       }
@@ -667,17 +661,17 @@ header {
   background-color: transparent;
   cursor: pointer;
 }
-.p-hamburger {
+//.p-hamburger {
   // position: absolute;
   // top: 0;
   // bottom: auto;
   // left: auto;
   // right: 0;
-}
-.p-hamburger:hover,
-.p-hamburger:focus {
+//}
+//.p-hamburger:hover,
+//.p-hamburger:focus {
   // box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
-}
+//}
 
 .p-hamburger__line {
   position: absolute;
@@ -749,8 +743,8 @@ header {
   position: relative;
   padding: 60px 0 32px;
   overflow: hidden;
-  .innerblock {
-  }
+  //.innerblock {
+  //}
   &::before {
     content: "";
     display: block;
@@ -986,15 +980,13 @@ header {
       &.u-pos-r {
         @media screen and (min-width: 1000px) {
         }
-          .btn {
-        }
+        //.btn {}
       }
       &.u-pos-l {
         @media screen and (min-width: 1000px) {
           flex-direction: row-reverse;
         }
-        .btn {
-        }
+        //.btn {}
       }
       .btn {
         display: inline-block;
@@ -1269,8 +1261,7 @@ header {
         margin-bottom: 0.5rem;
         opacity: 0.5;
       }
-      p {
-      }
+      //p {}
     }
   }
 }
@@ -1833,7 +1824,7 @@ footer {
             margin-right: 0.5rem;
           }
         }
-        .team-cc{}
+        //.team-cc{}
         .teamname{
           margin: 0;
           padding: 0.5rem;
