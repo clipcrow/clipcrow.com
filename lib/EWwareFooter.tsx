@@ -1,28 +1,25 @@
 export default () => (
   <>
     <footer>
-      <div class="footer_title">
-        <span>ClipCrow</span>Essential Workware
-      </div>
       <div class="nav">
         <ul class="listgroup">
           <li class="navlist__item">
-            <a class="" href="">ホーム</a>
+            <a class="" href="/">ホーム</a>
           </li>
           <li class="navlist__item">
-            <a class="" href="">活用例</a>
+            <a class="" href="/example/">活用例</a>
           </li>
           <li class="navlist__item">
-            <a class="" href="{{ relref . }}">特長・機能</a>
+            <a class="" href="/function/">特長・機能</a>
           </li>
           <li class="navlist__item">
-            <a class="" href="{{ .Site.BaseURL }}/news/">お知らせ</a>
+            <a class="" href="/news/">お知らせ</a>
           </li>
           <li class="navlist__item">
-            <a class="" href="{{ relref .  }}">お問い合わせ</a>
+            <a class="" href="/contact/">お問い合わせ</a>
           </li>
           <li class="navlist__item">
-            <a class="" href="{{ relref .  }}">会社概要</a>
+            <a class="" href="/company/">会社概要</a>
           </li>
         </ul>
       </div>
@@ -35,6 +32,6 @@ export default () => (
       referrerpolicy="no-referrer"
     >
     </script>
-    <script type="text/javascript" defer src="{{ $js.Permalink }}"></script>
+    <script type="text/javascript" defer src="/scripts/script.js"></script>
   </>
 );
