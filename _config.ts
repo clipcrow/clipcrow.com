@@ -7,6 +7,7 @@ const site = lume({
   src: "src",
   server: {
     open: true,
+    page404: "/404/",
   },
 });
 
