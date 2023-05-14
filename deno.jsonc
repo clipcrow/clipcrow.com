@@ -5,9 +5,9 @@
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.16.2/",
+    "lume/": "https://deno.land/x/lume@v1.17.3/",
     "preact": "npm:preact",
-    "@/": "./lib/"
+    "@/": "./src/_includes/components/"
   },
   "lint": {
     "files": {
