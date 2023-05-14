@@ -55,19 +55,19 @@ export default () => (
 
       <div class="relation-link">
         <h3>このステップで活用できる主な機能</h3>
-        <EWwareCategoryLink link="../function#case1-01">
+        <EWwareCategoryLink link="/function/#case1-01">
           打刻管理
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="../function#case1-02">
+        <EWwareCategoryLink link="/function/#case1-02">
           業務指示
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="../function#case1-03">
+        <EWwareCategoryLink link="/function/#case1-03">
           ワークトラッキング
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="../function#case2-01">
+        <EWwareCategoryLink link="/function/#case2-01">
           属性の可視化
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="../function#case2-02">
+        <EWwareCategoryLink link="/function/#case2-02">
           リソース可視化
         </EWwareCategoryLink>
       </div>
@@ -109,16 +109,16 @@ export default () => (
 
       <div class="relation-link">
         <h3>このステップで活用できる主な機能</h3>
-        <EWwareCategoryLink link="/function#burden">
+        <EWwareCategoryLink link="/function/#burden">
           打刻管理
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function#case1-03">
+        <EWwareCategoryLink link="/function/#case1-03">
           ワークトラッキング
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function#case4-01">
+        <EWwareCategoryLink link="/function/#case4-01">
           日報・伝票の自動化
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function#case4-02">
+        <EWwareCategoryLink link="/function/#case4-02">
           BIツール連携
         </EWwareCategoryLink>
       </div>
@@ -163,13 +163,13 @@ export default () => (
 
       <div class="relation-link">
         <h3>このステップで活用できる主な機能</h3>
-        <EWwareCategoryLink link="../function#case2-03">
+        <EWwareCategoryLink link="/function/#case2-03">
           キャリア指標
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="../function#case3-01">
+        <EWwareCategoryLink link="/function/#case3-01">
           ワークのテンプレート化
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="../function#case3-02">
+        <EWwareCategoryLink link="/function/#case3-02">
           サンクスカード
         </EWwareCategoryLink>
       </div>
