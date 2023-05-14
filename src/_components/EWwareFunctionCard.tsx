@@ -1,3 +1,6 @@
+import type { ComponentChildren } from "preact";
+import EWwareCategoryLink from "@/EWwareCategoryLink.tsx";
+
 export default (
   props: {
     id: string;
@@ -6,8 +9,7 @@ export default (
     worker?: boolean;
     step?: number;
     title: string;
-    // deno-lint-ignore no-explicit-any
-    children: any;
+    children: ComponentChildren;
   },
 ) => (
   <div class="case card round gray-pale" id={props.id}>
@@ -38,23 +40,23 @@ export default (
     <p class="read">{props.children}</p>
     {props.step === 1
       ? (
-        <p class="relation-link">
-          <a href="/example/#step1">活用例：勤務開始〜終了</a>
-        </p>
+        <EWwareCategoryLink link="/example/#step1">
+          活用例：勤務開始〜終了
+        </EWwareCategoryLink>
       )
       : null}
     {props.step === 2
       ? (
-        <p class="relation-link">
-          <a href="/example/#step2">活用例：締め作業</a>
-        </p>
+        <EWwareCategoryLink link="/example/#step2">
+          活用例：締め作業
+        </EWwareCategoryLink>
       )
       : null}
     {props.step === 3
       ? (
-        <p class="relation-link">
-          <a href="/example/#step3">活用例：組織の改善</a>
-        </p>
+        <EWwareCategoryLink link="/example/#step3">
+          活用例：組織の改善
+        </EWwareCategoryLink>
       )
       : null}
   </div>

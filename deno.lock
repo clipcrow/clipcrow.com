@@ -731,7 +731,7 @@
       "markdown-it-deflist@2.1.0": "markdown-it-deflist@2.1.0",
       "markdown-it@13.0.1": "markdown-it@13.0.1",
       "nunjucks@3.2.4": "nunjucks@3.2.4",
-      "preact": "preact@10.13.2",
+      "preact": "preact@10.14.0",
       "preact-render-to-string@6.0.2": "preact-render-to-string@6.0.2_preact@10.13.2",
       "preact-render-to-string@6.0.3": "preact-render-to-string@6.0.3_preact@10.13.2",
       "preact@10.13.2": "preact@10.13.2",
@@ -1014,6 +1014,10 @@
       },
       "preact@10.13.2": {
         "integrity": "sha512-q44QFLhOhty2Bd0Y46fnYW0gD/cbVM9dUVtNTDKPcdXSMA7jfY+Jpd6rk3GB0lcQss0z5s/6CmVP0Z/hV+g6pw==",
+        "dependencies": {}
+      },
+      "preact@10.14.0": {
+        "integrity": "sha512-4oh2sf208mKAdL5AQtzXxE387iSGNWMX/YjwMjH6m/XROILKAmx5Pbs2FsXrW7ixoVGGjpfYSBB833vOwYxNxw==",
         "dependencies": {}
       },
       "pretty-format@3.8.0": {

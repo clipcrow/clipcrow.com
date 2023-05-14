@@ -9,7 +9,7 @@ export default (data: PageData, filters: PageHelpers) => (
     <EWwareMetadata />
     <body>
       <EWwareBrandsign />
-      <div className="wrap">
+      <div class="wrap">
         <section class="kv">
           <div class="innerblock">
             <p class="copy">

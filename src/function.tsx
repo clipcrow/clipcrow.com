@@ -1,13 +1,16 @@
+import type { ComponentChildren } from "preact";
 import EWwareFunctionCard from "@/EWwareFunctionCard.tsx";
 
 export const beforeTitle = "Essential Workwareの";
 export const title = "特長・機能";
+export const css = "function";
 export const layout = "layouts/single.tsx";
 
 const Usage = () => (
-  <div class="innerblock function" id="notes">
+  <div id="notes">
     <p>
-      Essential Workwareには、経営者、スタッフ、ワーカー、それぞれが必要とする特長・機能が備わっています。
+      Essential
+      Workwareには、経営者、スタッフ、ワーカー、それぞれが必要とする特長・機能が備わっています。
     </p>
     <div class="explanatory">
       <div>
@@ -33,10 +36,14 @@ const Usage = () => (
 );
 
 const Category = (
-  // deno-lint-ignore no-explicit-any
-  props: { id: string; title: string; description: string; children: any },
+  props: {
+    id: string;
+    title: string;
+    description: string;
+    children: ComponentChildren;
+  },
 ) => (
-  <div class="innerblock function" id={props.id}>
+  <div id={props.id}>
     <div class="stepheder left">
       <h2 class="text">
         <span class="title">{props.title}</span>
@@ -107,7 +114,8 @@ export default () => (
         title="SaaSサブスクリプション"
         manager={true}
       >
-        Essential Workwareはサブスクリプションで提供されるSaaSです。初期費用も抑えられ、システムの自己管理も必要ありません。
+        Essential
+        Workwareはサブスクリプションで提供されるSaaSです。初期費用も抑えられ、システムの自己管理も必要ありません。
         非正規雇用者へは正規雇用者の1/5の利用料金で提供し、長期休眠にも対応するので、費用がとても合理的です。
       </EWwareFunctionCard>
     </Category>
