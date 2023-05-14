@@ -7,9 +7,7 @@ export default (
         ? <span class="before">{props.beforeTitle}</span>
         : null}
       {props.title}
-      {props.afterTitle
-        ? <span class="after">{props.afterTitle}</span>
-        : null}
+      {props.afterTitle ? <span class="after">{props.afterTitle}</span> : null}
     </h1>
   </section>
 );
