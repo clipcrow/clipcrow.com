@@ -22,7 +22,7 @@ export default (data: PageData, filters: PageHelpers) => (
               </span>
             </p>
             <div class="main-visual">
-              <img srcset="../images/kv.png" alt="" />
+              <img srcset="/images/kv.png" alt="" />
             </div>
             <p class="btn round yellow">
               <a class="elevation-2" href="/contact/">お問い合わせフォーム</a>
@@ -48,7 +48,7 @@ export default (data: PageData, filters: PageHelpers) => (
             <div class="pain__item u-pos-r">
               <div class="image illust-01">
                 <img
-                  srcset="../images/illust-01.png 1000w,../images/illust-01b.png"
+                  srcset="/images/illust-01.png 1000w,/images/illust-01b.png"
                   alt=""
                 />
               </div>
@@ -64,7 +64,7 @@ export default (data: PageData, filters: PageHelpers) => (
             </div>
             <div class="pain__item u-pos-l">
               <div class="image illust-02">
-                <img src="../images/illust-02.png" alt="" />
+                <img src="/images/illust-02.png" alt="" />
               </div>
               <div class="card round yellow-o">
                 <p>
@@ -89,7 +89,7 @@ export default (data: PageData, filters: PageHelpers) => (
                 <h2>業務負担を軽減できる</h2>
                 <div class="card-inner">
                   <div class=" image">
-                    <img src="../images/illust-03.png" alt="" />
+                    <img src="/images/illust-03.png" alt="" />
                   </div>
                   <p>
                     事前の準備なしですぐに利用開始。スタッフの負担を減らし、ワーカーの手持ちをなくします。
@@ -102,7 +102,7 @@ export default (data: PageData, filters: PageHelpers) => (
                 <h2>デジタルツインを実現する</h2>
                 <div class="card-inner">
                   <div class="image">
-                    <img src="../images/illust-04.png" alt="" />
+                    <img src="/images/illust-04.png" alt="" />
                   </div>
                   <p>
                     スタッフとワーカーの属性やリソース状況を常に最新の状態で把握できます。
@@ -115,7 +115,7 @@ export default (data: PageData, filters: PageHelpers) => (
                 <h2>標準化サイクルが発生する</h2>
                 <div class="card-inner">
                   <div class="image">
-                    <img src="../images/illust-05.png" alt="" />
+                    <img src="/images/illust-05.png" alt="" />
                   </div>
                   <p>
                     業務を容易にペーパーレス化。使っているうち自然に業務が標準化されます。
@@ -128,7 +128,7 @@ export default (data: PageData, filters: PageHelpers) => (
                 <h2>既存のしくみと連携できる</h2>
                 <div class="card-inner">
                   <div class="image">
-                    <img src="../images/illust-06.png" alt="" />
+                    <img src="/images/illust-06.png" alt="" />
                   </div>
                   <p>
                     APIで高度なソリューション開発も可能。既存システムとの連携で、組織のDXを素早く実現します。
@@ -137,7 +137,7 @@ export default (data: PageData, filters: PageHelpers) => (
               </div>
             </div>
             <p class="btn round yellow">
-              <a class="elevation-2" href="{{ .Site.BaseURL }}/function/">
+              <a class="elevation-2" href="/function/">
                 特長・機能の一覧
               </a>
             </p>
@@ -145,7 +145,10 @@ export default (data: PageData, filters: PageHelpers) => (
         </section>
         <section class="maincont info">
           <h1>お知らせ</h1>
-          <EWwareLatestNews search={data.search} timestamp={filters.timestamp!} />
+          <EWwareLatestNews
+            search={data.search}
+            timestamp={filters.timestamp!}
+          />
         </section>
       </div>
       <EWwareFooter />
