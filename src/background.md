@@ -2,11 +2,9 @@
 beforeTitle: "クリップクロウ合同会社"
 title: "代表社員 栗原傑享"
 afterTitle: " 経歴"
-date: 2022-09-01T00:00:00+09:00
-draft: false
+layout: layouts/single.tsx
+css: background
 ---
-
-<div class="innerblock background">
 
 ## 2022/04
 
@@ -80,5 +78,3 @@ Forum」を開設して初代シスオペを務める。インターネット普
 
 母親の実家がある北海道札幌市で生まれる。父親の転勤によって三重県四日市市、千葉県市原市、埼玉県浦和市(当時)に住み、
 小学校から千葉県市川市で育つ。私立麻布中学校・高等学校に進学して、サッカー部に所属する。
-
-</div>

@@ -1,7 +1,5 @@
 ---
 title: "情報セキュリティ基本方針"
-date: 2022-09-01T00:00:00+09:00
-draft: false
 layout: layouts/single.tsx
 ---
 
