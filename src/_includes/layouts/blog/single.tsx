@@ -8,7 +8,7 @@ export default (data: PageData) => (
   <>
     <EWwareTitle
       beforeTitle={data.beforeTitle}
-      title={data.title || "ClipCrow LLC"}
+      title={data.title || "ブログ"}
       afterTitle={data.afterTitle}
     />
     <EWwareContentsWrapper css={data.css || "info"}>

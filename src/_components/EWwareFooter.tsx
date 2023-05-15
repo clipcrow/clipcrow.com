@@ -13,7 +13,7 @@ export default () => (
             <a class="" href="/function/">特長・機能</a>
           </li>
           <li class="navlist__item">
-            <a class="" href="/news/">お知らせ</a>
+            <a class="" href="/blog/1/">ブログ</a>
           </li>
           <li class="navlist__item">
             <a class="" href="/contact/">お問い合わせ</a>

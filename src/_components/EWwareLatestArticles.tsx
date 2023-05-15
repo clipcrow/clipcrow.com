@@ -1,8 +1,9 @@
 import type { Helper } from "lume/core.ts";
 import { Search } from "lume/plugins/search.ts";
-export default (props: { search: Search; timestamp: Helper }) => (
+
+export default (props: { search: Search; timestamp: Helper, path: string, caption: string, limit: number }) => (
   <div class="innerblock">
-    {props.search.pages("news", "date=desc", 5).map((page) => (
+    {props.search.pages(props.path, "date=desc", props.limit).map((page) => (
       <div class="card round no-border elevation-2">
         <a class="infolink" href={page.data.url}>
           <p class="date">{props.timestamp(page.data.date)}</p>
@@ -11,7 +12,7 @@ export default (props: { search: Search; timestamp: Helper }) => (
       </div>
     ))}
     <p class="btn round yellow">
-      <a class="elevation-2" href="/news/">記事の一覧</a>
+      <a class="elevation-2" href={`/${props.path}/1/`}>{props.caption}</a>
     </p>
   </div>
 );
