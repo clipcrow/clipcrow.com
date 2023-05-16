@@ -1,5 +1,5 @@
 import type { PageData, PageHelpers } from "lume/core.ts";
-import EWwareLatestArticles from "@/EWwareLatestArticles.tsx";
+import EWwareBlogLatestArticles from "@/EWwareBlogLatestArticles.tsx";
 
 export const title = "Essential Workware";
 export const layout = "layouts/base.tsx";
@@ -141,13 +141,7 @@ export default (data: PageData, filters: PageHelpers) => (
     </section>
     <section class="maincont info">
       <h1>ブログ</h1>
-      <EWwareLatestArticles
-        search={data.search}
-        timestamp={filters.timestamp!}
-        path="blog"
-        limit={5}
-        caption="ブログ記事の一覧"
-      />
+      <EWwareBlogLatestArticles search={data.search} dateFormat={filters.dateFormat} />
     </section>
   </>
 );

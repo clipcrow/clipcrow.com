@@ -12,7 +12,7 @@ const site = lume({
   },
 });
 
-site.filter("timestamp", (date: Date) => (
+site.filter("dateFormat", (date: Date) => (
   format(date, "yyyy-MM-dd")
 ));
 
