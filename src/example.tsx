@@ -4,7 +4,7 @@ import EWwareCategoryLink from "@/EWwareCategoryLink.tsx";
 export const beforeTitle = "Essential Workwareの";
 export const title = "活用例";
 export const css = "example";
-export const layout = "layouts/single.tsx";
+export const layout = "layouts/withTitle.tsx";
 
 export default () => (
   <>

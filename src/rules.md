@@ -1,6 +1,7 @@
 ---
+beforeTitle: "Essential Workware "
 title: "利用規約"
-layout: layouts/single.tsx
+layout: layouts/info.tsx
 ---
 
 この利用規約（以下，「本規約」といいます。）は，クリップクロウ合同会社（以下，「当社」といいます。）が提供するEssential

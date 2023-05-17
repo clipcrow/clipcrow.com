@@ -4,15 +4,10 @@ import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
 import EWwareBlogCard from "@/EWwareBlogCard.tsx";
 import EWwareBlogPagination from "@/EWwareBlogPagination.tsx";
 
-export const layout = "layouts/base.tsx";
+export const layout = "layouts/withTitle.tsx";
 
 export default (data: PageData, filters: PageHelpers) => (
   <>
-    <EWwareTitle
-      beforeTitle={data.beforeTitle}
-      title="ブログ"
-      afterTitle={data.afterTitle}
-    />
     <EWwareContentsWrapper css="info" id="">
       {
         data.results && data.results.map((result) => (

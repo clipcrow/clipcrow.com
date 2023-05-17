@@ -8,7 +8,8 @@ export default function* ({ search, paginate }: PageData) {
       size: 10,
     })
   ) {
-    page.layout = "layouts/blog/section.tsx";
+    page.title = "ブログ";
+    page.layout = "layouts/blogList.tsx";
     yield page;
   }
 }

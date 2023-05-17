@@ -1,6 +1,7 @@
 ---
+beforeTitle: "クリップクロウ合同会社"
 title: "プライバシーポリシー"
-layout: layouts/single.tsx
+layout: layouts/info.tsx
 ---
 
 クリップクロウ合同会社(以下「当社」といいます。)は、当社が提供するサービスEssential

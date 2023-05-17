@@ -5,7 +5,7 @@ import EWwareFunctionCard from "@/EWwareFunctionCard.tsx";
 
 export const beforeTitle = "Essential Workwareの";
 export const title = "特長・機能";
-export const layout = "layouts/single.tsx";
+export const layout = "layouts/withTitle.tsx";
 
 const Usage = () => (
   <div id="notes">
