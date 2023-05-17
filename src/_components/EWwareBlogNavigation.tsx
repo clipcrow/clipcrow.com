@@ -8,8 +8,14 @@ export default (props: { page: Page | Data, search: Search }) => {
     return (
       <nav>
         <ul class="pagination justify-content-center">
-          { previous ? <li class="page-item"><a class="page-link" href={previous.data.url}> &lt; {previous.data.title} </a></li> : null }
-          { next ? <li class="page-item"><a class="page-link" href={next.data.url}> {next.data.title} &gt; </a></li> : null }
+          { previous ? <>
+            <li class="page-item active"><a class="page-link" href={previous.data.url}>&lt;</a></li>
+            <li class="page-item"><a class="page-link" href={previous.data.url}>{previous.data.title}</a></li>
+          </> : null }
+          { next ? <>
+            <li class="page-item"><a class="page-link" href={next.data.url}>{next.data.title}</a></li>
+            <li class="page-item active"><a class="page-link" href={next.data.url}>&gt;</a></li>
+          </> : null }
         </ul>
       </nav>
     )

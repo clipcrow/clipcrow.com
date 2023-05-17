@@ -1,4 +1,5 @@
 import type { PageData, PageHelpers } from "lume/core.ts";
+import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
 import EWwareBlogLatestArticles from "@/EWwareBlogLatestArticles.tsx";
 
 export const title = "Essential Workware";

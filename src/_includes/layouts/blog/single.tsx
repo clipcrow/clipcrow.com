@@ -12,7 +12,7 @@ export default (data: PageData) => (
       title={data.title || "ブログ"}
       afterTitle={data.afterTitle}
     />
-    <EWwareContentsWrapper css={data.css || "info"}>
+    <EWwareContentsWrapper css="info" id="">
       {data.children}
     </EWwareContentsWrapper>
     <EWwareBlogNavigation page={data.page} search={data.search}/>

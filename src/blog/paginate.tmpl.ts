@@ -4,7 +4,7 @@ export default function* ({ search, paginate }: PageData) {
   const pages = search.pages("blog", "date=desc");
   for (
     const page of paginate<(Page | Data)>(pages, {
-      url: (n) => (n === 1 ? "/blog/index.html" : `/blog/${n}/index.html`),
+      url: (n) => (n === 1 ? "/blog/" : `/blog/${n}/`),
       size: 10,
     })
   ) {

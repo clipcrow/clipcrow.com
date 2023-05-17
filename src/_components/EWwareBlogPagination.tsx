@@ -7,9 +7,9 @@ export default (props: { url: string | false, info?: PaginationInfo }) => {
       return (
         <nav>
           <ul class="pagination justify-content-center">
-            <li class={`page-item${previous ? "" : " disabled"}`}><a class="page-link" href={previous || ""}>&lt;</a></li>
-            <li class="page-item active"><a class="page-link" href={props.url}>{page}</a></li>
-            <li class={`page-item${next ? "" : " disabled"}`}><a class="page-link" href={next || ""}>&gt;</a></li>
+            <li class={`page-item${previous ? " active" : " disabled"}`}><a class="page-link" href={previous || ""}>&lt;</a></li>
+            <li class="page-item"><a class="page-link" href={props.url}>{page}</a></li>
+            <li class={`page-item${next ? " active" : " disabled"}`}><a class="page-link" href={next || ""}>&gt;</a></li>
           </ul>
         </nav>
       );

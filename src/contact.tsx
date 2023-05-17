@@ -9,7 +9,7 @@ const SRC = "https://docs.google.com/forms/d/e/" +
 export default () => (
   <>
     <section class="maincont u-section-header" />
-    <EWwareContentsWrapper css="contact">
+    <EWwareContentsWrapper css="contact" id="">
       <iframe
         src={SRC}
         frameBorder="0"

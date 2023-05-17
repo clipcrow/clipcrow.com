@@ -40,21 +40,21 @@ export default (
     <p class="read">{props.children}</p>
     {props.step === 1
       ? (
-        <EWwareCategoryLink link="/example/#step1">
+        <EWwareCategoryLink class="relation-link" link="/example/#step1">
           活用例：勤務開始〜終了
         </EWwareCategoryLink>
       )
       : null}
     {props.step === 2
       ? (
-        <EWwareCategoryLink link="/example/#step2">
+        <EWwareCategoryLink class="relation-link" link="/example/#step2">
           活用例：締め作業
         </EWwareCategoryLink>
       )
       : null}
     {props.step === 3
       ? (
-        <EWwareCategoryLink link="/example/#step3">
+        <EWwareCategoryLink class="relation-link" link="/example/#step3">
           活用例：組織の改善
         </EWwareCategoryLink>
       )

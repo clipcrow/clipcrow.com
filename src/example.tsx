@@ -1,3 +1,4 @@
+import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
 import EWwareCategoryLink from "@/EWwareCategoryLink.tsx";
 
 export const beforeTitle = "Essential Workwareの";
@@ -7,7 +8,7 @@ export const layout = "layouts/single.tsx";
 
 export default () => (
   <>
-    <div id="step1">
+    <EWwareContentsWrapper css="example" id="step1">
       <div class="stepheder left">
         <h2 class="num">
           <span class="num__inner">
@@ -55,25 +56,25 @@ export default () => (
 
       <div class="relation-link">
         <h3>このステップで活用できる主な機能</h3>
-        <EWwareCategoryLink link="/function/#case1-01">
+        <EWwareCategoryLink class="" link="/function/#case1-01">
           打刻管理
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case1-02">
+        <EWwareCategoryLink class="" link="/function/#case1-02">
           業務指示
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case1-03">
+        <EWwareCategoryLink class="" link="/function/#case1-03">
           ワークトラッキング
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case2-01">
+        <EWwareCategoryLink class="" link="/function/#case2-01">
           属性の可視化
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case2-02">
+        <EWwareCategoryLink class="" link="/function/#case2-02">
           リソース可視化
         </EWwareCategoryLink>
       </div>
-    </div>
+    </EWwareContentsWrapper>
 
-    <div id="step2">
+    <EWwareContentsWrapper css="example" id="step2">
       <div class="stepheder right">
         <h2 class="num">
           <span class="num__inner">
@@ -109,22 +110,22 @@ export default () => (
 
       <div class="relation-link">
         <h3>このステップで活用できる主な機能</h3>
-        <EWwareCategoryLink link="/function/#burden">
+        <EWwareCategoryLink class="" link="/function/#burden">
           打刻管理
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case1-03">
+        <EWwareCategoryLink class="" link="/function/#case1-03">
           ワークトラッキング
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case4-01">
+        <EWwareCategoryLink class="" link="/function/#case4-01">
           日報・伝票の自動化
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case4-02">
+        <EWwareCategoryLink class="" link="/function/#case4-02">
           BIツール連携
         </EWwareCategoryLink>
       </div>
-    </div>
+    </EWwareContentsWrapper>
 
-    <div id="step3">
+    <EWwareContentsWrapper css="example" id="step3">
       <div class="stepheder left">
         <h2 class="num">
           <span class="num__inner">
@@ -163,16 +164,16 @@ export default () => (
 
       <div class="relation-link">
         <h3>このステップで活用できる主な機能</h3>
-        <EWwareCategoryLink link="/function/#case2-03">
+        <EWwareCategoryLink class="" link="/function/#case2-03">
           キャリア指標
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case3-01">
+        <EWwareCategoryLink class="" link="/function/#case3-01">
           ワークのテンプレート化
         </EWwareCategoryLink>
-        <EWwareCategoryLink link="/function/#case3-02">
+        <EWwareCategoryLink class="" link="/function/#case3-02">
           サンクスカード
         </EWwareCategoryLink>
       </div>
-    </div>
+    </EWwareContentsWrapper>
   </>
 );

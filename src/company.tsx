@@ -1,9 +1,10 @@
+import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
+
 export const title = "会社概要";
-export const css = "company";
 export const layout = "layouts/single.tsx";
 
 export default () => (
-  <>
+  <EWwareContentsWrapper css="company" id="">
     <div class="logo">
       <img srcset="/images/cc-logo-v.png 600w,/images/cc-logo-h.png" alt="" />
     </div>
@@ -104,5 +105,5 @@ export default () => (
         </dd>
       </dl>
     </section>
-  </>
+  </EWwareContentsWrapper>
 );

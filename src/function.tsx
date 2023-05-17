@@ -1,9 +1,10 @@
+import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
+
 import type { ComponentChildren } from "preact";
 import EWwareFunctionCard from "@/EWwareFunctionCard.tsx";
 
 export const beforeTitle = "Essential Workwareの";
 export const title = "特長・機能";
-export const css = "function";
 export const layout = "layouts/single.tsx";
 
 const Usage = () => (
@@ -57,7 +58,7 @@ const Category = (
 );
 
 export default () => (
-  <>
+  <EWwareContentsWrapper css="function" id="">
     <Usage />
     <Category
       id="burden"
@@ -223,5 +224,5 @@ export default () => (
         データの入出力も充実させているので、ITロックオン状態になることはありません。
       </EWwareFunctionCard>
     </Category>
-  </>
+  </EWwareContentsWrapper>
 );

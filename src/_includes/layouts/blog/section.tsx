@@ -13,7 +13,7 @@ export default (data: PageData, filters: PageHelpers) => (
       title="ブログ"
       afterTitle={data.afterTitle}
     />
-    <EWwareContentsWrapper css={data.css || "info"}>
+    <EWwareContentsWrapper css="info" id="">
       {
         data.results && data.results.map((result) => (
           <EWwareBlogCard page={result} dateFormat={filters.dateFormat}/>

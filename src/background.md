@@ -2,8 +2,7 @@
 beforeTitle: "クリップクロウ合同会社"
 title: "代表社員 栗原傑享"
 afterTitle: " 経歴"
-layout: layouts/single.tsx
-css: background
+layout: layouts/background.tsx
 ---
 
 ## 2022/04
