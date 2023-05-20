@@ -21,9 +21,18 @@ export default (data: PageData, filters: PageHelpers) => (
         <div class="main-visual">
           <img srcset="/images/kv.png" alt="" />
         </div>
-        <p class="btn round yellow">
-          <a class="elevation-2" href="/contact/">お問い合わせフォーム</a>
-        </p>
+        <div class="card no-border">
+          <div class="btn">
+            <a href="https://play.google.com/store/apps/details?id=com.clipcrow.ewware" target="_blank">
+              <img src="/images/google-play-badge-jp.png"/>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="https://apps.apple.com/us/app/essential-workware/id6446253088" target="_blank">
+              <img src="/images/app-store-badge-jp.png"/>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="maincont msg">
