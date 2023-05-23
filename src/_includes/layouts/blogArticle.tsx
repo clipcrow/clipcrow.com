@@ -9,6 +9,6 @@ export default (data: PageData) => (
     <EWwareContentsWrapper css="info" id="">
       {data.children}
     </EWwareContentsWrapper>
-    <EWwareBlogNavigation page={data.page} search={data.search}/>
+    <EWwareBlogNavigation page={data.page} search={data.search} />
   </>
 );

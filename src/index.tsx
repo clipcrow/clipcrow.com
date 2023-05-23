@@ -1,5 +1,4 @@
 import type { PageData, PageHelpers } from "lume/core.ts";
-import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
 import EWwareBlogLatestArticles from "@/EWwareBlogLatestArticles.tsx";
 
 export const title = "Essential Workware";
@@ -23,13 +22,19 @@ export default (data: PageData, filters: PageHelpers) => (
         </div>
         <div class="card no-border">
           <div class="btn">
-            <a href="https://play.google.com/store/apps/details?id=com.clipcrow.ewware" target="_blank">
-              <img src="/images/google-play-badge-jp.png"/>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.clipcrow.ewware"
+              target="_blank"
+            >
+              <img src="../images/google-play-badge-jp.png" />
             </a>
           </div>
           <div class="btn">
-            <a href="https://apps.apple.com/us/app/essential-workware/id6446253088" target="_blank">
-              <img src="/images/app-store-badge-jp.png"/>
+            <a
+              href="https://apps.apple.com/us/app/essential-workware/id6446253088"
+              target="_blank"
+            >
+              <img src="../images/app-store-badge-jp.png" />
             </a>
           </div>
         </div>
@@ -151,7 +156,10 @@ export default (data: PageData, filters: PageHelpers) => (
     </section>
     <section class="maincont info">
       <h1>ブログ</h1>
-      <EWwareBlogLatestArticles search={data.search} dateFormat={filters.dateFormat} />
+      <EWwareBlogLatestArticles
+        search={data.search}
+        dateFormat={filters.dateFormat}
+      />
     </section>
   </>
 );

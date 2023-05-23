@@ -9,12 +9,11 @@ export const layout = "layouts/withTitle.tsx";
 export default (data: PageData, filters: PageHelpers) => (
   <>
     <EWwareContentsWrapper css="info" id="">
-      {
-        data.results && data.results.map((result) => (
-          <EWwareBlogCard page={result} dateFormat={filters.dateFormat}/>
-        ))
-      }
+      {data.results &&
+        data.results.map((result) => (
+          <EWwareBlogCard page={result} dateFormat={filters.dateFormat} />
+        ))}
     </EWwareContentsWrapper>
-    <EWwareBlogPagination url={data.url} info={data.pagination}/>
+    <EWwareBlogPagination url={data.url} info={data.pagination} />
   </>
 );

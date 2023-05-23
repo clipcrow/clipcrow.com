@@ -1,6 +1,6 @@
 import EWwareContentsWrapper from "@/EWwareContentsWrapper.tsx";
 
-export const beforeTitle = "クリップクロウ合同会社"
+export const beforeTitle = "クリップクロウ合同会社";
 export const title = "会社概要";
 export const layout = "layouts/withTitle.tsx";
 
