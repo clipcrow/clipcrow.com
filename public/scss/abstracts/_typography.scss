@@ -6,7 +6,7 @@ a {
 p {
     font-size: 1rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 24px;
     color: $c-neutral-010;
 }
 
@@ -20,9 +20,10 @@ h1 {
 
 h4 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 700;
     color: $c-neutral-000;
     text-align: center;
+    line-height: 1.5;
 }
 
 ul,
@@ -30,4 +31,16 @@ li {
     list-style-type: none;
     margin-bottom: 1rem;
     color: $c-neutral-099;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-blue {
+    color: $c-blue-dark;
+}
+
+.text-pink {
+    color: $c-tertiary-040;
 }
