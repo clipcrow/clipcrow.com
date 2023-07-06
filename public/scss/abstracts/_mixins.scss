@@ -53,3 +53,21 @@
   transform: rotate(-12deg);
 }
 
+@mixin features__deco {
+  margin-bottom: 3rem;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: $c-primary-060;
+      height: 60px;
+      width: 100%;
+      z-index: -1;
+  }
+}
+
