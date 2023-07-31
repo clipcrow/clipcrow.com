@@ -5,6 +5,8 @@
 @import "components/features";
 @import "components/usage-example";
 @import "components/profile";
+@import "components/history";
+@import "components/404-error";
 
 /* reset css */
 * {
@@ -17,6 +19,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   background-color: $c-neutral-100;
   overflow-x: hidden;
+  color: $c-neutral-020;
 }
 
 //===============================================
@@ -25,13 +28,12 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 52px 12px;
-
-  @media screen and (max-width: 1000px) {
-    width: 100%;
-    margin: 0 auto;
-    padding: 40px 16px;
-    overflow-x: hidden;
+  padding: 64px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 64px 77px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 32px;
   }
 }
 
@@ -457,37 +459,84 @@ nav {
 /*==================================================================================*/
 /* footer */
 
+/*==================================================================================*/
+/* footer for all pages*/
+
 footer {
   background-color: $c-primary-000;
   color: $c-neutral-099;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 6rem;
-  z-index: -1;
-
-  .footer__left {
-    h4 {
-      color: $c-neutral-099;
-      font-weight: 700;
-      margin-bottom: 1rem;
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    @media screen and (max-width: 1199px) {
+      max-width: calc(100% - 64px);
     }
-    p {
-      color: $c-neutral-099;
-      @media screen and (max-width: 1000px) {
-        display: none;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      padding: 2rem 0 4rem;
+    }
+    &__right {
+      margin: 3rem 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 9rem;
+      @media screen and (max-width: 767px) {
+        margin: 0;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+    &__left {
+      img {
+        height: 87px;
+        width: auto;
+        margin-bottom: 1.5rem;
+      }
+        @media screen and (max-width: 767px) {
+          margin: 0 auto;
+          img {
+          height: 51px;
+          }
       }
     }
   }
-
-  @media screen and (max-width: 1000px) {
+  .footer__link {
+    display: flex;
     flex-direction: column;
-    padding: 2rem;
-    .footer__right {
-      align-items: flex-start;
-      align-content: flex-start;
-      align-self: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      gap: 16px;
+    }
+    a {
+      color: $c-neutral-099;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      &:hover {
+        opacity: 0.7;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        border: 1px solid $c-neutral-099;
+        text-align: center;
+        padding: 16px;
+        border-radius: 8px;
+        font-size: 0.875rem;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        &:hover {
+          background-color: $c-neutral-099;
+          color: $c-primary-000;
+        }
+      }
     }
   }
 }

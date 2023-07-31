@@ -1,3 +1,30 @@
+//page tile for all pages
+@mixin page__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &::before {
+    @include bg-deco(500px, 120vw, $c-primary-050);
+    top: -520px;
+    @media screen and (max-width: 1200px) {
+      top: -428px;
+    }
+  }
+  span {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}
+
+
+
 @mixin button($bg-color, $hover-color, $text-color) {
     background-color: $bg-color;
     color: $text-color;
