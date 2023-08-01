@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <title>Clipcrow</title>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="nav__title">
+        <img src="/images/nav_title.svg" alt="essential workware" />
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="content__page-title">
+      <h1>お問い合わせ</h1>
+    </section>
+    <section class="content__maincont">
+      <p class="content__form-title">土日祝を除く3営業日以内に担当者よりご連絡させていただきます。お問い合わせ内容により、ご回答までにお時間をいただく場合または、ご回答が出来ない場合がございます。</p>
+      <form class="container" action="content_confirm.html">
+        <div class="input__box">
+          <input class="input__text" type="text" placeholder=" " required>
+          <label class="input__label">お名前 *</label>
+          <!-- <div class="error-message">お名前を入力してください</div> -->
+        </div>
+          <div class="input__box">
+          <input class="input__text error" type="text" placeholder=" " required>
+          <label class="input__label">メールアドレス *</label>
+          <div class="error-message">メールアドレスを入力してください</div>
+        </div>
+        <div class="radio__wrapper">
+          <label class="radio__title" for="questions">ご用件 *</label>
+          <div class="radio__section">
+            <input type="radio" id="dev" value="dev" name="questions">
+            <label for="dev">開発案件プロデュースのご依頼・ご相談</label>
+          </div>
+          <div class="radio__section">
+            <input type="radio" id="info" value="info" name="questions">
+            <label for="info">Essential Workwareについて</label>
+          </div>
+          <div class="radio__section">
+            <input type="radio" id="other" value="other" name="questions">
+            <label for="other">その他</label>
+          </div>
+        </div>
+        <div class="input__box">
+          <textarea class="input__textarea" placeholder="" name="content" id="text" cols="30" rows="8" required></textarea>
+          <label class="input__label">お問い合わせ内容 *</label>
+        </div>
+        <input class="submit__button" type="submit" value="内容確認" />
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer__left">
+        <img src="/images/nav_title_footer.svg" alt="essential workware" />
+      </div>
+      <div class="footer__right">
+      <div class="footer__link">
+        <a href="index.html">ホーム</a>
+        <a href="usage-example.html">活用例</a>
+        <a href="features.html">特徴・機能</a>
+      </div>
+      <div class="footer__link">
+        <a href="blog.html">ブログ</a>
+        <a href="content.html">お問い合わせ</a>
+        <a href="profile.html">会社情報</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
