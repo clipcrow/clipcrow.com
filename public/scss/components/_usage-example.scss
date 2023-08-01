@@ -1,93 +1,29 @@
 @import "../abstracts/mixins";
 
 
-//page title
-//======================================================================
 
-.example__title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  padding: 48px 0 64px;
-  h1 {
-    font-size: 2.8125rem;
-    padding-bottom: 0;
-    color: $c-neutral-020;
-  }
-  span {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  &::before {
-    @include bg-deco(500px, 120vw, $c-primary-050);
-    top: -550px;
-    @media screen and (max-width: 1199px) {
-      top: -380px;
-    }
-    @media screen and (max-width: 612px) {
-      top: -440px;
-    }
-  }
-  @media screen and (max-width: 1199px) {
-    h1 {
-      font-size: 2.8125rem;
-      padding-bottom: 4rem;
-      color: $c-neutral-020;
-    }
-    span {
-      font-weight: 400;
-      font-size: 2rem;
-      line-height: 2.5rem;
-    }
-  }
-  @media screen and (max-width: 612px) {
-    padding: 16px 0 32px;
-    h1 {
-      font-size: 2rem;
-      line-height: 2.5rem;
-      padding-bottom: 0;
-    }
-    span {
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.5rem;
-    }
-  }
+.example__page-title {
+  @include page__title();
+}
+//===========================================================================================
+//title for each step
+/* @include is from abstracts/_mixin.scss */
+
+.example-title {
+  @include title(79px, 46px);
 }
 
-//===================================================================
-//example case wrapper 
-
-.case__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  @media screen and (max-width: 612px) {
-    padding: 0;
-    gap: 0;
-    flex-direction: column;
-  }
-}
 
 //========================================================================
-//example case arrangement for each step including responsive
+//This is the arrrange of circle in each step according to each breakpoints
 
 .step__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 64px 0;
   gap: 64px;
-  &#step2 {
-    .example__case {
-      gap: 128px;
-    }
-  }
-  &#step3 {
+  &.step__02,
+  &.step__03 {
     .example__case {
       gap: 128px;
       .case__wrapper {
@@ -96,8 +32,7 @@
     }
   }
   @media screen and (max-width: 1199px) {
-    padding: 64px 77px;
-    &#step1 {
+    &.step__01 {
       .example__case {
         height: 640px;
         flex-direction: column;
@@ -108,16 +43,12 @@
         }
       }
     }
-    &#step2 {
+    &.step__02,
+    &.step__03 {
       .example__case {
         gap: 16px;
         height: 288px;
         margin: 0 -24px;
-      }
-    }
-    &#step3 {
-      .example__case {
-        gap: 16px;
         .case__wrapper {
           gap: 16px;
           height: 288px;
@@ -125,47 +56,26 @@
       }
     }
   }
-
-  @media screen and (max-width: 768px) {
-    padding: 64px 32px;
-  }
-
   @media screen and (max-width: 895px) {
-    &#step3 {
+    &.step__03 {
       .example__case {
         margin: 0 -24px;
         flex-direction: column;
         gap: 64px;
+        height: auto;
       }
     }
   }
-
   @media screen and (max-width: 612px) {
     padding: 32px;
     gap: 32px;
-    &#step1 {
+    &.step__01,
+    &.step__02,
+    &.step__03 {
       .example__case {
         gap: 0;
         height: auto;
         .case__wrapper {
-          height: auto;
-          &:last-child {
-            margin-top: -2rem;
-          }
-        }
-      }
-    }
-    &#step2 {
-      .example__case {
-        gap: 0;
-        height: auto;
-      }
-    }
-    &#step3 {
-      .example__case {
-        gap: 0;
-        .case__wrapper {
-          gap: 0;
           height: auto;
           &:last-child {
             margin-top: -2rem;
@@ -187,6 +97,7 @@
   }
 }
 
+
 //================================================================================
 //label text for each step
 
@@ -194,86 +105,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 32px;
-  padding: 0 11.5rem;
-  color: $c-neutral-020;
+  max-width: 936px;
+  margin: 0 auto;
   text-align: start;
   @media screen and (max-width: 1199px) {
-    padding: 0 77px;
-  }
-  @media screen and (max-width: 768px) {
-    padding: 0 32px;
-  }
-  @media screen and (max-width: 612px) {
-    padding: 0;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.15px;
+    width: auto;
   }
 }
 
-//===========================================================================================
-//title align to the left
-
-.ex__title-left {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 79px;
-  margin-bottom: 4rem;
-  color: $c-neutral-020;
-  margin-bottom: 0;
-  @media screen and (max-width: 612px) {
-    height: 46px;
-  }
-  .title__bg {
-    position: absolute;
-    background-color: $c-primary-060;
-    margin: 0 auto;
-    width: 100vw;
-    height: 79px;
-    z-index: -1;
-    border-radius: 0px 10px 10px 0px;
-    right: 0;
-    @media screen and (max-width: 612px) {
-      height: 46px;
-    }
-  }
-}
-
-//========================================================================================
-//title align to the right
-
-.ex__title-right {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 79px;
-  margin-bottom: 4rem;
-  color: $c-neutral-020;
-  margin-bottom: 0;
-  @media screen and (max-width: 612px) {
-    height: 46px;
-  }
-  .title__bg {
-    position: absolute;
-    background-color: $c-primary-060;
-    width: 100vw;
-    height: 79px;
-    z-index: -1;
-    border-radius: 10px 0 0 10px;
-    left: 0;
-    @media screen and (max-width: 612px) {
-      height: 46px;
-    }
-  }
-}
 
 //============================================================
 /* step header title */
@@ -282,54 +122,45 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
-  color: $c-neutral-020;
-  .num__inner {
+  gap: 0.5rem;
+  @media screen and (max-width: 767px) {
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+  &__inner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     margin: -4.5rem 0 0.5rem 2rem;
-  }
-  .step {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 0.15px;
-    margin-bottom: 0.5rem;
-  }
-  .figure {
-    font-size: 5.625rem;
-    font-weight: 700;
-    line-height: 70px;
-  }
-  .title {
-    font-size: 2rem;
-    line-height: 40px;
-    font-weight: 700;
-  }
-  @media screen and (max-width: 1199px) {
-    .num__inner {
-      flex-wrap: nowrap;
+    @media screen and (max-width: 1199px) {
       margin: -5rem 0 0 0;
     }
-  }
-  @media screen and (max-width: 612px) {
-    gap: 8px;
-    .step {
-      font-size: 0.75rem;
-      letter-spacing: 0.4px;
-      margin-bottom: -1rem;
-    }
-    .num__inner {
+    @media screen and (max-width: 767px) {
       margin: -2.2rem 0 0 0;
     }
-    .figure {
-      font-size: 3.75rem;
-      line-height: 86.88px;
+    &-step {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+      margin-bottom: 0.5rem;
+      @media screen and (max-width: 767px) {
+        font-size: 0.75rem;
+        letter-spacing: 0.4px;
+        margin-bottom: -1rem;
+      }
     }
-    .title {
-      font-size: 22px;
+    &-figure {
+      font-size: 5.625rem;
+      font-weight: 700;
+      line-height: 70px;
+      @media screen and (max-width: 767px) {
+        font-size: 3.75rem;
+        line-height: 86.88px;
+      }
     }
   }
 }
@@ -341,6 +172,17 @@
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
+  .case__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    @media screen and (max-width: 612px) {
+      padding: 0;
+      gap: 0;
+      flex-direction: column;
+    }
+  }
   .case {
     display: flex;
     flex-direction: column;
@@ -368,7 +210,6 @@
     .action {
       padding: 0 3rem;
       text-align: center;
-      color: $c-neutral-020;
     }
   }
   @media screen and (max-width: 612px) {
@@ -420,11 +261,13 @@
   margin: 0 auto;
   width: 568px;
   gap: 1rem;
-  h4 {
-    color: $c-neutral-020;
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    width: 100%;
+  }
+  h6 {
     font-weight: 700;
+    text-align: center;
   }
   .case__relation-link {
     a {
@@ -438,27 +281,7 @@
         background-image: url("data:image/svg+xml,%3Csvg%20width%3D%228%22%20height%3D%2210%22%20viewBox%3D%220%200%208%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.0876%200L0.912598%201.175L4.72926%205L0.912598%208.825L2.0876%2010L7.0876%205L2.0876%200Z%22%20fill%3D%22%23504100%22%2F%3E%3C%2Fsvg%3E");
         top: 0.9rem;
       }
-    }
-  }
-
-  @media screen and (max-width: 1199px) {
-    padding: 0;
-    max-width: 100%;
-
-  }
-  @media screen and (max-width: 612px) {
-    padding: 0;
-    max-width: 100%;
-    h4 {
-      font-size: 1rem;
-      line-height: 1.5rem;
-      letter-spacing: 0.15px;
-    }
-    p {
-      margin: 0;
-    }
-    .case__relation-link {
-      a {
+      @media screen and (max-width: 767px) {
         font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: 0.15px;
