@@ -1,4 +1,5 @@
-//page tile for all pages
+//page title for features/profile/blog/content/history/example/error
+//===================================================================
 @mixin page__title {
   display: flex;
   flex-direction: column;
@@ -23,78 +24,83 @@
   }
 }
 
-
-
+/* button in top page */
 @mixin button($bg-color, $hover-color, $text-color) {
-    background-color: $bg-color;
-    color: $text-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 568px;
-    height: 84px;
-    border: none;
-    border-radius: 42px;
-    cursor: pointer;
-    font-weight: 700;
-    &:hover {
-      background-color: $hover-color;
-      transition: all 0.5s ease;
-    }
-    @media screen and (max-width: 1000px) {
-      font-size: 14px;
-      width: 250px;
-      height: 50px;
-    }
+  background-color: $bg-color;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 568px;
+  height: 84px;
+  border: none;
+  border-radius: 42px;
+  cursor: pointer;
+  font-weight: 500;
+  &:hover {
+    background-color: $hover-color;
   }
-
-@mixin download_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: $c-secondary-090;
-    color: #333538;
-    width: 568px;
-    height: 48px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5;
-    @media screen and (max-width: 1000px) {
-      font-size: 14px;
-      width: 80%;
-      height: 40px;
-    }
+  @media screen and (max-width: 1199px) {
+    font-size: 14px;
+    width: 200px;
+    height: 40px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
 }
 
-@mixin bg-deco ($height, $width, $bg-color) {
+//title in features page and usage-example page
+//=======================================================
+
+@mixin title($pc-height, $sp-height) {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: $pc-height;
+    @media screen and (max-width: 767px) {
+      height: $pc-height;
+    }
+  &__bg {
+    position: absolute;
+    background-color: $c-primary-060;
+    margin: 0 auto;
+    width: 100vw;
+    height: $pc-height;
+    z-index: -1;
+    @media screen and (max-width: 767px) {
+      height: $sp-height;
+    }
+    &.left {
+      border-radius: 0px 10px 10px 0px;
+      right: 0;
+    }
+    &.right {
+      border-radius: 10px 0 0 10px;
+      left: 0;
+    }
+  }
+}
+
+//======================================================
+/* background decoration */
+
+@mixin bg-deco($height, $width, $bg-color) {
   content: "";
   display: block;
   position: absolute;
+  overflow-x: hidden;
   width: $width;
   height: $height;
   background-color: $bg-color;
   z-index: -1;
-  margin: 3% -10% 0 -20%;
+  margin: 3% -10% 0 -10%;
   transform: rotate(-12deg);
-}
-
-@mixin features__deco {
-  margin-bottom: 3rem;
-  font-size: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      background-color: $c-primary-060;
-      height: 60px;
-      width: 100%;
-      z-index: -1;
+  @media screen and (max-width: 1200px) {
+    width: 200%;
+    margin: 3% -10% 0 -38%;
   }
 }
 
