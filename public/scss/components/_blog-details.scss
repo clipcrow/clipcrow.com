@@ -6,7 +6,7 @@
     @include page__title();
     @media screen and (max-width: 767px) {
       &::before {
-        top: -490px;
+        top: -890px;
       }
     }
   }

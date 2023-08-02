@@ -171,17 +171,17 @@
 .content__page-title {
   @include page__title();
   &::before {
-    top: -530px;
+    top: -930px;
   }
   @media screen and (max-width: 1199px) {
     &::before {
-      top: -470px;
+      top: -870px;
     }
   }
   @media screen and (max-width: 767px) {
     padding: 64px 0;
     &::before {
-      top: -490px;
+      top: -890px;
     }
   }
 }

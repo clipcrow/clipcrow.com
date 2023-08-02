@@ -6,10 +6,10 @@
   align-items: center;
   position: relative;
   &::before {
-    @include bg-deco(500px, 120vw, $c-primary-050);
-    top: -520px;
+    @include bg-deco(900px, 120vw, $c-primary-050);
+    top: -920px;
     @media screen and (max-width: 1200px) {
-      top: -428px;
+      top: -828px;
     }
   }
   span {

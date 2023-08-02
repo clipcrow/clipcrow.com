@@ -14,14 +14,14 @@
       padding: 64px 0;
     }
     &::before {
-      @include bg-deco(500px, 120vw, $c-primary-050);
-      top: -520px;
+      @include bg-deco(900px, 120vw, $c-primary-050);
+      top: -920px;
       @media screen and (max-width: 1200px) {
-        width: 120vw;
-        top: -490px;
+        width: 150vw;
+        top: -890px;
       }
       @media screen and (max-width: 767px) {
-        top: -480px;
+        top: -880px;
       }
     }
     .error__image {
