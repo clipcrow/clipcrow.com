@@ -6,7 +6,7 @@
 
 Static new site design, consisting of HTML and CSS (using SASS).
 
-## /lune
+## /(root)
 
 A site built using a static site generator called Lume. Follow the steps below
 to build.

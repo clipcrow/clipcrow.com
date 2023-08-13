@@ -1,7 +1,7 @@
 ---
 title: クリップクロウ合同会社
 catchCopy: キャッチコピー
-layout: iaylouts/index.tsx
+layout: layouts/index.tsx
 ---
 
 労働人口が減少している日本ならびに先進各国では、
