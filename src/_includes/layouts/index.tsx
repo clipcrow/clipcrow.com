@@ -62,7 +62,7 @@ export default (data: PageData, filters: PageHelpers) => (
         <div className="card__image">
           <img src="/images/ex_step03-1.png" alt="step3-1" />
         </div>
-        <a className="btn__blue" href="usage-example.html">
+        <a className="btn__blue" href="/usage-example">
           ワーク管理を行い、<br />標準化を実現するには…
         </a>
       </div>
@@ -77,7 +77,7 @@ export default (data: PageData, filters: PageHelpers) => (
         <div className="card__image">
           <img src="/images/ex_step03-2.png" alt="step3-2" />
         </div>
-        <a className="btn__pink" href="usage-example.html">
+        <a className="btn__pink" href="/usage-example">
           人材管理を行い、<br />組織を活性化するには...
         </a>
       </div>
@@ -121,7 +121,7 @@ export default (data: PageData, filters: PageHelpers) => (
         </div>
       </div>
     </div>
-    <a className="btn__yellow-dark" href="features.html">特徴・機能の詳細 </a>
+    <a className="btn__yellow-dark" href="/features">特徴・機能の詳細 </a>
   </section>
   <section className="point">
     <h1>Essential Workwareのポイント</h1>
@@ -151,7 +151,7 @@ export default (data: PageData, filters: PageHelpers) => (
         search={data.search}
         dateFormat={filters.dateFormat}
     />
-    <a className="btn__yellow-light" href="blog.html">ブログ記事の一覧 </a>
+    <a className="btn__yellow-light" href="/blog">ブログ記事の一覧 </a>
   </section>
   <section className="info">
     <div className="info__text">
@@ -164,7 +164,7 @@ export default (data: PageData, filters: PageHelpers) => (
         生活必需サービス産業の従業者間コミュニケーションを円滑にするグループウェア製品を提案することで、
         データに基づく医療最適化と個人健康管理の実現を推進します。
       </p>
-      <a className="btn__yellow-light" href="profile.html"> 会社情報 </a>
+      <a className="btn__yellow-light" href="/profile"> 会社情報 </a>
     </div>
   </section>
 </main>
