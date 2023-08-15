@@ -1,10 +1,10 @@
-import type { PageData, PageHelpers } from "lume/core.ts";
+import type { PageData } from "lume/core.ts";
 import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData, filters: PageHelpers) => (
+export default (data: PageData) => (
   <main>
     <section class="example__page-title">
       <h1>

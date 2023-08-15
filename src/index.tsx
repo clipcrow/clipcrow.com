@@ -1,4 +1,4 @@
-import type { PageData, PageHelpers } from "lume/core.ts";
+import type { PageData } from "lume/core.ts";
 import BlogLatestArticles from "@/BlogLatestArticles.tsx";
 import StoreLinks from "@/StoreLinks.tsx";
 
@@ -6,7 +6,7 @@ export const title = "クリップクロウ合同会社";
 export const catchCopy = "キャッチコピー";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData, filters: PageHelpers) => (
+export default (data: PageData) => (
   <main>
     <section className="top__kv">
       <div className="hero">
@@ -137,10 +137,7 @@ export default (data: PageData, filters: PageHelpers) => (
     </section>
     <section className="blog">
       <h1>ブログ</h1>
-      <BlogLatestArticles
-        search={data.search}
-        dateFormat={filters.dateFormat}
-      />
+      <BlogLatestArticles search={data.search} />
       <a className="btn__yellow-light" href="/blog">ブログ記事の一覧</a>
     </section>
     <section className="info">

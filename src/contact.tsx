@@ -1,9 +1,9 @@
-import type { PageData, PageHelpers } from "lume/core.ts";
+import type { PageData } from "lume/core.ts";
 
 export const title = "クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData, filters: PageHelpers) => (
+export default (data: PageData) => (
   <main>
     <section class="content__page-title">
       <h1>お問い合わせ</h1>

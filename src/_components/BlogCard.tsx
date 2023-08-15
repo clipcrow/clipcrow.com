@@ -1,9 +1,10 @@
-import type { Data, Helper, Page } from "lume/core.ts";
+import { format } from "std/datetime/mod.ts";
+import type { Data, Page } from "lume/core.ts";
 
-export default (props: { page: Page | Data; dateFormat?: Helper }) => (
+export default (props: { page: Page | Data }) => (
   <a href={props.page.data.url}>
     <div className="blog__card">
-      <span>{props.dateFormat!(props.page.data.date)}</span>
+      <span>{format(props.page.data.date, "yyyy-MM-dd")}</span>
       <p>{props.page.data.title}</p>
     </div>
   </a>

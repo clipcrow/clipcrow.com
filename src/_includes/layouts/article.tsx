@@ -1,8 +1,9 @@
-import type { PageData, PageHelpers } from "lume/core.ts";
+import { format } from "std/datetime/mod.ts";
+import type { PageData } from "lume/core.ts";
 
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData, filters: PageHelpers) => (
+export default (data: PageData) => (
   <main>
     <section class="details__page-title">
     </section>
@@ -15,7 +16,7 @@ export default (data: PageData, filters: PageHelpers) => (
               <div class="card__category">{data.category}</div>
             </div>
           </div>
-          <p class="blog__card-date">{filters.dateFormat!(data.date)}</p>
+          <p class="blog__card-date">{format(data.date!, "yyyy-MM-dd")}</p>
         </div>
         <div class="blog__details-content">
           <p>{data.children}</p>
