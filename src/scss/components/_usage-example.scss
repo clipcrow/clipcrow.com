@@ -1,0 +1,295 @@
+@import "../abstracts/mixins";
+
+
+
+.example__page-title {
+  @include page__title();
+}
+//===========================================================================================
+//title for each step
+/* @include is from abstracts/_mixin.scss */
+
+.example-title {
+  @include title(79px, 46px);
+}
+
+
+//========================================================================
+//This is the arrrange of circle in each step according to each breakpoints
+
+.step__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+  &.step__02,
+  &.step__03 {
+    .example__case {
+      gap: 128px;
+      .case__wrapper {
+        gap: 128px;
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    &.step__01 {
+      .example__case {
+        height: 640px;
+        flex-direction: column;
+        gap: 64px;
+        margin: 0 -24px;
+        .case__wrapper {
+          height: 288px;
+        }
+      }
+    }
+    &.step__02,
+    &.step__03 {
+      .example__case {
+        gap: 16px;
+        height: 288px;
+        margin: 0 -24px;
+        .case__wrapper {
+          gap: 16px;
+          height: 288px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 895px) {
+    &.step__03 {
+      .example__case {
+        margin: 0 -24px;
+        flex-direction: column;
+        gap: 64px;
+        height: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 612px) {
+    padding: 32px;
+    gap: 32px;
+    &.step__01,
+    &.step__02,
+    &.step__03 {
+      .example__case {
+        gap: 0;
+        height: auto;
+        .case__wrapper {
+          height: auto;
+          &:last-child {
+            margin-top: -2rem;
+          }
+        }
+      }
+    }
+    .case {
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.right {
+        align-self: flex-end;
+      }
+      &.left {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+
+//================================================================================
+//label text for each step
+
+.step-wrapper__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+  max-width: 936px;
+  margin: 0 auto;
+  text-align: start;
+  @media screen and (max-width: 1199px) {
+    width: auto;
+  }
+}
+
+
+//============================================================
+/* step header title */
+
+.num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  @media screen and (max-width: 767px) {
+    &__title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: -4.5rem 0 0.5rem 2rem;
+    @media screen and (max-width: 1199px) {
+      margin: -5rem 0 0 0;
+    }
+    @media screen and (max-width: 767px) {
+      margin: -2.2rem 0 0 0;
+    }
+    &-step {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+      margin-bottom: 0.5rem;
+      @media screen and (max-width: 767px) {
+        font-size: 0.75rem;
+        letter-spacing: 0.4px;
+        margin-bottom: -1rem;
+      }
+    }
+    &-figure {
+      font-size: 5.625rem;
+      font-weight: 700;
+      line-height: 70px;
+      @media screen and (max-width: 767px) {
+        font-size: 3.75rem;
+        line-height: 86.88px;
+      }
+    }
+  }
+}
+
+//=======================================================================
+/*example case */
+.example__case {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  .case__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    @media screen and (max-width: 612px) {
+      padding: 0;
+      gap: 0;
+      flex-direction: column;
+    }
+  }
+  .case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-secondary-095;
+    height: 288px;
+    width: 288px;
+    gap: 12px;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    .roll {
+      font-size: 1.375rem;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    .image-container {
+      height: 150px;
+      width: auto;
+      img {
+        height: 150px;
+        width: auto;
+      }
+    }
+    .action {
+      padding: 0 3rem;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 612px) {
+    height: auto;
+    gap: 0;
+    padding: 0;
+    margin: 0 -32px;
+    flex-direction: column;
+    .case {
+      height: 240px;
+      width: 240px;
+      margin-bottom: -3rem;
+      p {
+        margin: 0;
+        text-align: center;
+        padding: 0 40px;
+      }
+      .roll {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+      }
+      .image-container {
+        font-size: 0.875rem;
+        height: 100px;
+        width: 145px;
+        img {
+          margin: 0;
+          height: 100px;
+          width: auto;
+          object-fit: contain;
+        }
+      }
+      .action {
+        padding: 0 2.5rem;
+        font-size: 0.875rem;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+//====================================================================
+/* example link */
+.example__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 568px;
+  gap: 1rem;
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    width: 100%;
+  }
+  h6 {
+    font-weight: 700;
+    text-align: center;
+  }
+  .case__relation-link {
+    a {
+      height: 48px;
+      font-size: 1.5rem;
+      padding: 8px 16px;
+      line-height: 2rem;
+      &::before {
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%228%22%20height%3D%2210%22%20viewBox%3D%220%200%208%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M2.0876%200L0.912598%201.175L4.72926%205L0.912598%208.825L2.0876%2010L7.0876%205L2.0876%200Z%22%20fill%3D%22%23504100%22%2F%3E%3C%2Fsvg%3E");
+        top: 0.9rem;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.15px;
+        height: 40px;
+        &::before {
+          top: 0.7rem;
+        }
+      }
+    }
+  }
+}
