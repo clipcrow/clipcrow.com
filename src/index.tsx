@@ -1,5 +1,6 @@
 import type { PageData, PageHelpers } from "lume/core.ts";
 import BlogLatestArticles from "@/BlogLatestArticles.tsx";
+import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
 export const catchCopy = "キャッチコピー";
@@ -29,31 +30,8 @@ export default (data: PageData, filters: PageHelpers) => (
           <img src="/images/kv.png" alt="hero cover" />
         </div>
       </div>
-      <div className="download" id="download_section">
-        <h4>アプリをダウンロード</h4>
-        <div className="download__btn">
-          <div className="download__btn-google">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.clipcrow.ewware"
-              target="_blank"
-            >
-              <img
-                src="/images/google-play-badge_1.png"
-                alt="google-play-store"
-              />
-            </a>
-          </div>
-          <div className="download__btn-appstore">
-            <a
-              href="https://apps.apple.com/us/app/essential-workware/id6446253088"
-              target="_blank"
-            >
-              <img src="/images/app-store-badge_1.png" alt="app-store" />
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
+    <StoreLinks />
     <section className="maincont">
       <h1>こんな問題を抱えていませんか</h1>
       <div className="maincont__card">
