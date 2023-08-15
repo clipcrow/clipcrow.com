@@ -1,5 +1,7 @@
 import { format } from "std/datetime/mod.ts";
 import type { PageData } from "lume/core.ts";
+import BlogLatestArticles from "@/BlogLatestArticles.tsx";
+import BlogMonthlyArchives from "@/BlogMonthlyArchives.tsx";
 
 export const layout = "layouts/base.tsx";
 
@@ -29,71 +31,8 @@ export default (data: PageData) => (
         </div>
       </div>
       <div class="blog__link">
-        <div class="blog__latest">
-          <div class="blog__latest-title">最新の記事</div>
-          <a class="blog__latest-content">
-            <p>-タイトルタイトル</p>
-            <p>-タイトルタイトル</p>
-            <p>-タイトルタイトル</p>
-          </a>
-        </div>
-        <div class="blog__monthly">
-          <div class="blog__monthly-title">月別アーカイブ</div>
-          <div class="blog-monthly-section">
-            <div class="blog__monthly-year" id="dropdown-icon">
-              <div class="monthly__dropdown-icon"></div>
-              <p class="monthly__title">2023(25)</p>
-            </div>
-            <div class="monthly__dropdown-content">
-              <p>2023/7(6)</p>
-              <p>2023/6(2)</p>
-              <p>2023/5(3)</p>
-              <p>2023/4(3)</p>
-              <p>2023/3(2)</p>
-              <p>2023/2(4)</p>
-              <p>2023/1(5)</p>
-            </div>
-          </div>
-          <div class="blog-monthly-section">
-            <div class="blog__monthly-year" id="dropdown-icon">
-              <div class="monthly__dropdown-icon"></div>
-              <p class="monthly__title">2022(20)</p>
-            </div>
-            <div class="monthly__dropdown-content">
-              <p>2023/7(6)</p>
-              <p>2023/6(2)</p>
-            </div>
-          </div>
-          <div class="blog-monthly-section">
-            <div class="blog__monthly-year" id="dropdown-icon">
-              <div class="monthly__dropdown-icon"></div>
-              <p class="monthly__title">2021(20)</p>
-            </div>
-            <div class="monthly__dropdown-content">
-              <p>2023/7(6)</p>
-              <p>2023/6(2)</p>
-            </div>
-          </div>
-          <div class="blog-monthly-section">
-            <div class="blog__monthly-year" id="dropdown-icon">
-              <div class="monthly__dropdown-icon"></div>
-              <p class="monthly__title">2023(25)</p>
-            </div>
-            <div class="monthly__dropdown-content">
-              <p>2023/7(6)</p>
-              <p>2023/6(2)</p>
-            </div>
-          </div>
-          <div class="blog-monthly-section">
-            <div class="blog__monthly-year" id="dropdown-icon">
-              <div class="monthly__dropdown-icon"></div>
-              <p class="monthly__title">2023(25)</p>
-            </div>
-            <div class="monthly__dropdown-content">
-              <p>2023/7(6)</p>
-            </div>
-          </div>
-        </div>
+        <BlogLatestArticles search={data.search} />
+        <BlogMonthlyArchives search={data.search} />
       </div>
     </section>
   </main>

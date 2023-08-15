@@ -1,5 +1,5 @@
 import type { PageData } from "lume/core.ts";
-import BlogLatestArticles from "@/BlogLatestArticles.tsx";
+import BlogLatestCards from "@/BlogLatestCards.tsx";
 import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
@@ -137,7 +137,7 @@ export default (data: PageData) => (
     </section>
     <section className="blog">
       <h1>ブログ</h1>
-      <BlogLatestArticles search={data.search} />
+      <BlogLatestCards search={data.search} />
       <a className="btn__yellow-light" href="/blog">ブログ記事の一覧</a>
     </section>
     <section className="info">

@@ -34,7 +34,11 @@ export default (props: { search: Search }) => {
             <p class="monthly__title">{`${y.year} (${y.months.length})`}</p>
           </div>
           <div class="monthly__dropdown-content">
-            {y.months.map((m) => <p>{`${m.month} (${m.dates.length})`}</p>)}
+            {y.months.map((m) => (
+              <p>
+                <a href="/404">{`${m.month} (${m.dates.length})`}</a>
+              </p>
+            ))}
           </div>
         </div>
       ))}

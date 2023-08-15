@@ -1,4 +1,5 @@
 import type { PageData } from "lume/core.ts";
+import BlogLatestArticles from "@/BlogLatestArticles.tsx";
 import BlogMonthlyArchives from "@/BlogMonthlyArchives.tsx";
 
 export const layout = "layouts/base.tsx";
@@ -90,14 +91,7 @@ export default (data: PageData) => (
         </div>
       </div>
       <div class="blog__link">
-        <div class="blog__latest">
-          <div class="blog__latest-title">最新の記事</div>
-          <a class="blog__latest-content">
-            <p>-タイトルタイトル</p>
-            <p>-タイトルタイトル</p>
-            <p>-タイトルタイトル</p>
-          </a>
-        </div>
+        <BlogLatestArticles search={data.search} />
         <BlogMonthlyArchives search={data.search} />
       </div>
     </section>
