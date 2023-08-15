@@ -634,6 +634,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 32px;
     gap: 10px;
     background: $c-neutral-100;
@@ -642,8 +643,7 @@ footer {
     border-radius: 10px;
 
     span {
-      width: 75px;
-      height: 20px;
+      width: 100%;
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
@@ -652,8 +652,7 @@ footer {
     }
 
     p {
-      width: 194px;
-      height: 24px;
+      width: 100%;
       font-weight: 500;
       color: $c-neutral-010;
     }
