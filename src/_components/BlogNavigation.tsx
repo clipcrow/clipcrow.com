@@ -14,38 +14,24 @@ export default (props: { page: Page | Data; search: Search }) => {
       "date=desc",
     );
     return (
-      <nav>
-        <ul class="pagination justify-content-center">
-          {previous
-            ? (
-              <>
-                <li class="page-item active">
-                  <a class="page-link" href={previous.data.url}>&lt;</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href={previous.data.url}>
-                    {previous.data.title}
-                  </a>
-                </li>
-              </>
-            )
-            : null}
-          {next
-            ? (
-              <>
-                <li class="page-item">
-                  <a class="page-link" href={next.data.url}>
-                    {next.data.title}
-                  </a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href={next.data.url}>&gt;</a>
-                </li>
-              </>
-            )
-            : null}
-        </ul>
-      </nav>
+      <div class="blog__pagination">
+        {previous
+          ? (
+            <a href={previous.data.url} class="pagination__section prev start">
+              <span class="pagination__nav"></span>
+              {previous.data.title}
+            </a>
+          )
+          : null}
+        {next
+          ? (
+            <a href={next.data.url} class="pagination__section next end">
+              {next.data.title}
+              <span class="pagination__nav"></span>
+            </a>
+          )
+          : null}
+      </div>
     );
   }
   return null;
