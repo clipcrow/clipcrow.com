@@ -5,10 +5,10 @@ export default function* ({ search, paginate }: PageData) {
   for (
     const page of paginate(pages, {
       url: (n) => (n === 1 ? "/blog/" : `/blog/${n}/`),
-      size: 10,
+      size: 2,
     })
   ) {
-    page.title = "ブログ";
+    page.title = "クリップクロウ合同会社";
     page.layout = "layouts/blog.tsx";
     yield page;
   }
