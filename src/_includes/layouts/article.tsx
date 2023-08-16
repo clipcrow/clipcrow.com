@@ -1,5 +1,6 @@
 import { format } from "std/datetime/mod.ts";
 import type { PageData } from "lume/core.ts";
+import BlogNavigation from "@/BlogNavigation.tsx";
 import BlogLatestArticles from "@/BlogLatestArticles.tsx";
 import BlogMonthlyArchives from "@/BlogMonthlyArchives.tsx";
 
@@ -23,12 +24,7 @@ export default (data: PageData) => (
         <div class="blog__details-content">
           <p>{data.children}</p>
         </div>
-        <div class="blog__pagination details">
-          <a href="blog-details-1.html" class="pagination__section details">
-            タイトルタイトルタイトルタイトル
-            <span class="pagination__nav"></span>
-          </a>
-        </div>
+        <BlogNavigation page={data.page} search={data.search} />
       </div>
       <div class="blog__link">
         <BlogLatestArticles search={data.search} />

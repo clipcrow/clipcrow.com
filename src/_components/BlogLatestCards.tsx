@@ -1,10 +1,15 @@
+import { format } from "std/datetime/mod.ts";
 import { Search } from "lume/plugins/search.ts";
-import BlogCard from "@/BlogCard.tsx";
 
 export default (props: { search: Search }) => (
   <div className="blog-card__wrapper">
     {props.search.pages("blog", "date=desc", 5).map((page) => (
-      <BlogCard page={page!} />
+      <a href={page!.data.url}>
+        <div className="blog__card">
+          <span>{format(page!.data.date, "yyyy-MM-dd")}</span>
+          <p>{page!.data.title}</p>
+        </div>
+      </a>
     ))}
   </div>
 );
