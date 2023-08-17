@@ -6,19 +6,19 @@ usage:
     details:
       - title: 勤務開始の打刻を行う
         image: /images/ex_step01-1.png
-        badge: 3
+        target: ワーカー
 
       - title: ワークを新規作成
         image: /images/ex_step01-2.png
-        badge: 2
+        target: スタッフ
 
       - title: オープンワークを引き受け業務指示を読む
         image: /images/ex_step01-3.png
-        badge: 3
+        target: ワーカー
 
       - title: 勤務終了の打刻を行う
         image: /images/ex_step01-4.png
-        badge: 3
+        target: ワーカー
 
   - id: 2
     title: 締め作業
@@ -27,11 +27,11 @@ usage:
     details:
       - title: ワーカーの勤務時間を確認
         image: /images/ex_step02-1.png
-        badge: 3
+        target: ワーカー
 
       - title: タイムシートを確認し、必要があれば修正
         image: /images/ex_step02-2.png
-        badge: 2
+        target: スタッフ
 
   - id: 3
     title: 組織の改善
@@ -40,15 +40,15 @@ usage:
     details:
       - title: ワーカ人材育成のためにラダーを設計するーの勤務時間を確認
         image: /images/ex_step03-1.png
-        badge: 3
+        target: ワーカー
 
       - title: 評価やサンクスカードを送る
         image: /images/ex_step03-2.png
-        badge: 2
+        target: スタッフ
 
       - title: テンプレートを整備する
         image: /images/ex_step03.png
-        badge: 2
+        target: スタッフ
 
 feature:
   - section: 業務負担を軽減できる

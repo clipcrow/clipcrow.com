@@ -38,7 +38,7 @@ const BlogMonthlyArchives = (props: { search: Search }) => {
   );
 };
 
-export default  (props: { search: Search }) => (
+export default (props: { search: Search }) => (
   <div class="blog__link">
     <BlogLatestArticles search={props.search} />
     <BlogMonthlyArchives search={props.search} />

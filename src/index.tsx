@@ -10,7 +10,9 @@ export default (data: PageData) => (
     <section className="top__kv">
       <div className="hero">
         <div className="hero__content">
-          <div className="hero__content-title">心が動く<br/>行動が変わる</div>
+          <div className="hero__content-title">
+            心が動く<br />行動が変わる
+          </div>
           <p className="hero__content-text">
             労働人口が減少している日本ならびに先進各国では、
             現在もこれからも労働力の確保が難しく、
