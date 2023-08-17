@@ -1,6 +1,5 @@
 import type { PageData } from "lume/core.ts";
-import BlogLatestArticles from "@/BlogLatestArticles.tsx";
-import BlogMonthlyArchives from "@/BlogMonthlyArchives.tsx";
+import BlogRightRail from "@/BlogRightRail.tsx";
 import BlogPagination from "@/BlogPagination.tsx";
 import BlogTitle from "@/BlogTitle.tsx";
 
@@ -19,14 +18,12 @@ export default (data: PageData) => (
               category={result.data.category}
               date={result.data.date!}
               url={result.data.url || ""}
+              lead={result.data.lead}
             />
           ))}
-        <BlogPagination url={data.url} info={data.pagination} />
+        <BlogPagination pagination={data.pagination} />
       </div>
-      <div class="blog__link">
-        <BlogLatestArticles search={data.search} />
-        <BlogMonthlyArchives search={data.search} />
-      </div>
+      <BlogRightRail search={data.search} />
     </section>
   </main>
 );
