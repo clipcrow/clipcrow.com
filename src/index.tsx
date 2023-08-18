@@ -3,7 +3,6 @@ import BlogLatestCards from "@/BlogLatestCards.tsx";
 import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
-export const catchCopy = "キャッチコピー";
 export const layout = "layouts/base.tsx";
 
 export default (data: PageData) => (
@@ -11,7 +10,9 @@ export default (data: PageData) => (
     <section className="top__kv">
       <div className="hero">
         <div className="hero__content">
-          <div className="hero__content-title">{data.catchCopy}</div>
+          <div className="hero__content-title">
+            心が動く<br />行動が変わる
+          </div>
           <p className="hero__content-text">
             労働人口が減少している日本ならびに先進各国では、
             現在もこれからも労働力の確保が難しく、

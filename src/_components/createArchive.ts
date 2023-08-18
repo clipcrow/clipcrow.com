@@ -10,8 +10,8 @@ interface Archive {
   }[];
 }
 
-export default (props: { search: Search }) => {
-  const pages = props.search.pages("blog", "date=desc");
+export default function (search: Search) {
+  const pages = search.pages("blog", "date=desc");
   const years: Archive[] = [];
   for (const page of pages) {
     const date: Date = page?.data.date;
@@ -39,25 +39,5 @@ export default (props: { search: Search }) => {
     const oldest = years[years.length - 1];
     oldest.count += oldest.months[oldest.months.length - 1].dates.length;
   }
-
-  return (
-    <div class="blog__monthly">
-      <div class="blog__monthly-title">月別アーカイブ</div>
-      {years.map((y, index) => (
-        <div class="blog-monthly-section">
-          <div class="blog__monthly-year" tabIndex={index} id="dropdown-icon">
-            <div class="monthly__dropdown-icon"></div>
-            <p class="monthly__title">{`${y.year} (${y.count})`}</p>
-          </div>
-          <div class="monthly__dropdown-content">
-            {y.months.map((m) => (
-              <p>
-                <a href="/404">{`${m.month} (${m.dates.length})`}</a>
-              </p>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-};
+  return years;
+}

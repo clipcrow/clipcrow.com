@@ -1,9 +1,9 @@
 import { PaginationInfo } from "lume/plugins/paginate.ts";
 
-export default (props: { url: string | false; info?: PaginationInfo }) => {
-  if (props.info) {
-    const { totalPages, previous, next } = props.info;
-    if (totalPages > 1 && props.url) {
+export default (props: { pagination?: PaginationInfo }) => {
+  if (props.pagination) {
+    const { totalPages, previous, next } = props.pagination;
+    if (totalPages > 1) {
       return (
         <div class="blog__pagination">
           {previous

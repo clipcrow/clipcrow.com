@@ -1,7 +1,6 @@
 import type { PageData } from "lume/core.ts";
 import BlogNavigation from "@/BlogNavigation.tsx";
-import BlogLatestArticles from "@/BlogLatestArticles.tsx";
-import BlogMonthlyArchives from "@/BlogMonthlyArchives.tsx";
+import BlogRightRail from "@/BlogRightRail.tsx";
 import BlogTitle from "@/BlogTitle.tsx";
 
 export const layout = "layouts/base.tsx";
@@ -19,14 +18,12 @@ export default (data: PageData) => (
           url={data.url || ""}
         />
         <div class="blog__details-content">
+          {data.lead ? <div class="blog__details-lead">{data.lead}</div> : null}
           {data.children}
         </div>
         <BlogNavigation page={data.page} search={data.search} />
       </div>
-      <div class="blog__link">
-        <BlogLatestArticles search={data.search} />
-        <BlogMonthlyArchives search={data.search} />
-      </div>
+      <BlogRightRail search={data.search} />
     </section>
   </main>
 );

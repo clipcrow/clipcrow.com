@@ -1,21 +1,43 @@
 # clipcrow.com
 
-# New ClipCrow site.
+# 企業WEBサイト
+
+クリップクロウ合同会社の企業WEBサイト。製品の紹介を中心におこないつつ、会社案内としてコンサルテーションやSIの事業についても言及する。
+SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシュすると公開先クラウドに自動で展開させる。
 
 ## /public
 
-Static new site design, consisting of HTML and CSS (using SASS).
+このフォルダには、WEBサイトのデザイン成果物として、HTMLとCSS
+(SASSの利用による)を保存しておく。
 
 ## /(root)
 
-A site built using a static site generator called Lume. Follow the steps below
-to build.
+静的サイトジェネレーター lume
+を使用して構築されたサイト。以下の手順に従ってメンテナンスや操作を行える。
 
-- Install Deno.
+- Deno をインストールする
   [reference](https://deno.com/manual@v1.34.3/getting_started/installation)
-- Type below. That is it. A web browser will automatically open and you can see
-  the generated site content.
+- このリポジトリをローカル環境にCloneする。リポジトリのルートフォルダに移動する
+- 下記コマンドを実行する。WEBブラウザが自動的に開き、WEBサイトをプレビューできる
 
 ```sh
 % deno task serve
 ```
+
+- Blog記事を書くときは、下記コマンドを実効する。記事タイトルは設定してもしなくてもよい
+
+```sh
+% deno task blog "タイトル"
+```
+
+- src/blog/yyyy-MM-dd/HH:mm:ss.md
+  （日付時刻はコマンド実行時）というMarkdownファイルが作成される
+- Markdownファイルを編集すると、WEBサイトプレビューにも反映される
+- 記事のメタデータは、生成されたファイルの冒頭に記述する
+  - title: 記事のタイトル。コマンド実行時に指定すると、あらかじめ記述されている
+  - category: 記事のカテゴリー、記載しないと「おしらせ」となる
+  - date:
+    記事の日付。コマンド実行時が予め記述されている。変更すると表示だけ変わる
+  - lead:
+    記事のリードとして、一覧表示の際にはカードに、詳細のときは本文冒頭に表示する
+- src/blogフォルダ内にあれば、サブフォルダやファイル名を変更しても動作に支障はない
