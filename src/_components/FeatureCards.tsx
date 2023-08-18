@@ -34,32 +34,32 @@ function createTable(usages: UsageGroup[], details: Feature[]) {
   ));
 }
 
-const align = (index: number) => ((index + 1) % 2 ? "left" : "right");
+function align(index: number) {
+  return (index + 1) % 2 ? "left" : "right";
+}
 
-export default (props: { usages: UsageGroup[]; features: FeatureGroup[] }) => {
-  return (
-    <>
-      {props.features.map((feature, index) => (
-        <section class="features__maincont">
-          <h3 class="title">
-            <div class={`title__bg ${align(index)}`}></div>
-            {feature.section}
-          </h3>
-          <div class="img-ellipse">
-            <div class="img-ellipse__wrapper">
-              <div class="ellipse"></div>
-              <img
-                class={`features__img-${index + 1}}`}
-                src={feature.image}
-              />
-            </div>
-            <div class="img-ellipse__text">{feature.text}</div>
+export default (props: { usages: UsageGroup[]; features: FeatureGroup[] }) => (
+  <>
+    {props.features.map((feature, index) => (
+      <section class="features__maincont">
+        <h3 class="title">
+          <div class={`title__bg ${align(index)}`}></div>
+          {feature.section}
+        </h3>
+        <div class="img-ellipse">
+          <div class="img-ellipse__wrapper">
+            <div class="ellipse"></div>
+            <img
+              class={`features__img-${index + 1}}`}
+              src={feature.image}
+            />
           </div>
-          <div class="features__case-wrapper">
-            {createTable(props.usages, feature.details)}
-          </div>
-        </section>
-      ))}
-    </>
-  );
-};
+          <div class="img-ellipse__text">{feature.text}</div>
+        </div>
+        <div class="features__case-wrapper">
+          {createTable(props.usages, feature.details)}
+        </div>
+      </section>
+    ))}
+  </>
+);
