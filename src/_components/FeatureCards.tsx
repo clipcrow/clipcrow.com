@@ -40,24 +40,24 @@ function align(index: number) {
 
 export default (props: { usages: UsageGroup[]; features: FeatureGroup[] }) => (
   <>
-    {props.features.map((feature, index) => (
+    {props.features.map((section, index) => (
       <section class="features__maincont">
         <h3 class="title">
           <div class={`title__bg ${align(index)}`}></div>
-          {feature.section}
+          {section.section}
         </h3>
         <div class="img-ellipse">
           <div class="img-ellipse__wrapper">
             <div class="ellipse"></div>
             <img
               class={`features__img-${index + 1}}`}
-              src={feature.image}
+              src={section.image}
             />
           </div>
-          <div class="img-ellipse__text">{feature.text}</div>
+          <div class="img-ellipse__text">{section.text}</div>
         </div>
         <div class="features__case-wrapper">
-          {createTable(props.usages, feature.details)}
+          {createTable(props.usages, section.details)}
         </div>
       </section>
     ))}

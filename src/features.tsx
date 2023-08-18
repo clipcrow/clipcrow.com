@@ -27,7 +27,7 @@ export default (data: PageData) => (
       </div>*/
       }
     </section>
-    <FeatureCards usages={data.usage} features={data.feature} />
+    <FeatureCards usages={data.usages} features={data.features} />
     <StoreLinks />
   </main>
 );
