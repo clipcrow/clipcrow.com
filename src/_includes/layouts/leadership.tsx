@@ -5,8 +5,8 @@ interface Career {
   text: string;
 }
 
-function createList(history: Career[]) {
-  return history.map((career) => (
+function createList(careers: Career[]) {
+  return careers.map((career) => (
     <div class="career__content">
       <h6 class="career__content-year">{career.year}</h6>
       <p>{career.text}</p>
@@ -33,7 +33,7 @@ export default (data: PageData) => (
       <div class="career">
         <h4 class="career__title">経歴</h4>
         <div class="career__section">
-          {createList(data.history)}
+          {createList(data.careers)}
         </div>
       </div>
     </section>

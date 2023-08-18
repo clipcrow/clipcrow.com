@@ -92,7 +92,7 @@ export default (data: PageData) => (
         <dd class="enclose__button">
           栗原傑享/くりはらまさたか
           <span class="button">
-            <a href="/history">経歴</a>
+            <a href="/leadership">詳細</a>
           </span>
         </dd>
         <dt>住所</dt>
