@@ -1,5 +1,6 @@
 import type { PageData } from "lume/core.ts";
 import BlogLatestCards from "@/BlogLatestCards.tsx";
+import FeatureIndex from "@/FeatureIndex.tsx";
 import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
@@ -76,42 +77,7 @@ export default (data: PageData) => (
     </section>
     <section className="features">
       <h1>Essential Workwareの特長・機能</h1>
-      <div className="features__grid-wrapper">
-        <div className="features__grid">
-          <div className="features__card">
-            <h4>業務負担を軽減できる</h4>
-            <img src="/images/ex_step03.png" alt="step 3" />
-            <p>
-              事前の準備少なく、すぐに利用開始。スタッフの負担を減らし、ワーカーの手持ちをなくします。
-            </p>
-          </div>
-          <div className="features__card">
-            <h4>デジタルツインを実現する</h4>
-            <img src="/images/illust-04.png" alt="illust 4" />
-            <p>
-              スタッフとワーカーの属性やリソース状況を常に最新の状態で把握できます。
-            </p>
-          </div>
-        </div>
-        <div className="features__grid">
-          <div className="features__card">
-            <h4>標準化サイクルが発生する</h4>
-            <div className="features__card-image">
-              <img src="/images/ex_step01-2.png" alt="step1-2" />
-            </div>
-            <p>使っているうちに、自然に業務が標準化されます。</p>
-          </div>
-          <div className="features__card">
-            <h4>既存のしくみと連携できる</h4>
-            <div className="features__card-image">
-              <img src="/images/illust-06.png" alt="illust 6" />
-            </div>
-            <p>
-              既存の様々なしくみを連携一体運用することで、DXを素早く実現します。
-            </p>
-          </div>
-        </div>
-      </div>
+      <FeatureIndex features={data.features} />
       <a className="btn__yellow-dark" href="/features">特長・機能の詳細</a>
     </section>
     <section className="point">
