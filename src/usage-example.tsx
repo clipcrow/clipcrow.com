@@ -67,16 +67,16 @@ export default (data: PageData) => (
           <a href="/features/#features_01">打刻管理</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_01">業務指示</a>
+          <a href="/features/#feature1">業務指示</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_01">ワークトラッキング</a>
+          <a href="/features/#feature3">ワークトラッキング</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_02">属性の可視化</a>
+          <a href="/features/#feature7">属性の可視化</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_02">リソース可視化</a>
+          <a href="/features/#feature8">リソース可視化</a>
         </p>
       </div>
     </section>
@@ -113,16 +113,16 @@ export default (data: PageData) => (
       <div class="example__link">
         <h6>このステップで活用できる主な機能</h6>
         <p class="case__relation-link">
-          <a href="/features/#features_01">打刻管理</a>
+          <a href="/features/#feature1">打刻管理</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_01">ワークトラッキング</a>
+          <a href="/features/#feature3">ワークトラッキング</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_04">日報・伝票の自動化</a>
+          <a href="/features/#feature13">日報・伝票の自動化</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_04">BIツール連携</a>
+          <a href="/features/#feature14">BIツール連携</a>
         </p>
       </div>
     </section>
@@ -170,13 +170,13 @@ export default (data: PageData) => (
       <div class="example__link">
         <h6>このステップで活用できる主な機能</h6>
         <p class="case__relation-link">
-          <a href="/features/#features_02">キャリア指標</a>
+          <a href="/features/#feature9">キャリア指標</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_03">ワークのテンプレート化</a>
+          <a href="/features/#feature10">ワークのテンプレート化</a>
         </p>
         <p class="case__relation-link">
-          <a href="/features/#features_03">サンクスカード</a>
+          <a href="/features/#feature11">サンクスカード</a>
         </p>
       </div>
     </section>

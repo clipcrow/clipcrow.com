@@ -19,11 +19,13 @@ export default (data: PageData) => (
         ClipCrow Essential
         Workwareには、経営者、スタッフ、ワーカー、それぞれが必要とする特徴・機能が備わっています。
       </p>
-      <div class="features__kv-image">
+      {
+        /*<div class="features__kv-image">
         <img src="/images/features_cover01.png" alt="manager" />
         <img src="/images/features_cover02.png" alt="staff" />
         <img src="/images/features_cover03.png" alt="worker" />
-      </div>
+      </div>*/
+      }
     </section>
     <FeatureCards usages={data.usage} features={data.feature} />
     <StoreLinks />
