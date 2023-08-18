@@ -32,7 +32,7 @@ function createTable(details: Usage[]) {
   ));
 }
 
-function stepNo(index: number) {
+function displayStep(index: number) {
   const temp = `0${index}`;
   return temp.slice(-2);
 }
@@ -46,7 +46,7 @@ export default (props: { usages: UsageGroup[]; features: FeatureGroup[] }) => (
           <h3 class="num">
             <span class="num__inner">
               <span class="num__inner-step">step</span>
-              <span class="num__inner-figure">{stepNo(step.id)}</span>
+              <span class="num__inner-figure">{displayStep(step.step)}</span>
             </span>
             {step.title}
           </h3>
