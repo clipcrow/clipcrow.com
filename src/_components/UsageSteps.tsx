@@ -40,7 +40,7 @@ function displayStep(index: number) {
 export default (props: { usages: UsageGroup[]; features: FeatureGroup[] }) => (
   <>
     {props.usages.map((step, index) => (
-      <section class="step__wrapper step__01" id={`step${index}`}>
+      <section class="step__wrapper step__01" id={`step${step.step}`}>
         <div class="example-title">
           <div class={`example-title__bg ${align(index)}`}></div>
           <h3 class="num">

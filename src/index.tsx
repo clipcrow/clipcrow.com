@@ -53,7 +53,7 @@ export default (data: PageData) => (
           <div className="card__image">
             <img src="/images/ex_step03-1.png" alt="step3-1" />
           </div>
-          <a className="btn__blue" href="/usage-example">
+          <a className="btn__blue" href="/usage-example/#step1">
             ワーク管理を行い、<br />標準化を実現するには…
           </a>
         </div>
@@ -68,14 +68,14 @@ export default (data: PageData) => (
           <div className="card__image">
             <img src="/images/ex_step03-2.png" alt="step3-2" />
           </div>
-          <a className="btn__pink" href="/usage-example">
+          <a className="btn__pink" href="/usage-example/#step3">
             人材管理を行い、<br />組織を活性化するには...
           </a>
         </div>
       </div>
     </section>
     <section className="features">
-      <h1>Essential Workwareの特徴・機能</h1>
+      <h1>Essential Workwareの特長・機能</h1>
       <div className="features__grid-wrapper">
         <div className="features__grid">
           <div className="features__card">
@@ -112,7 +112,7 @@ export default (data: PageData) => (
           </div>
         </div>
       </div>
-      <a className="btn__yellow-dark" href="/features">特徴・機能の詳細</a>
+      <a className="btn__yellow-dark" href="/features">特長・機能の詳細</a>
     </section>
     <section className="point">
       <h1>Essential Workwareのポイント</h1>
