@@ -78,7 +78,7 @@ export default (data: PageData) => (
     <section className="features">
       <h1>Essential Workwareの特長・機能</h1>
       <FeatureIndex features={data.features} />
-      <a className="btn__yellow-dark" href="/features">特長・機能の詳細</a>
+      <a className="btn__yellow-dark" href="/features/">特長・機能の詳細</a>
     </section>
     <section className="point">
       <h1>Essential Workwareのポイント</h1>
@@ -105,20 +105,17 @@ export default (data: PageData) => (
     <section className="blog">
       <h1>ブログ</h1>
       <BlogLatestCards search={data.search} />
-      <a className="btn__yellow-light" href="/blog">ブログ記事の一覧</a>
+      <a className="btn__yellow-light" href="/blog/">ブログ記事の一覧</a>
     </section>
     <section className="info">
       <div className="info__text">
         <img src="/images/ClipCrow_logo.png" alt="clip-crow logo" />
         <p>
-          クリップクロウ合同会社は、代表する栗原が20年以上にわたるエンタープライズ向けIT事業会社経営において得た、
-          大規模なクラウドネイティブアプリケーション開発プロジェクト指揮の経験と、
-          クラウドグループウェア製品の開発・販売・導入ビジネスの経験により、
           医療や健康管理分野のシステム開発案件プロデュースと、
           生活必需サービス産業の従業者間コミュニケーションを円滑にするグループウェア製品を提案することで、
           データに基づく医療最適化と個人健康管理の実現を推進します。
         </p>
-        <a className="btn__yellow-light" href="/profile">会社情報</a>
+        <a className="btn__yellow-light" href="/company/">会社情報</a>
       </div>
     </section>
   </main>
