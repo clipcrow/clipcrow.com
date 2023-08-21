@@ -29,13 +29,13 @@ export default (data: PageData) => (
           <div className="footer__right">
             <div className="footer__link">
               <a href="/">ホーム</a>
-              <a href="/usage-example">活用例</a>
-              <a href="/features">特徴・機能</a>
+              <a href="/usage-example/">活用例</a>
+              <a href="/features/">特長・機能</a>
             </div>
             <div className="footer__link">
-              <a href="/blog">ブログ</a>
-              <a href="/contact">お問い合わせ</a>
-              <a href="/profile">会社情報</a>
+              <a href="/blog/">ブログ</a>
+              <a href="/contact/">お問い合わせ</a>
+              <a href="/company/">会社情報</a>
             </div>
           </div>
         </div>

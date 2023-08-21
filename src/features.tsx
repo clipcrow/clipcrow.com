@@ -17,7 +17,7 @@ export default (data: PageData) => (
     <section class="features__kv">
       <p class="features__kv-text">
         ClipCrow Essential
-        Workwareには、経営者、スタッフ、ワーカー、それぞれが必要とする特徴・機能が備わっています。
+        Workwareには、経営者、スタッフ、ワーカー、それぞれが必要とする特長・機能が備わっています。
       </p>
       {
         /*<div class="features__kv-image">
@@ -27,7 +27,7 @@ export default (data: PageData) => (
       </div>*/
       }
     </section>
-    <FeatureCards usages={data.usage} features={data.feature} />
+    <FeatureCards usages={data.usages} features={data.features} />
     <StoreLinks />
   </main>
 );

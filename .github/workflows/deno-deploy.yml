@@ -1,0 +1,23 @@
+name: Publish on Deno Deploy
+on:
+  push:
+     branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build_and_deploy:
+    if: github.repository == 'masataka/clipcrow.com'
+    runs-on: ubuntu-latest
+    permission:
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: deno task build
+      - uses: denoland/deployctl@v1
+        with:
+          project: '${{ secrets.DENO_DEPLOY_PROJECT }}'
+          entrypoint: serve.ts

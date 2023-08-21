@@ -1,5 +1,6 @@
 import type { PageData } from "lume/core.ts";
 import BlogLatestCards from "@/BlogLatestCards.tsx";
+import FeatureIndex from "@/FeatureIndex.tsx";
 import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
@@ -53,7 +54,7 @@ export default (data: PageData) => (
           <div className="card__image">
             <img src="/images/ex_step03-1.png" alt="step3-1" />
           </div>
-          <a className="btn__blue" href="/usage-example">
+          <a className="btn__blue" href="/usage-example/#step1">
             ワーク管理を行い、<br />標準化を実現するには…
           </a>
         </div>
@@ -68,51 +69,16 @@ export default (data: PageData) => (
           <div className="card__image">
             <img src="/images/ex_step03-2.png" alt="step3-2" />
           </div>
-          <a className="btn__pink" href="/usage-example">
+          <a className="btn__pink" href="/usage-example/#step3">
             人材管理を行い、<br />組織を活性化するには...
           </a>
         </div>
       </div>
     </section>
     <section className="features">
-      <h1>Essential Workwareの特徴・機能</h1>
-      <div className="features__grid-wrapper">
-        <div className="features__grid">
-          <div className="features__card">
-            <h4>業務負担を軽減できる</h4>
-            <img src="/images/ex_step03.png" alt="step 3" />
-            <p>
-              事前の準備少なく、すぐに利用開始。スタッフの負担を減らし、ワーカーの手持ちをなくします。
-            </p>
-          </div>
-          <div className="features__card">
-            <h4>デジタルツインを実現する</h4>
-            <img src="/images/illust-04.png" alt="illust 4" />
-            <p>
-              スタッフとワーカーの属性やリソース状況を常に最新の状態で把握できます。
-            </p>
-          </div>
-        </div>
-        <div className="features__grid">
-          <div className="features__card">
-            <h4>標準化サイクルが発生する</h4>
-            <div className="features__card-image">
-              <img src="/images/ex_step01-2.png" alt="step1-2" />
-            </div>
-            <p>使っているうちに、自然に業務が標準化されます。</p>
-          </div>
-          <div className="features__card">
-            <h4>既存のしくみと連携できる</h4>
-            <div className="features__card-image">
-              <img src="/images/illust-06.png" alt="illust 6" />
-            </div>
-            <p>
-              既存の様々なしくみを連携一体運用することで、DXを素早く実現します。
-            </p>
-          </div>
-        </div>
-      </div>
-      <a className="btn__yellow-dark" href="/features">特徴・機能の詳細</a>
+      <h1>Essential Workwareの特長・機能</h1>
+      <FeatureIndex features={data.features} />
+      <a className="btn__yellow-dark" href="/features/">特長・機能の詳細</a>
     </section>
     <section className="point">
       <h1>Essential Workwareのポイント</h1>
@@ -139,20 +105,17 @@ export default (data: PageData) => (
     <section className="blog">
       <h1>ブログ</h1>
       <BlogLatestCards search={data.search} />
-      <a className="btn__yellow-light" href="/blog">ブログ記事の一覧</a>
+      <a className="btn__yellow-light" href="/blog/">ブログ記事の一覧</a>
     </section>
     <section className="info">
       <div className="info__text">
         <img src="/images/ClipCrow_logo.png" alt="clip-crow logo" />
         <p>
-          クリップクロウ合同会社は、代表する栗原が20年以上にわたるエンタープライズ向けIT事業会社経営において得た、
-          大規模なクラウドネイティブアプリケーション開発プロジェクト指揮の経験と、
-          クラウドグループウェア製品の開発・販売・導入ビジネスの経験により、
           医療や健康管理分野のシステム開発案件プロデュースと、
           生活必需サービス産業の従業者間コミュニケーションを円滑にするグループウェア製品を提案することで、
           データに基づく医療最適化と個人健康管理の実現を推進します。
         </p>
-        <a className="btn__yellow-light" href="/profile">会社情報</a>
+        <a className="btn__yellow-light" href="/company/">会社情報</a>
       </div>
     </section>
   </main>

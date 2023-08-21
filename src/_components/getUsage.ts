@@ -5,18 +5,18 @@ export interface Usage {
 }
 
 export interface UsageGroup {
-  id: number;
+  step: number;
   title: string;
   text: string;
   feature: number[];
   details: Usage[];
 }
 
-export default function (data: UsageGroup[], id: number) {
+export default function (data: UsageGroup[], step: number) {
   for (const group of data) {
-    if (group.id === id) {
+    if (group.step === step) {
       return group;
     }
   }
-  throw new Error(`UsageのIDで${id}は不正です`);
+  throw new Error(`Usageのstepで${step}は不正です`);
 }
