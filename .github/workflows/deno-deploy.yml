@@ -19,5 +19,5 @@ jobs:
       - run: deno task build
       - uses: denoland/deployctl@v1
         with:
-          project: '${{ secrets.DENO_DEPLOY_PROJECT }}'
+          project: '${{ vars.DENO_DEPLOY_PROJECT }}'
           entrypoint: serve.ts
