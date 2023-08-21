@@ -1,0 +1,18 @@
+{
+    "hosting": {
+      "public": "_site",
+      "ignore": [
+        ".DS_Store",
+        ".github",
+        ".vscode",
+        "public",
+        "src",
+        "_config.ts",
+        ".gitignore",
+        "deno.json",
+        "deno.lock",
+        "firebase.json",
+        "README.md"
+      ]
+    }
+  }
