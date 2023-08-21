@@ -5,10 +5,10 @@ const server = new Server({
   root: `${Deno.cwd()}/_site`,
 });
 
-server.use(async (request, next) => {
+server.use(async (request, next, info) => {
   const response = await next(request);
   if (response.status === 404) {
-    return Response.redirect("404", 404);
+    return Response.redirect(`${info.remoteAddr}/404/`, 404);
   }
   return response;
 });
