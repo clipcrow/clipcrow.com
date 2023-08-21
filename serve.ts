@@ -5,10 +5,13 @@ const server = new Server({
   root: `${Deno.cwd()}/_site`,
 });
 
-server.use(async (request, next, info) => {
+server.use(async (request, next) => {
   const response = await next(request);
   if (response.status === 404) {
-    return Response.redirect(`${info.remoteAddr}/404/`, 404);
+    const { headers, status } = response;
+    headers.set("content-type", "text/html; charset=utf-8");
+    const body = await Deno.readFile(`${Deno.cwd()}/_site/404/index.html`);
+    return new Response(body, { status, headers });
   }
   return response;
 });
