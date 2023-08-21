@@ -8,7 +8,7 @@ const server = new Server({
 server.use(async (request, next) => {
   const response = await next(request);
   if (response.status === 404) {
-    return Response.redirect("/404/", 404);
+    return Response.redirect("/404", 404);
   }
   return response;
 });
