@@ -14,6 +14,19 @@ const BlogLatestArticles = (props: { search: Search }) => (
   </div>
 );
 
+const BlogCategories = (props: { search: Search }) => (
+  <div class="blog__latest">
+    <div class="blog__latest-title">カテゴリー</div>
+    {props.search.values("category").map((value) => (
+      <p>
+        <a class="blog__latest-content" href={`/blog/category/${value}/`}>
+          {`- ${value}`}
+        </a>
+      </p>
+    ))}
+  </div>
+);
+
 const BlogMonthlyArchives = (props: { search: Search }) => {
   const years = createArchive(props.search);
   return (
@@ -28,7 +41,9 @@ const BlogMonthlyArchives = (props: { search: Search }) => {
           <div class="monthly__dropdown-content">
             {y.months.map((m) => (
               <p>
-                <a href="/404">{`${m.month} (${m.dates.length})`}</a>
+                <a href={`/blog/monthly/${m.month}/`}>
+                  {`${m.month} (${m.pages.length})`}
+                </a>
               </p>
             ))}
           </div>
@@ -41,6 +56,7 @@ const BlogMonthlyArchives = (props: { search: Search }) => {
 export default (props: { search: Search }) => (
   <div class="blog__link">
     <BlogLatestArticles search={props.search} />
+    <BlogCategories search={props.search} />
     <BlogMonthlyArchives search={props.search} />
   </div>
 );
