@@ -5,9 +5,20 @@ function align(index: number) {
   return (index + 1) % 2 ? "left" : "right";
 }
 
+function getColorClass(target: string) {
+  switch (target) {
+    case "スタッフ":
+      return "ex-staff";
+    case "ワーカー":
+      return "ex-worker";
+    default:
+      return "ex-manager"
+  }
+}
+
 const UsageCircle = (props: { circle: Usage; index: number }) => (
   <div class={`case ${align(props.index)}`}>
-    <p class="roll ex-worker">{props.circle.target}</p>
+    <p class={`roll ${getColorClass(props.circle.target)}`}>{props.circle.target}</p>
     <div class="image-container">
       <img src={props.circle.image} />
     </div>
