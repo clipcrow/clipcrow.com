@@ -70,8 +70,20 @@
       gap: 8px;
     }
     .blog__latest-content {
-      p {
-        margin-bottom: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      a {
+        color: $c-neutral-020;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        @media screen and (max-width: 767px) {
+          font-size: 14px;
+          line-height: 20px; 
+          letter-spacing: 0.25px;
+        }
       }
     }
   }
@@ -86,6 +98,9 @@
       display: flex;
       flex-direction: column;
       position: relative;
+      .toggleButton {
+        display: none;
+      }
       .blog__monthly-year {
         display: flex;
         flex-direction: row;
@@ -93,11 +108,6 @@
         align-items: center;
         cursor: pointer;
         gap: 8px;
-        &:focus {
-          .monthly__dropdown-icon {
-            background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M8.75%2011.875L15%2018.125L21.25%2011.875H8.75Z%22%20fill%3D%22%235B5B55%22%2F%3E%3C%2Fsvg%3E");
-          }
-        }
         .monthly__dropdown-icon {
           width: 30px;
           height: 30px;
@@ -118,14 +128,25 @@
         @media screen and (max-width: 767px) {
           padding-left: 48px;
         }
+        a {
+          color: $c-neutral-020;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.15px;
+          @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 0.25px;
+          }
+        }
       }
-      .blog__monthly-year:focus + .monthly__dropdown-content,
-      .monthly__dropdown-content:focus-within {
+      .toggleButton:checked ~ .monthly__dropdown-content {
         display: flex;
         flex-direction: column;
-        .monthly__dropdown-icon {
-          background-image: url("data:image/svg+xml,%3Csvg%20width%3D%226%22%20height%3D%228%22%20viewBox%3D%220%200%206%208%22%20fill%3D%22%23504100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1.47003%200L0.530029%200.94L3.58336%204L0.530029%207.06L1.47003%208L5.47003%204L1.47003%200Z%22%20fill%3D%22%23504100%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-        }
+      }
+      .toggleButton:checked ~ .blog__monthly-year .monthly__dropdown-icon {
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M8.75%2011.875L15%2018.125L21.25%2011.875H8.75Z%22%20fill%3D%22%235B5B55%22%2F%3E%3C%2Fsvg%3E");
       }
     }
   }
@@ -172,7 +193,6 @@
     @media screen and (max-width: 767px) {
       &__date {
         font-size: 12px;
-        font-style: normal;
         font-weight: 400;
         line-height: 16px; /* 133.333% */
         letter-spacing: 0.4px;
@@ -180,7 +200,7 @@
     }
     &-content {
       align-items: center;
-      height: 421px;
+      height: auto;
       width: 768px;
       padding: 32px;
       border-width: 1px;
@@ -190,7 +210,6 @@
       background-size: contain;
       position: relative;
       @media screen and (max-width: 767px) {
-        height: auto;
         width: 100%;
         padding: 16px;
       }
@@ -223,7 +242,6 @@
       .card__inside {
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 32px;
         gap: 32px;
         border-width: 2px;
@@ -258,24 +276,26 @@
         .card__lead {
           color: $c-neutral-020;
           font-size: 1.5rem;
-          font-style: normal;
+          text-align: left;
           font-weight: 400;
           line-height: 32px;
+          display: -webkit-box; /* Required for Safari and some old versions of iOS */
+          -webkit-line-clamp: 3; /* Number of lines to display */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
           @media screen and (max-width: 767px) {
             font-size: 1rem;
             line-height: 24px;
             letter-spacing: 0.15px;
-            width: 250px;
+            width: 100%;
             height: 48px;
-            display: -webkit-box; /* Required for Safari and some old versions of iOS */
             -webkit-line-clamp: 2; /* Number of lines to display */
-            -webkit-box-orient: vertical;
-            overflow: hidden;
           }
         }
         .card__category {
           height: 56px;
           padding: 16px 32px;
+          margin: 0 auto;
           border: 1px solid $c-tertiary-000;
           color: $c-tertiary-000;
           font-size: 1rem;
