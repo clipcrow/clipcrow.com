@@ -435,7 +435,7 @@
     height: auto;
     width: 100%;
     border-radius: 32px;
-    background-color: $c-neutral-098;
+    background-color: $c-neutral-099;
     padding: 16px;
     color: #000;
     @media screen and (max-width: 1199px) {
@@ -450,12 +450,12 @@
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 21px solid #F0F0F2; 
+    border-bottom: 21px solid $c-neutral-099; 
     @media screen and (max-width: 1199px) {
       margin-top: 6px;
       border-left: 17px solid transparent;
       border-right: 17px solid transparent;
-      border-bottom: 16px solid #F0F0F2; 
+      border-bottom: 16px solid $c-neutral-099; 
     }
   }
 }

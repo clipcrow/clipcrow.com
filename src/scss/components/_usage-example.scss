@@ -293,3 +293,13 @@
     }
   }
 }
+
+//=================================================================================
+//download section
+
+.example__download {
+  padding: 64px 0 128px;
+  @media screen and (max-width: 612px) {
+    padding: 32px 0 64px;
+  }
+}

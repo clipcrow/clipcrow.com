@@ -12,9 +12,9 @@ export default (props: {
       <div class="card__inside card-4">
         <h4 class="card__title">{props.title}</h4>
         {props.lead ? <div class="card__lead">{props.lead}</div> : null}
-        <object>
+        <object class="card__category">
           <a href={`/blog/category/${props.category}/`}>
-            <div class="card__category">{props.category}</div>
+            <div>{props.category}</div>
           </a>
         </object>
       </div>
