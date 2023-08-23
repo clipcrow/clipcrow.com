@@ -5,11 +5,9 @@ const BlogLatestArticles = (props: { search: Search }) => (
   <div class="blog__latest">
     <div class="blog__latest-title">最新の記事</div>
     {props.search.pages("blog", "date=desc", 5).map((page) => (
-      <p>
-        <a class="blog__latest-content" href={page!.data.url}>
-          {`- ${page!.data.title}`}
-        </a>
-      </p>
+      <a class="blog__latest-content" href={page!.data.url}>
+        {`- ${page!.data.title}`}
+      </a>
     ))}
   </div>
 );
@@ -18,11 +16,9 @@ const BlogCategories = (props: { search: Search }) => (
   <div class="blog__latest">
     <div class="blog__latest-title">カテゴリー</div>
     {props.search.values("category").map((value) => (
-      <p>
-        <a class="blog__latest-content" href={`/blog/category/${value}/`}>
-          {`- ${value}`}
-        </a>
-      </p>
+      <a class="blog__latest-content" href={`/blog/category/${value}/`}>
+        {`- ${value}`}
+      </a>
     ))}
   </div>
 );
@@ -32,22 +28,21 @@ const BlogMonthlyArchives = (props: { search: Search }) => {
   return (
     <div class="blog__monthly">
       <div class="blog__monthly-title">月別アーカイブ</div>
-      {years.map((y, index) => (
-        <div class="blog-monthly-section">
-          <div class="blog__monthly-year" tabIndex={index} id="dropdown-icon">
+      {years.map((y) => (
+        <label class="blog-monthly-section">
+          <input type="checkbox" class="toggleButton" />
+          <div class="blog__monthly-year">
             <div class="monthly__dropdown-icon"></div>
-            <p class="monthly__title">{`${y.year} (${y.count})`}</p>
+            <div class="monthly__title">{`${y.year} (${y.count})`}</div>
           </div>
           <div class="monthly__dropdown-content">
             {y.months.map((m) => (
-              <p>
-                <a href={`/blog/monthly/${m.month}/`}>
-                  {`${m.month} (${m.pages.length})`}
-                </a>
-              </p>
+              <a href={`/blog/monthly/${m.month}/`}>
+                {`${m.month} (${m.pages.length})`}
+              </a>
             ))}
           </div>
-        </div>
+        </label>
       ))}
     </div>
   );
