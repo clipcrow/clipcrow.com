@@ -14,6 +14,8 @@ export default (data: PageData) => (
         <BlogTitle
           title={data.title!}
           category={data.category}
+          color={data.color}
+          image={data.image}
           date={data.date!}
           url={data.url || ""}
         />

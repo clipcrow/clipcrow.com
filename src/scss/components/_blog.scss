@@ -158,7 +158,7 @@
     1. card with no background images
     2. card with background images 
   
-    Card with background images are page-1 and page-2
+    Card with background images are image-1 and image-2
   */
 
 .blog__card-wrapper {
@@ -173,16 +173,6 @@
     width: 100%;
     align-items: center;
     padding: 0 32px;
-  }
-  &.page-1 {
-    .blog__card-content {
-      background-image: url("/images/blog-illust.png");
-    }
-  }
-  &.page-2 {
-    .blog__card-content {
-      background-image: url("/images/blog-illust-1.png");
-    }
   }
   .blog__card {
     display: flex;
@@ -212,6 +202,13 @@
       @media screen and (max-width: 767px) {
         width: 100%;
         padding: 16px;
+      }
+
+      &.image-1 {
+        background-image: url("/images/blog-illust.png");
+      }
+      &.image-2 {
+        background-image: url("/images/blog-illust-1.png");
       }
 
       &.card-1 {
