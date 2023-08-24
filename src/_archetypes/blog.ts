@@ -9,6 +9,8 @@ export default function (arg?: string) {
     content: {
       title,
       category,
+      color: "Y",
+      image: "LOGO",
       date: now,
       lead: "",
       content: "# TODO: \r以下、記事をMarkdownで書く",

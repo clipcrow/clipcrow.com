@@ -10,12 +10,14 @@ export default (data: PageData) => (
     <section class="blog__page-title">
     </section>
     <section class="blog__maincont">
-      <div class="blog__card-wrapper page-2">
+      <div class="blog__card-wrapper">
         {data.results &&
           data.results.map((result) => (
             <BlogTitle
               title={result.data.title!}
               category={result.data.category}
+              color={result.data.color}
+              image={result.data.image}
               date={result.data.date!}
               url={result.data.url || ""}
               lead={result.data.lead}
