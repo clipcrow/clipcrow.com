@@ -1,6 +1,6 @@
 import "./styles/app.scss";
 import { useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import FormConfirm from "./FormConfirm";
 import FormComplete from "./FormComplete";
 
@@ -34,8 +34,9 @@ const App = () => {
   const handleConfirm = async () => {
     // Send data to Slack
     if (formData) {
+      const webhookURL = import.meta.env.VITE_APP_SLACK_WEBHOOK_URL;
       try {
-        await fetch("https://hooks.slack.com/services/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",
+        await fetch( webhookURL,
           {
             method: "POST",
             mode: "no-cors",
