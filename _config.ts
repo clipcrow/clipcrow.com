@@ -13,7 +13,8 @@ const site = lume({
 site.use(jsx());
 site.use(sass());
 
-site.copy("contact");
+site.copy("contact/index.html");
+site.copy("contact/assets", "assets");
 site.copy("favicon.ico");
 site.copy("images");
 
