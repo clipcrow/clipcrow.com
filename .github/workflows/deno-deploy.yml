@@ -25,7 +25,4 @@ jobs:
         with:
           project: '${{ vars.DENO_DEPLOY_PROJECT }}'
           entrypoint: serve.ts
-          exclude:
-            - src
-            - public
-            - CCL2
+          exclude: CCL2
