@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: cd CCL2 && npm install && npm run build
+      - run: cd contact && npm install && npm run build
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
@@ -25,4 +25,4 @@ jobs:
         with:
           project: '${{ vars.DENO_DEPLOY_PROJECT }}'
           entrypoint: serve.ts
-          exclude: CCL2
+          exclude: contact
