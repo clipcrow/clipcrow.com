@@ -2,8 +2,8 @@
 
 動作方法
 
-- ローカル環境にプルした後、CCL2フォルダに移動して、npm installを実行
-- CCL2/.envファイルを用意して、VITE_APP_SLACK_WEBHOOK_URL キーにSlackのWebhook
+- ローカル環境にプルした後、contactフォルダに移動して、npm installを実行
+- contact/.envファイルを用意して、VITE_APP_SLACK_WEBHOOK_URL キーにSlackのWebhook
   URLを記載する
 - npm run dev でローカル実行できる
 
