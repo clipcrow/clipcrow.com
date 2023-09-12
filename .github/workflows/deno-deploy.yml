@@ -18,6 +18,7 @@ jobs:
           node-version: 18
       - run: | 
         cd CCL2
+        npm install
         npm run build
       - uses: denoland/setup-deno@v1
         with:
