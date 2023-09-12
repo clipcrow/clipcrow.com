@@ -1,4 +1,12 @@
-# React + TypeScript + Vite
+# Contact SPA
+
+動作方法
+
+- ローカル環境にプルした後、CCL2フォルダに移動して、npm installを実行
+- CCL2/.envファイルを用意して、VITE_APP_SLACK_WEBHOOK_URL キーにSlackのWebhook URLを記載する
+- npm run dev でローカル実行できる
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
