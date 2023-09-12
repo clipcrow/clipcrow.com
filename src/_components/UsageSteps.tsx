@@ -12,13 +12,15 @@ function getColorClass(target: string) {
     case "ワーカー":
       return "ex-worker";
     default:
-      return "ex-manager"
+      return "ex-manager";
   }
 }
 
 const UsageCircle = (props: { circle: Usage; index: number }) => (
   <div class={`case ${align(props.index)}`}>
-    <p class={`roll ${getColorClass(props.circle.target)}`}>{props.circle.target}</p>
+    <p class={`roll ${getColorClass(props.circle.target)}`}>
+      {props.circle.target}
+    </p>
     <div class="image-container">
       <img src={props.circle.image} />
     </div>
