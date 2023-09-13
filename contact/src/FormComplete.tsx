@@ -11,7 +11,7 @@ const FormComplete = () => {
         </div>
       </section>
       <section className="complete__button-section">
-        <a href="index.html" className="complete__button">ホームへ戻る</a>
+        <a href="/" className="complete__button">ホームへ戻る</a>
       </section>
     </main>
   );
