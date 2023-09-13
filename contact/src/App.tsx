@@ -34,11 +34,9 @@ const App = () => {
   const handleConfirm = async () => {
     // Send data to Slack
     if (formData) {
-      const webhookURL = import.meta.env.VITE_APP_SLACK_WEBHOOK_URL;
       try {
-        await fetch(webhookURL, {
+        await fetch("/slack", {
           method: "POST",
-          mode: "no-cors",
           headers: {
             "Content-Type": "application/json",
           },
