@@ -52,7 +52,7 @@ export default (data: PageData) => (
             </span>
           </p>
           <div class="card__image">
-            <img src="/images/ex_step03-1.png" alt="step3-1" />
+            <img src="/images/home-01.png" />
           </div>
           <a class="btn__blue" href="/usage-example/#step1">
             ワーク管理を行い、<br />標準化を実現するには…
@@ -67,7 +67,7 @@ export default (data: PageData) => (
             離職率が高く、特にリーダー的ポジションは常に人材難。
           </p>
           <div class="card__image">
-            <img src="/images/ex_step03-2.png" alt="step3-2" />
+            <img src="/images/home-02.png" />
           </div>
           <a class="btn__pink" href="/usage-example/#step3">
             人材管理を行い、<br />組織を活性化するには...
@@ -80,6 +80,7 @@ export default (data: PageData) => (
       <FeatureIndex features={data.features} />
       <a class="btn__yellow-dark" href="/features/">特長・機能の詳細</a>
     </section>
+    {/*
     <section class="point">
       <h1>Essential Workwareのポイント</h1>
       <div class="point__top-grid">
@@ -102,6 +103,7 @@ export default (data: PageData) => (
         </div>
       </div>
     </section>
+    */}
     <section class="blog">
       <h1>ブログ</h1>
       <BlogLatestCards search={data.search} />
