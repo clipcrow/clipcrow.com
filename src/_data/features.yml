@@ -1,6 +1,6 @@
 - section: 業務負担を軽減できる
   text: 事前の準備少なく、すぐに利用開始。スタッフの負担を減らし、ワーカーの手持ちをなくします。
-  image: /images/ex_step03.png
+  image: /images/home-03.png
   details:
     - id: 1
       title: 打刻管理
@@ -37,7 +37,7 @@
     
 - section: デジタルツインを実現する
   text: スタッフとワーカーの属性やリソース状況を常に最新の状態で把握できます。
-  image: /images/illust-04.png
+  image: /images/home-04.png
   details:
     - id: 7
       title: 属性の可視化
@@ -59,7 +59,7 @@
     
 - section: 標準化サイクルが発生する
   text: EssentialWorkwareを使っているうちに、自然と業務が標準化されます。
-  image: /images/ex_step01-2.png
+  image: /images/home-05.png
   details:
     - id: 10
       title: ワークのテンプレート化
@@ -80,7 +80,7 @@
     
 - section: 既存の仕組みと連携できる
   text: 既存の様々なしくみを連携一体運用することで、DXを素早く実現します。
-  image: /images/illust-06.png
+  image: /images/home-06.png
   details:
     - id: 13
       title: 日報・伝票の自動化

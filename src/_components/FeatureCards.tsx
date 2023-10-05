@@ -50,7 +50,6 @@ export default (props: { usages: UsageGroup[]; features: FeatureGroup[] }) => (
           <div class="img-ellipse__wrapper">
             <div class="ellipse"></div>
             <img
-              class={`features__img-${index + 1}}`}
               src={section.image}
             />
           </div>
