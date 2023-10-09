@@ -19,13 +19,13 @@ export default (data: PageData) => (
             現在もこれからも労働力の確保が難しく、
             特に生活必需産業では労働力不足が顕著となっています。
             個別事業者に可能な対策としては、
-            求人に注力する一方で、IT導入による自動化と地道な業務の標準化で、
-            組織の生産性を向上させることが考えられます。<br />
+            求人に注力する一方で、
+            IT導入によって組織の生産性を向上させることが考えられます。
             <span>
-              「EssenntialWorkware」は、Out of the Boxですぐにワーク管理と
-              人材管理の機能を提供して、業務の自動化を行うグループウェアです。
+              「EssenntialWorkware」は、Out of the Boxですぐにタスク管理と
+              シフト管理の機能を提供するスマートフォン上のグループウェアです。
             </span>
-            また、日々使ううちに自然と業務の標準化が実現するようになっています。
+            また、日々使ううちに自然と業務の標準化が実現して、組織が活性化するようになります。
           </p>
         </div>
         <div class="hero__image">
@@ -38,39 +38,45 @@ export default (data: PageData) => (
       <h1>こんな問題を抱えていませんか</h1>
       <div class="maincont__card">
         <div class="card">
-          <p class="card__pc-text">
+          <div class="card__image">
+            <img src="/images/home-01.png" />
+          </div>
+          <p>
             顧客に対面する業務が多く、業務の実行内容が売上や費用の計算に直結している。
             繰り返し発生する業務はそれぞれが定型で短時間に完了するが、とにかく種類が多いため、
             <span class="text-blue">
               業務見直しやDXにはなかなか手が付かない。
             </span>
+            既に何らかのITシステムを導入していても、うまく使いこなせていない。
           </p>
-          <p class="card__sp-text">
-            顧客に対面する業務が多く、業務の実行内容が売ざ時間に完了するが、とにかく種類が多いため、
-            <span class="text-blue">
-              業務見直しやDXにはなかなか手が付かない。
-            </span>
-          </p>
-          <div class="card__image">
-            <img src="/images/home-01.png" />
-          </div>
           <a class="btn__blue" href="/usage-example/#step1">
-            ワーク管理を行い、<br />標準化を実現するには…
+            <p class="card__pc-text">
+              タスク管理〜業務管理を行い、<br />標準化を実現するには…
+            </p>
+            <p class="card__sp-text">
+              タスク管理〜業務管理を行い、標準化を実現するには…
+            </p>
           </a>
         </div>
         <div class="card">
-          <p>
-            正規雇用者だけでは足りずにパート・アルバイトや未経験者も集めていることと、
-            <span class="text-pink">
-              資格や専門的な技術を必要とする業務も多いことから、組織の人材を活かすにはどうすればよいのか悩む。
-            </span>
-            離職率が高く、特にリーダー的ポジションは常に人材難。
-          </p>
           <div class="card__image">
             <img src="/images/home-02.png" />
           </div>
+          <p>
+            正規雇用者だけでは足りずに社外のパートナーや、パート・アルバイト、未経験者も集めていることと、
+            資格や専門的な技術を必要とする業務も多いことから、
+            <span class="text-pink">
+              組織の人材を活かすにはどうすればよいのか悩む。
+            </span>
+            離職率が高く、特にリーダー的ポジションは常に人材難。
+          </p>
           <a class="btn__pink" href="/usage-example/#step3">
-            人材管理を行い、<br />組織を活性化するには...
+            <p class="card__pc-text">
+              シフト管理〜人材管理を行い、<br />組織を活性化するには...
+            </p>
+            <p class="card__sp-text">
+              シフト管理〜人材管理を行い、組織を活性化するには...
+            </p>
           </a>
         </div>
       </div>
@@ -113,9 +119,8 @@ export default (data: PageData) => (
       <div class="info__text">
         <img src="/images/ClipCrow_logo.png" alt="clip-crow logo" />
         <p>
-          医療や健康管理分野のシステム開発案件プロデュースと、
-          生活必需サービス産業の従業者間コミュニケーションを円滑にするグループウェア製品を提案することで、
-          データに基づく医療最適化と個人健康管理の実現を推進します。
+          SaaS製品事業の創造と開発案件プロデュースで、
+          システムを磨き、健康で楽しく豊かな組織と個人を実現します。
         </p>
         <a class="btn__yellow-light" href="/company/">会社情報</a>
       </div>

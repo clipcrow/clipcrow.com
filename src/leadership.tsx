@@ -30,7 +30,7 @@ export default (data: PageData) => (
       <div class="history__kv">
         {/*<img class="history__kv-image" src=""/>*/}
         <p class="history__kv-text">
-          妻と娘2人、愛犬のゴールデンレトリバーとで東京都世田谷区に在住。<br />
+          妻と娘2人、愛犬のゴールデンレトリバーとで東京都在住。<br />
           趣味はアクアリウム、プラモデル。最近ちょっと良いクロスバイクを購入し、毎日乗るのが楽しい。
         </p>
       </div>

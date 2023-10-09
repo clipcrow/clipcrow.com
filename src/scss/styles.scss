@@ -56,9 +56,6 @@ section {
 .btn {
   &__blue {
     @include button($c-blue-dark, $c-blue-light, $c-neutral-100);
-    font-size: 22px;
-    color: $c-neutral-070;
-    line-height: 28px;
     text-align: center;
     @media screen and (max-width: 1199px) {
       width: 100%;
@@ -68,9 +65,6 @@ section {
   }
   &__pink {
     @include button($c-tertiary-040, $c-tertiary-050, $c-neutral-100);
-    font-size: 22px;
-    color: $c-tertiary-099;
-    line-height: 28px;
     text-align: center;
     @media screen and (max-width: 1199px) {
       width: 100%;
@@ -390,7 +384,10 @@ footer {
       max-height: 488px;
       gap: 32px;
       &__pc-text {
-        color: $c-neutral-010;
+        font-size: 18pt;
+        font-weight: 700;
+        line-height: 22pt;
+        display: block;
       }
       &__sp-text {
         display: none;
@@ -410,21 +407,6 @@ footer {
         }
         &__sp-text {
           display: block;
-          color: $c-neutral-010;
-        }
-        p {
-          font-size: 16px;
-          line-height: 24px;
-        }
-        span {
-          font-size: 16px;
-          font-weight: 700;
-        }
-        &__image {
-          margin: 0;
-          img {
-            height: 165px;
-          }
         }
       }
     }

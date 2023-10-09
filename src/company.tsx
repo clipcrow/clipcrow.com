@@ -23,22 +23,26 @@ export default (data: PageData) => (
         </p>
         <p>
           クリップクロウ合同会社は、代表する栗原が20年以上にわたるエンタープライズ向けIT事業会社経営において得た、
-          大規模なクラウドネイティブアプリケーション開発プロジェクト指揮の経験と、
-          クラウドグループウェア製品の開発・販売・導入ビジネスの経験により、
-          クラウドでの医療情報システム開発案件をプロデュースし、
+          クラウドグループウェア製品の開発・販売・導入ビジネスの経験と、
+          大規模なクラウドネイティブアプリケーション開発プロジェクト指揮の経験より、
           医療従事者間および医療従事者と患者との間のコミュニケーションを円滑にする
-          グループウェアの適用を提案することで、
-          データに基づく医療最適化と個人健康管理の実現を推進します。
+          グループウェアの適用を提案し、
+          同時にクラウドでの医療情報システム開発案件をプロデュースすることで、
+          データに基づく医療最適化と個人健康管理の実現を推進しています。
+        </p>
+        <p>
+          そして、今、医療と健康管理の領域で得られた成功体験を汎化して、「Essemtial Work」つまり生活必需産業全般、
+          さらには自らも属するIT産業まで広くソリューションをお届けいたします。
         </p>
       </div>
     </section>
     <section class="business">
-      <h2>製品事業の創造と、開発案件プロデュース</h2>
+      <h2>SaaS製品事業の創造と、開発案件プロデュース</h2>
       <div class="business__diagram">
         <div class="top-box">
           <div class="box__inside">
             <div class="box__text">
-              <div class="box__title">製品事業の創造</div>
+              <div class="box__title">SaaS製品事業の創造</div>
               <p>Essential Workwareの開発・販売を行う</p>
             </div>
             <img
@@ -49,7 +53,7 @@ export default (data: PageData) => (
         </div>
         <div class="center-box">
           <div class="center-box__title">
-            データに基づく医療最適化と個人健康管理の実現を推進する
+            システムを磨き、健康で楽しく豊かに
           </div>
         </div>
         <div class="bottom-box">
@@ -67,11 +71,11 @@ export default (data: PageData) => (
       </div>
       <div class="teams">
         <div class="teams__box">
-          <p class="teams__box-name">開発陣</p>
+          <p class="teams__box-name">パートナーシップ</p>
           <div class="teams__box-inner">
             <img class="dev__img" src="/images/team-dev.svg" alt="dev team" />
             <ul>
-              <li>React, Unity, Flutter</li>
+              <li>React, Flutter</li>
               <li>GCP, AWS</li>
               <li>Golang, TypeScript, Dart</li>
               <li>Docker, Kubernetes, Terraform</li>
@@ -81,7 +85,7 @@ export default (data: PageData) => (
             </ul>
           </div>
           <p class="teams__box-note">
-            20年以上のパートナーシップ、国内外で連携する開発組織
+            オフショアで高度ソフトウェア開発を行います
           </p>
         </div>
         <div class="teams__box">
@@ -98,6 +102,9 @@ export default (data: PageData) => (
               <li>カスタマーサクセス</li>
             </ul>
           </div>
+          <p class="teams__box-note">
+            ゼロから開発プロジェクトを立ち上げられます
+          </p>
         </div>
       </div>
     </section>
