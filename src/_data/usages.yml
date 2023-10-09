@@ -1,17 +1,17 @@
 - step: 1
   title: 勤務開始〜終了
-  text: 打刻の操作で勤務を開始します。新たなワークも容易に作成し割り当て。勤務終了の打刻でタイムシートが作成されます。
+  text: 打刻の操作で勤務を開始します。新たなタスクも容易に作成し割り当て。勤務終了の打刻でタイムシートが作成されます。
   feature: [1, 2, 3, 7, 8]
   details:
     - title: 勤務開始の打刻を行う
       image: /images/ex_step01-1.png
       target: ワーカー
 
-    - title: ワークを新規作成
+    - title: タスクを新規作成
       image: /images/ex_step01-2.png
       target: スタッフ
 
-    - title: オープンワークを引き受け業務指示を読む
+    - title: オープンタスクを引き受け業務指示を読む
       image: /images/ex_step01-3.png
       target: ワーカー
 
@@ -37,7 +37,7 @@
   text: チームビルディングと業務標準化を行います
   feature: [9, 10, 11]
   details:
-    - title: ワーカ人材育成のためにラダーを設計する
+    - title: 人材育成のためにラダーを設計する
       image: /images/ex_step03-1.png
       target: ワーカー
 
