@@ -1,7 +1,7 @@
 - step: 1
   title: 勤務開始〜終了
   text: 打刻の操作で勤務を開始します。新たなタスクも容易に作成し割り当て。勤務終了の打刻でタイムシートが作成されます。
-  feature: [1, 2, 3, 7, 8]
+  feature: [1, 2, 3, 9, 10]
   details:
     - title: 勤務開始の打刻を行う
       image: /images/ex_step01-1.png
@@ -22,7 +22,7 @@
 - step: 2
   title: 締め作業
   text: タイムシートと日報を自動生成。確認された証憑は人事会計システムに同期されます。
-  feature: [1, 3, 13, 14]
+  feature: [1, 3, 15, 16]
   details:
     - title: ワーカーの勤務時間を確認
       image: /images/ex_step02-1.png
@@ -35,7 +35,7 @@
 - step: 3
   title: 組織の改善
   text: チームビルディングと業務標準化を行います
-  feature: [9, 10, 11]
+  feature: [11, 12, 13]
   details:
     - title: 人材育成のためにラダーを設計する
       image: /images/ex_step03-1.png
