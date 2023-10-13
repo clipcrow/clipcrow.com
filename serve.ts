@@ -11,7 +11,8 @@ const server = new Server({
 server.use(async (request, next) => {
   const { method, url, body } = request;
   if (method == "POST" && url.endsWith("/slack")) {
-    const webhookURL = Deno.env.get("SLACK_WEBHOOK_URL") || env["SLACK_WEBHOOK_URL"];
+    const webhookURL = Deno.env.get("SLACK_WEBHOOK_URL") ||
+      env["SLACK_WEBHOOK_URL"];
     try {
       return await fetch(webhookURL, {
         method: "POST",

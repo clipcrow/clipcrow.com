@@ -14,7 +14,8 @@ export default (data: PageData) => (
         特長・機能
       </h1>
     </section>
-{/*
+    {
+      /*
     <section class="features__kv">
       <p class="features__kv-text">
         ClipCrow Essential
@@ -65,7 +66,8 @@ export default (data: PageData) => (
         </div>
       </div>
     </section>
-*/}
+      */
+    }
     <FeatureCards usages={data.usages} features={data.features} />
     <StoreLinks />
   </main>

@@ -18,8 +18,7 @@ export default (data: PageData) => (
             労働人口が減少している日本ならびに先進各国では、
             現在もこれからも労働力の確保が難しく、
             特に生活必需産業では労働力不足が顕著となっています。
-            個別事業者に可能な対策としては、
-            求人に注力する一方で、
+            個別事業者に可能な対策としては、 求人に注力する一方で、
             IT導入によって組織の生産性を向上させることが考えられます。
             <span>
               「EssenntialWorkware」は、Out of the Boxですぐにタスク管理と
@@ -86,7 +85,8 @@ export default (data: PageData) => (
       <FeatureIndex features={data.features} />
       <a class="btn__yellow-dark" href="/features/">特長・機能の詳細</a>
     </section>
-    {/*
+    {
+      /*
     <section class="point">
       <h1>Essential Workwareのポイント</h1>
       <div class="point__top-grid">
@@ -109,7 +109,8 @@ export default (data: PageData) => (
         </div>
       </div>
     </section>
-    */}
+    */
+    }
     <section class="blog">
       <h1>ブログ</h1>
       <BlogLatestCards search={data.search} />
