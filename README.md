@@ -11,7 +11,8 @@ SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシ�
 
 - ローカル環境にプルした後、contactフォルダに移動して、npm installを実行
 - npm run build を実行すると、/src/contact にSPAを出力する
-- お問い合わせを操作すると、"/slack" へ入力内容を送信する。serve.tsで受診して処理を行う
+- お問い合わせを操作すると、"/slack"
+  へ入力内容を送信する。serve.tsで受診して処理を行う
 
 ## /public
 
@@ -37,7 +38,8 @@ SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシ�
 - .envファイルを用意して、"SLACK_WEBHOOK_URL"キーにSlack Webhook URLを記載する。
 - Deno Deployには＝も、同上のキーを用意する。
 
-ローカルでSlackポストをテストする場合は、deno task serveではserve.tsを用いないため、以下を実行する。
+ローカルでSlackポストをテストする場合は、deno task
+serveではserve.tsを用いないため、以下を実行する。
 
 ```sh
 % deno run -A serve.ts
