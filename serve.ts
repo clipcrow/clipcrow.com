@@ -10,29 +10,36 @@ const server = new Server({
 
 const kv = await Deno.openKv();
 
+function isBody(test: unknown): test is string {
+  return test !== undefined && typeof test === "string";
+}
+
 kv.listenQueue(async (body) => {
-  const webhookURL = Deno.env.get("SLACK_WEBHOOK_URL") ||
+  if (isBody(body)) {
+    const webhookURL = Deno.env.get("SLACK_WEBHOOK_URL") ||
     env["SLACK_WEBHOOK_URL"];
-  try {
-    const response = await fetch(webhookURL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: body as undefined,
-    });
-    if (!response.ok) {
-      console.error(response);
+    try {
+      const response = await fetch(webhookURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body,
+      });
+      if (!response.ok) {
+        console.error(response);
+      }
+    } catch (error) {
+      console.error(error);
     }
-  } catch (error) {
-    console.error(error);
   }
 });
 
 server.use(async (request, next) => {
   const { method, url } = request;
   if (method == "POST" && url.endsWith("/slack")) {
-    const result = await kv.enqueue(request.body);
+    const body = await new Response(request.body).text();
+    const result = await kv.enqueue(body);
     if (!result.ok) {
       console.error(result);
     }
