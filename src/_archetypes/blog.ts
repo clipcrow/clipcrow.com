@@ -5,7 +5,7 @@ export default function (arg?: string) {
   const title = arg ? arg : format(now, "yyyy年M月d日 H時m分s秒");
   const category = "おしらせ";
   return {
-    path: `/blog/${format(now, "yyyy-MM-dd/HH:mm:ss")}.md`,
+    path: `/blog/${format(now, "yyyy-MM-dd/HH:mm:ss")}/index.md`,
     content: {
       title,
       category,
