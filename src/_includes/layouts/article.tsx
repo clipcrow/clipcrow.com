@@ -21,7 +21,7 @@ export default (data: PageData) => (
         />
         <div class="blog__details-content">
           {data.lead ? <div class="blog__details-lead">{data.lead}</div> : null}
-          {data.children}
+          <div class="markdown">{data.children}</div>
         </div>
         <BlogNavigation page={data.page} search={data.search} />
       </div>
