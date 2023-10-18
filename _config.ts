@@ -16,5 +16,5 @@ site.use(sass());
 site.copy("contact");
 site.copy("favicon.ico");
 site.copy("images");
-
+site.copyRemainingFiles((path: string) => path.startsWith("/blog/"));
 export default site;
