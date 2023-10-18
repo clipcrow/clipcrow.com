@@ -107,39 +107,11 @@
           letter-spacing: 0.15px;
         }
       }
-      .blog__details-table {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        border: 1px solid #6c5c1b;
-        padding: 16px;
-        .table-title {
-          font-size: 1.75rem;
-          font-weight: 700;
-          line-height: 36px;
-          color: $c-neutral-020;
-          @media screen and (max-width: 767px) {
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 24px; /* 150% */
-            letter-spacing: 0.15px;
-          }
-        }
-      }
-      .details__content {
-        .details__content-title {
-          color: $c-neutral-020;
-          font-size: 2.25rem;
-          font-weight: 700;
-          line-height: 44px;
-          margin-bottom: 16px;
-          @media screen and (max-width: 767px) {
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 28px;
-          }
+      .markdown {
+        /* HTML tags from markdown contents */
+        img {
+          max-width: 100%;
+          height: auto;
         }
       }
     }
