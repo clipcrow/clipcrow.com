@@ -1,16 +1,5 @@
-export interface Usage {
-  title: string;
-  image: string;
-  target: string;
-}
 
-export interface UsageGroup {
-  step: number;
-  title: string;
-  text: string;
-  feature: number[];
-  details: Usage[];
-}
+import type { UsageGroup } from "@/Type.ts";
 
 export default function (data: UsageGroup[], step: number) {
   for (const group of data) {

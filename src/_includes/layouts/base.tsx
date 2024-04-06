@@ -1,6 +1,4 @@
-import type { PageData } from "lume/core.ts";
-
-export default (data: PageData) => (
+export default (data: Lume.Data) => (
   <html lang="ja">
     <head>
       <meta charSet="UTF-8" />
@@ -33,7 +31,6 @@ export default (data: PageData) => (
               <a href="/features/">特長・機能</a>
             </div>
             <div class="footer__link">
-              <a href="/blog/">ブログ</a>
               <a href="/contact/">お問い合わせ</a>
               <a href="/company/">会社情報</a>
             </div>

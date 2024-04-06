@@ -1,12 +1,11 @@
-import type { PageData } from "lume/core.ts";
-import BlogLatestCards from "@/BlogLatestCards.tsx";
+import type { EWData } from "@/Type.ts";
 import FeatureIndex from "@/FeatureIndex.tsx";
 import StoreLinks from "@/StoreLinks.tsx";
 
 export const title = "クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData) => (
+export default (data: EWData) => (
   <main>
     <section class="top__kv">
       <div class="hero">
@@ -111,11 +110,6 @@ export default (data: PageData) => (
     </section>
     */
     }
-    <section class="blog">
-      <h1>ブログ</h1>
-      <BlogLatestCards search={data.search} />
-      <a class="btn__yellow-light" href="/blog/">ブログ記事の一覧</a>
-    </section>
     <section class="info">
       <div class="info__text">
         <img src="/images/ClipCrow_logo.png" alt="clip-crow logo" />

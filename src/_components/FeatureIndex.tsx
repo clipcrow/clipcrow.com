@@ -1,4 +1,4 @@
-import type { FeatureGroup } from "@/getFeature.ts";
+import type { FeatureGroup } from "@/Type.ts";
 
 const IndexCard = (props: { card: FeatureGroup }) => (
   <div class="features__card">

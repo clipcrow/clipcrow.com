@@ -1,11 +1,11 @@
-import type { PageData } from "lume/core.ts";
+import type { EWData } from "@/Type.ts";
 import StoreLinks from "@/StoreLinks.tsx";
 import FeatureCards from "@/FeatureCards.tsx";
 
 export const title = "クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData) => (
+export default (data: EWData) => (
   <main>
     <section class="features__page-title">
       <h1>

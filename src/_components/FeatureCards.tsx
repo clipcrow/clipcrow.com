@@ -1,5 +1,5 @@
-import type { Feature, FeatureGroup } from "@/getFeature.ts";
-import getUsage, { UsageGroup } from "@/getUsage.ts";
+import type { Feature, FeatureGroup, UsageGroup } from "@/Type.ts";
+import getUsage from "@/getUsage.ts";
 
 const FeatureCard = (props: { usages: UsageGroup[]; card: Feature }) => (
   <div class="case" id={`feature${props.card.id}`}>

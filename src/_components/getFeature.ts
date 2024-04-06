@@ -1,17 +1,4 @@
-export interface Feature {
-  id: number;
-  title: string;
-  body: string;
-  badge: number[];
-  usage?: number;
-}
-
-export interface FeatureGroup {
-  section: string;
-  text: string;
-  image: string;
-  details: Feature[];
-}
+import type { FeatureGroup } from "@/Type.ts";
 
 export default function (data: FeatureGroup[], id: number) {
   for (const feature of data) {

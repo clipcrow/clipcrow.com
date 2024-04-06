@@ -1,5 +1,5 @@
-import getFeature, { FeatureGroup } from "@/getFeature.ts";
-import type { Usage, UsageGroup } from "@/getUsage.ts";
+import getFeature from "@/getFeature.ts";
+import type { FeatureGroup, Usage, UsageGroup } from "@/Type.ts";
 
 function align(index: number) {
   return (index + 1) % 2 ? "left" : "right";

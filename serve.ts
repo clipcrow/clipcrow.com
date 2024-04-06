@@ -52,7 +52,7 @@ server.use(async (request, next) => {
   const { headers, status } = response;
   if (status === 404) {
     headers.set("content-type", "text/html; charset=utf-8");
-    const body = await Deno.readFile(`${Deno.cwd()}/_site/404/index.html`);
+    const body = await Deno.readFile(`${Deno.cwd()}/_site/404.html`);
     return new Response(body, { status, headers });
   }
   return response;

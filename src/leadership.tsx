@@ -1,9 +1,4 @@
-import type { PageData } from "lume/core.ts";
-
-interface Career {
-  year: string;
-  text: string;
-}
+import type { Career, EWData } from "@/Type.ts";
 
 function createList(careers: Career[]) {
   return careers.map((career) => (
@@ -17,7 +12,7 @@ function createList(careers: Career[]) {
 export const title = "クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData) => (
+export default (data: EWData) => (
   <main>
     <section class="history__page-title">
       <h1>

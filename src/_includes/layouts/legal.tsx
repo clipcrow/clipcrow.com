@@ -1,6 +1,4 @@
-import type { PageData } from "lume/core.ts";
-
-export default (data: PageData) => (
+export default (data: Lume.Data) => (
   <html lang="ja">
     <head>
       <meta charSet="UTF-8" />

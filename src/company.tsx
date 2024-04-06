@@ -1,9 +1,7 @@
-import type { PageData } from "lume/core.ts";
-
 export const title = "クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-export default (data: PageData) => (
+export default () => (
   <main>
     <section class="profile__page-title">
       <h1>会社概要</h1>
