@@ -5,9 +5,9 @@
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.1.3/",
-    "std/": "https://deno.land/std@0.221.0/",
-    "preact": "npm:react",
+    "lume/": "https://deno.land/x/lume@v2.1.4/",
+    "std/": "https://deno.land/std@0.224.0/",
+    "preact": "npm:react@18.3.1",
     "@/": "./src/_components/"
   },
   "compilerOptions": {
