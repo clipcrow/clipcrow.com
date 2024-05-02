@@ -3,11 +3,11 @@ export const layout = "layouts/base.tsx";
 
 export default () => (
   <main>
-    <section class="profile__page-title">
+    <section className="profile__page-title">
       <h1>会社概要</h1>
     </section>
-    <section class="profile__kv">
-      <div class="profile__kv-content">
+    <section className="profile__kv">
+      <div className="profile__kv-content">
         <img src="/images/ClipCrow_logo.png" alt="clipcrow logo" />
         <p>
           皆が健康で・楽しく・豊かな人生をおくるために、医療の高度化とその利便性向上はいつの時代であっても社会的最重要テーマであり続けてきました。
@@ -35,13 +35,13 @@ export default () => (
         </p>
       </div>
     </section>
-    <section class="business">
+    <section className="business">
       <h2>SaaS製品事業の創造と、開発案件プロデュース</h2>
-      <div class="business__diagram">
-        <div class="top-box">
-          <div class="box__inside">
-            <div class="box__text">
-              <div class="box__title">SaaS製品事業の創造</div>
+      <div className="business__diagram">
+        <div className="top-box">
+          <div className="box__inside">
+            <div className="box__text">
+              <div className="box__title">SaaS製品事業の創造</div>
               <p>Essential Workwareの開発・販売を行う</p>
             </div>
             <img
@@ -50,29 +50,29 @@ export default () => (
             />
           </div>
         </div>
-        <div class="center-box">
-          <div class="center-box__title">
+        <div className="center-box">
+          <div className="center-box__title">
             システムを磨き、健康で楽しく豊かに
           </div>
         </div>
-        <div class="bottom-box">
-          <div class="box__inside">
+        <div className="bottom-box">
+          <div className="box__inside">
             <img
               src="/images/business-diagram-illust02.png"
               alt="business diagram illust2"
             />
-            <div class="box__text">
-              <div class="box__title">開発案件プロデュース</div>
+            <div className="box__text">
+              <div className="box__title">開発案件プロデュース</div>
               <p>技術部門組織と指導、企画〜設計、PM業務</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="teams">
-        <div class="teams__box">
-          <p class="teams__box-name">パートナーシップ</p>
-          <div class="teams__box-inner">
-            <img class="dev__img" src="/images/team-dev.svg" alt="dev team" />
+      <div className="teams">
+        <div className="teams__box">
+          <p className="teams__box-name">パートナーシップ</p>
+          <div className="teams__box-inner">
+            <img className="dev__img" src="/images/team-dev.svg" alt="dev team" />
             <ul>
               <li>React, Flutter</li>
               <li>GCP, AWS</li>
@@ -83,14 +83,14 @@ export default () => (
               <li>位置情報, 画像, DWH</li>
             </ul>
           </div>
-          <p class="teams__box-note">
+          <p className="teams__box-note">
             オフショアで高度ソフトウェア開発を行います
           </p>
         </div>
-        <div class="teams__box">
-          <p class="teams__box-name">ClipCrow</p>
-          <div class="teams__box-inner">
-            <img class="cc__img" src="/images/team-cc.svg" alt="cc team" />
+        <div className="teams__box">
+          <p className="teams__box-name">ClipCrow</p>
+          <div className="teams__box-inner">
+            <img className="cc__img" src="/images/team-cc.svg" alt="cc team" />
             <ul>
               <li>案件コンソーシアム運営</li>
               <li>顧客ヒアリング, フィット&ギャップ</li>
@@ -101,22 +101,22 @@ export default () => (
               <li>カスタマーサクセス</li>
             </ul>
           </div>
-          <p class="teams__box-note">
+          <p className="teams__box-note">
             ゼロから開発プロジェクトを立ち上げられます
           </p>
         </div>
       </div>
     </section>
-    <section class="enclose">
+    <section className="enclose">
       <dl>
         <dt>社名</dt>
         <dd>クリップクロウ合同会社</dd>
         <dt>設立</dt>
         <dd>2020年7月1日</dd>
         <dt>代表社員</dt>
-        <dd class="enclose__button">
+        <dd className="enclose__button">
           栗原傑享/くりはらまさたか
-          <span class="button">
+          <span className="button">
             <a href="/leadership">詳細</a>
           </span>
         </dd>

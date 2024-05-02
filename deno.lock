@@ -4,6 +4,8 @@
     "specifiers": {
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@types/estree@1.0.5": "npm:@types/estree@1.0.5",
+      "npm:@types/react-dom@18.2.23": "npm:@types/react-dom@18.2.23",
+      "npm:@types/react@18.2.73": "npm:@types/react@18.2.73",
       "npm:date-fns@2.30.0": "npm:date-fns@2.30.0",
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@13.0.1",
@@ -14,11 +16,10 @@
       "npm:meriyah@4.4.0": "npm:meriyah@4.4.0",
       "npm:nunjucks@3.2.4": "npm:nunjucks@3.2.4",
       "npm:octokit": "npm:octokit@3.2.0_@octokit+core@5.2.0",
-      "npm:preact": "npm:preact@10.16.0",
-      "npm:preact-render-to-string@6.2.0": "npm:preact-render-to-string@6.2.0_preact@10.16.0",
-      "npm:preact-render-to-string@6.4.1": "npm:preact-render-to-string@6.4.1_preact@10.16.0",
-      "npm:preact@10.16.0": "npm:preact@10.16.0",
       "npm:preact@10.20.1": "npm:preact@10.20.1",
+      "npm:react": "npm:react@18.2.0",
+      "npm:react-dom@18.2.0": "npm:react-dom@18.2.0_react@18.2.0",
+      "npm:react@18.2.0": "npm:react@18.2.0",
       "npm:sass@1.64.2": "npm:sass@1.64.2",
       "npm:sass@1.72.0": "npm:sass@1.72.0"
     },
@@ -272,6 +273,23 @@
         "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
         "dependencies": {}
       },
+      "@types/prop-types@15.7.12": {
+        "integrity": "sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==",
+        "dependencies": {}
+      },
+      "@types/react-dom@18.2.23": {
+        "integrity": "sha512-ZQ71wgGOTmDYpnav2knkjr3qXdAFu0vsk8Ci5w3pGAIdj7/kKAyn+VsQDhXsmzzzepAiI9leWMmubXz690AI/A==",
+        "dependencies": {
+          "@types/react": "@types/react@18.2.73"
+        }
+      },
+      "@types/react@18.2.73": {
+        "integrity": "sha512-XcGdod0Jjv84HOC7N5ziY3x+qL0AfmubvKOZ9hJjJ2yd5EE+KYjWhdOjt387e9HPheHkdggF9atTifMRtyAaRA==",
+        "dependencies": {
+          "@types/prop-types": "@types/prop-types@15.7.12",
+          "csstype": "csstype@3.1.3"
+        }
+      },
       "a-sync-waterfall@1.0.1": {
         "integrity": "sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==",
         "dependencies": {}
@@ -343,6 +361,10 @@
       },
       "commander@5.1.0": {
         "integrity": "sha512-P0CysNDQ7rtVw4QIQtm+MRxV66vKFSvlsQvGYXZWR3qFU0jlMKHZZZgw8e+8DSah4UDKMqnknRDQz+xuQXQ/Zg==",
+        "dependencies": {}
+      },
+      "csstype@3.1.3": {
+        "integrity": "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==",
         "dependencies": {}
       },
       "date-fns@2.30.0": {
@@ -419,6 +441,10 @@
         "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
         "dependencies": {}
       },
+      "js-tokens@4.0.0": {
+        "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+        "dependencies": {}
+      },
       "jsbi@4.3.0": {
         "integrity": "sha512-SnZNcinB4RIcnEyZqFPdGPVgrg2AcnykiBy0sHVJQKHYeaLUvi3Exj+iaPpLnFVkDPZIV4U0yvgC9/R4uEAZ9g==",
         "dependencies": {}
@@ -492,6 +518,12 @@
       "lodash.once@4.1.1": {
         "integrity": "sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==",
         "dependencies": {}
+      },
+      "loose-envify@1.4.0": {
+        "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
+        "dependencies": {
+          "js-tokens": "js-tokens@4.0.0"
+        }
       },
       "lru-cache@10.2.0": {
         "integrity": "sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==",
@@ -591,35 +623,27 @@
         "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==",
         "dependencies": {}
       },
-      "preact-render-to-string@6.2.0_preact@10.16.0": {
-        "integrity": "sha512-51HDkgWGssQvWhAXE6xWGSFgqXx+qzQPKatLBVm5Uxl2Bq8RHz+CcNMTWz3kjGNM8PL+9GZZfTLGHyR1wu6ZuA==",
-        "dependencies": {
-          "preact": "preact@10.16.0",
-          "pretty-format": "pretty-format@3.8.0"
-        }
-      },
-      "preact-render-to-string@6.4.1_preact@10.16.0": {
-        "integrity": "sha512-oHKIFIv+/N0i3fNRF4ANMr2I93maycuXK78ERJ0vUW+nz6MXXMO6mTOFxp3itvSVBS/GXtLAy2jio3ZPeD8lZQ==",
-        "dependencies": {
-          "preact": "preact@10.16.0",
-          "pretty-format": "pretty-format@3.8.0"
-        }
-      },
-      "preact@10.16.0": {
-        "integrity": "sha512-XTSj3dJ4roKIC93pald6rWuB2qQJO9gO2iLLyTe87MrjQN+HklueLsmskbywEWqCHlclgz3/M4YLL2iBr9UmMA==",
-        "dependencies": {}
-      },
       "preact@10.20.1": {
         "integrity": "sha512-JIFjgFg9B2qnOoGiYMVBtrcFxHqn+dNXbq76bVmcaHYJFYR4lW67AOcXgAYQQTDYXDOg/kTZrKPNCdRgJ2UJmw==",
-        "dependencies": {}
-      },
-      "pretty-format@3.8.0": {
-        "integrity": "sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==",
         "dependencies": {}
       },
       "punycode.js@2.3.1": {
         "integrity": "sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==",
         "dependencies": {}
+      },
+      "react-dom@18.2.0_react@18.2.0": {
+        "integrity": "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==",
+        "dependencies": {
+          "loose-envify": "loose-envify@1.4.0",
+          "react": "react@18.2.0",
+          "scheduler": "scheduler@0.23.2"
+        }
+      },
+      "react@18.2.0": {
+        "integrity": "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==",
+        "dependencies": {
+          "loose-envify": "loose-envify@1.4.0"
+        }
       },
       "readdirp@3.6.0": {
         "integrity": "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==",
@@ -649,6 +673,12 @@
           "chokidar": "chokidar@3.5.3",
           "immutable": "immutable@4.3.4",
           "source-map-js": "source-map-js@1.0.2"
+        }
+      },
+      "scheduler@0.23.2": {
+        "integrity": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==",
+        "dependencies": {
+          "loose-envify": "loose-envify@1.4.0"
         }
       },
       "semver@7.6.0": {
@@ -1558,6 +1588,7 @@
     "https://deno.land/x/lume@v2.1.3/deps/markdown_it.ts": "5da22a23e59f86bb7f0a0aa7c9cb9012a2444b8c3a0896d92a07492626a8c21f",
     "https://deno.land/x/lume@v2.1.3/deps/path.ts": "a4a1b2c05bf7b6cb795fafe161e8e07be2f7a7c8adf3e1819804bf362149e6ca",
     "https://deno.land/x/lume@v2.1.3/deps/preact.ts": "6c64768814392bbce164860e9f0d529c3602760aba5d9f1e7138a3c48c377e2f",
+    "https://deno.land/x/lume@v2.1.3/deps/react.ts": "930cc82116a081eed9c26823a3a4c7f8f7fee23347ca2adc0a0580c236b91e24",
     "https://deno.land/x/lume@v2.1.3/deps/sass.ts": "94c291b9c16fd4ec9e78f858f600badad2da9b45376dac7de9cca8c858764546",
     "https://deno.land/x/lume@v2.1.3/deps/temporal.ts": "1958b134c4186b0ab39316fa33ba19d1a4203e2ea445080429d60d296b91a552",
     "https://deno.land/x/lume@v2.1.3/deps/toml.ts": "feb71d598cd36718abd43094b45dc0d42cbfaddc92dcdf0e7e6e83ea2837987d",
@@ -1570,6 +1601,7 @@
     "https://deno.land/x/lume@v2.1.3/middlewares/reload_client.js": "34d75e01503fae8180796de882af42b1125fac88f22a010a99d5548de1ba7d72",
     "https://deno.land/x/lume@v2.1.3/mod.ts": "79b72a3b7f102be55058682948f2f969a88d69f55cf5bcec7cc8cf9f06609c0f",
     "https://deno.land/x/lume@v2.1.3/plugins/json.ts": "f6429bbd865e3666ef3385fd205fcc92df02ca2c0f74f20baa5c0798a81e1642",
+    "https://deno.land/x/lume@v2.1.3/plugins/jsx.ts": "20ece4ddd348089dd407f184f462f8824b342aef461117257166fd81323f18da",
     "https://deno.land/x/lume@v2.1.3/plugins/jsx_preact.ts": "57ecef22dc26f80ba7aa705688b0e13be71829941116518ab2db1167e39ddfb5",
     "https://deno.land/x/lume@v2.1.3/plugins/markdown.ts": "b0f224dcffa0abeb30af178d7ec21f50515c2a7ccd42a3347aac3bea53c4ca27",
     "https://deno.land/x/lume@v2.1.3/plugins/modules.ts": "19a66398a5494f506458e48b8443a7c4700b7577e8fcc0818c39b1d0530c8950",
@@ -1605,7 +1637,7 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:preact"
+      "npm:react"
     ]
   }
 }

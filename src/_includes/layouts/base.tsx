@@ -12,25 +12,25 @@ export default (data: Lume.Data) => (
     </head>
     <body>
       <header>
-        <nav class="nav">
-          <a class="nav__title">
+        <nav className="nav">
+          <a className="nav__title">
             <img src="/images/nav_title.svg" alt="essential workware" />
           </a>
         </nav>
       </header>
       {data.children}
       <footer>
-        <div class="footer">
-          <div class="footer__left">
+        <div className="footer">
+          <div className="footer__left">
             <img src="/images/nav_title_footer.svg" alt="essential workware" />
           </div>
-          <div class="footer__right">
-            <div class="footer__link">
+          <div className="footer__right">
+            <div className="footer__link">
               <a href="/">ホーム</a>
               <a href="/usage-example/">活用例</a>
               <a href="/features/">特長・機能</a>
             </div>
-            <div class="footer__link">
+            <div className="footer__link">
               <a href="/contact/">お問い合わせ</a>
               <a href="/company/">会社情報</a>
             </div>

@@ -7,7 +7,7 @@ export const layout = "layouts/base.tsx";
 
 export default (data: EWData) => (
   <main>
-    <section class="example__page-title">
+    <section className="example__page-title">
       <h1>
         <span>Essential Workwareの</span>
         <br />

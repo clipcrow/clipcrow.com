@@ -1,7 +1,7 @@
 import type { FeatureGroup } from "@/Type.ts";
 
 const IndexCard = (props: { card: FeatureGroup }) => (
-  <div class="features__card">
+  <div className="features__card">
     <h4>{props.card.section}</h4>
     <img src={props.card.image} />
     <p>{props.card.text}</p>
@@ -14,14 +14,14 @@ function createTable(features: FeatureGroup[]) {
     rows.push(features.slice(i, i + 2));
   }
   return rows.map((row) => (
-    <div class="features__grid">
+    <div className="features__grid">
       {row.map((card) => <IndexCard card={card} />)}
     </div>
   ));
 }
 
 export default (props: { features: FeatureGroup[] }) => (
-  <div class="features__grid-wrapper">
+  <div className="features__grid-wrapper">
     {createTable(props.features)}
   </div>
 );
