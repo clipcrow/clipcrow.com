@@ -18,19 +18,15 @@ kv.listenQueue(async (body) => {
   if (isBody(body)) {
     const webhookURL = Deno.env.get("SLACK_WEBHOOK_URL") ||
     env["SLACK_WEBHOOK_URL"];
-    try {
-      const response = await fetch(webhookURL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body,
-      });
-      if (!response.ok) {
-        console.error(response);
-      }
-    } catch (error) {
-      console.error(error);
+    const response = await fetch(webhookURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body,
+    });
+    if (!response.ok) {
+      console.error(response);
     }
   }
 });
@@ -40,9 +36,7 @@ server.use(async (request, next) => {
   if (method == "POST" && url.endsWith("/slack")) {
     const body = await new Response(request.body).text();
     const result = await kv.enqueue(body);
-    if (!result.ok) {
-      console.error(result);
-    }
+    return new Response(body, { status: result.ok ? 200 : 500 });
   }
   return await next(request);
 });
@@ -50,6 +44,7 @@ server.use(async (request, next) => {
 server.use(async (request, next) => {
   const response = await next(request);
   const { headers, status } = response;
+  headers.set("Access-Control-Allow-Origin", "*");
   if (status === 404) {
     headers.set("content-type", "text/html; charset=utf-8");
     const body = await Deno.readFile(`${Deno.cwd()}/_site/404.html`);
