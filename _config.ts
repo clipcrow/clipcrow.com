@@ -1,19 +1,19 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
-import sass from "lume/plugins/sass.ts";
 
 const site = lume({
   src: "src",
   server: {
     open: true,
-    page404: "/404.html",
+    page404: "/404/",
   },
 });
 
 site.use(jsx());
-site.use(sass());
 
-site.copy("contact");
 site.copy("favicon.ico");
-site.copy("images");
+site.copy("apple-touch-icon.png");
+site.copy("assets");
+site.copy([".html", ".jpg", ".png", ".svg"]);
+
 export default site;

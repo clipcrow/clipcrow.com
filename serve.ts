@@ -47,7 +47,7 @@ server.use(async (request, next) => {
   headers.set("Access-Control-Allow-Origin", "*");
   if (status === 404) {
     headers.set("content-type", "text/html; charset=utf-8");
-    const body = await Deno.readFile(`${Deno.cwd()}/_site/404.html`);
+    const body = await Deno.readFile(`${Deno.cwd()}/_site/404/index.html`);
     return new Response(body, { status, headers });
   }
   return response;
