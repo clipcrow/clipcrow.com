@@ -48,6 +48,11 @@ a,a:link,a:active,a:visited {
 	text-decoration: none;
 	outline: none;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 /* ===============
 header
@@ -421,6 +426,7 @@ footer {
 	background: url("../images/common/oval_bg.svg") no-repeat top center var(--themecolor);
 	background-size: 100%;
 	padding: 100px 0;
+	margin-top: auto;
 
 	h2 {
 		width: 146px;
