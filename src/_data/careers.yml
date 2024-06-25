@@ -90,6 +90,10 @@
   text: |
     「Essential Workware」1.0リリース。
 
-- year: 2023/10 現在
+- year: 2023/10
   text: |
     「Essential Workware」の継続開発を行いながら、遠隔診療サービス、健康経営のための行動変容サービス、といった案件をFlutter+Golangで実施中。
+
+- year: 2024/06
+  text: |
+    「Essential Workware」2.2リリース。チャット機能を全面に取り込んで、「カード型データベース+チャット」へ大きくピボットした。

@@ -1,6 +1,6 @@
-import type { Career, EWData } from "@/Type.ts";
+import type { Event, EWData } from "@/Type.ts";
 
-function createList(careers: Career[]) {
+function createList(careers: Event[]) {
   return careers.map((career) => (
     <div className="career__content">
       <h6 className="career__content-year">{career.year}</h6>

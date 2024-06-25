@@ -1,42 +1,39 @@
+import GlobalFooter from "@/GlobalFooter.tsx";
+import GlobalHeader from "@/GlobalHeader.tsx";
+import GrobalScript from "@/GlobalScript.tsx";
+
 export default (data: Lume.Data) => (
   <html lang="ja">
     <head>
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charSet="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
       <title>{data.title}</title>
-      <link rel="stylesheet" href="/scss/styles.css" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
+      <meta name="Author" content="クリップクロウ合同会社" />
+      <meta name="keywords" content="クリップクロウ合同会社" />
+      <meta name="description" content="クリップクロウ合同会社" />
+      <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
+      <meta property="og:site_name" content="クリップクロウ合同会社" />
+      <meta property="og:title" content="404 ページが見つかりません | クリップクロウ合同会社" />
+      <meta property="og:image" content="https://" />
+      <meta property="og:description" content="クリップクロウ合同会社" />
+      <meta property="og:locale" content="ja_JP" />
+      <meta property="og:type" content="website" />
+      <meta name="format-detection" content="telephone=no" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+      <link href="/assets/css/normalize.css" type="text/css" rel="stylesheet" />
+      <link href="/assets/css/layout.css" type="text/css" rel="stylesheet" />
+      <link href="/assets/css/layout_sp.css" type="text/css" rel="stylesheet" />
+      <link href="/assets/css/layout_tb.css" type="text/css" rel="stylesheet" />
+      <link href="/assets/css/animate.css" type="text/css" rel="stylesheet" />
     </head>
-    <body>
-      <header>
-        <nav className="nav">
-          <a className="nav__title">
-            <img src="/images/nav_title.svg" alt="essential workware" />
-          </a>
-        </nav>
-      </header>
-      {data.children}
-      <footer>
-        <div className="footer">
-          <div className="footer__left">
-            <img src="/images/nav_title_footer.svg" alt="essential workware" />
-          </div>
-          <div className="footer__right">
-            <div className="footer__link">
-              <a href="/">ホーム</a>
-              <a href="/usage-example/">活用例</a>
-              <a href="/features/">特長・機能</a>
-            </div>
-            <div className="footer__link">
-              <a href="/contact/">お問い合わせ</a>
-              <a href="/company/">会社情報</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+    <body className={data.bodyClass}>
+      <div className="wrapper">
+        <GlobalHeader />
+        {data.children}
+        <GlobalFooter />
+      </div>
+    <GrobalScript />
     </body>
   </html>
 );
