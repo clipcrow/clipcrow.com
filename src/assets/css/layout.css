@@ -183,6 +183,9 @@ a:hover img {
 .marginleft0 {
 	margin-left: 0!important;
 }
+.marginleft30 {
+	margin-left: 30px!important;
+}
 
 .cap {
 	font-size: 1.2rem;
@@ -957,8 +960,8 @@ main {
 	}
 	.information_index {
 		width: 100%;
-		margin-bottom: 30px;
 		dl {
+			min-height: 30em;
 			border-top: 1px dotted var(--themecolor);
 			.info_item {
 				display:flex;
@@ -1802,11 +1805,17 @@ main {
 	}
 	ol {
 		list-style-position: inside;
-		margin-left: 30px;
+		margin-left: 16px;
+		li {
+			list-style-position: outside;
+		}
+		ul {
+			margin-left: 20px;
+		}
 	}
 	ul {
 		display: block;
-		margin-left: 20px;
+		margin-left: 30px;
 		margin-top: 10px;
 		margin-bottom: 20px;
 		li {
