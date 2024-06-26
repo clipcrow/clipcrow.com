@@ -13,7 +13,7 @@ export default (data: Lume.Data) => (
       <meta name="description" content="クリップクロウ合同会社" />
       <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
       <meta property="og:site_name" content="クリップクロウ合同会社" />
-      <meta property="og:title" content="404 ページが見つかりません | クリップクロウ合同会社" />
+      <meta property="og:title" content={data.title} />
       <meta property="og:image" content="https://" />
       <meta property="og:description" content="クリップクロウ合同会社" />
       <meta property="og:locale" content="ja_JP" />
