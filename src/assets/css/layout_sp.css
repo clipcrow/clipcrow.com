@@ -538,6 +538,7 @@ main {
 		text-align: left;
 	}
 	.information_index {
+		min-height: calc(100vh - 330px);
 		dl {
 			.info_item {
 				padding: 8px 0;

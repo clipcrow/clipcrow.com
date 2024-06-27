@@ -25,10 +25,7 @@ header
 ================*/
 header {
 	width: 100%;
-	margin: 10px auto 50px auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	padding: 10px 0 50px 0;
 
 	h1 {
 		flex-basis: auto;
