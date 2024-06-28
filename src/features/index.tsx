@@ -1,3 +1,4 @@
+import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
 export const title = "Essential Workware 製品機能 | クリップクロウ合同会社";
@@ -21,11 +22,13 @@ export default () => (
     <section className="main_contents">
       <div className="mark_sample">
         <dl>
-          <dt><img src="/assets/images/common/mark_admin.png" alt="管理者" /></dt>
+          <dt><ActorImg actor="admin"/></dt>
           <dd>：管理者</dd>
-          <dt><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></dt>
+          <dt><ActorImg actor="staff"/></dt>
           <dd>：スタッフ</dd>
-          <dt><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></dt>
+          <dt><ActorImg actor="worker"/></dt>
+          <dd>：ワーカー</dd>
+          <dt><ActorImg actor="guest"/></dt>
           <dd>：ゲスト</dd>
         </dl>
       </div>
@@ -33,8 +36,8 @@ export default () => (
       <article id="features01" className="features_contents">
         <h2>
           ホームとチームのInfographics
-          <span><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></span>
-          <span><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></span>
+          <span><ActorImg actor="staff"/></span>
+          <span><ActorImg actor="guest"/></span>
         </h2>
         <div className="features_bg"></div>
         <div className="features_inner">
@@ -58,7 +61,7 @@ export default () => (
       <article id="features02" className="features_contents">
         <h2>
           カード型データベース
-          <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+          <span><ActorImg actor="admin"/></span>
         </h2>
         <div className="features_bg"></div>
         <div className="features_inner">
@@ -83,8 +86,8 @@ export default () => (
       <article id="features03" className="features_contents">
         <h2>
           ビジネスチャット
-          <span><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></span>
-          <span><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></span>
+          <span><ActorImg actor="staff"/></span>
+          <span><ActorImg actor="guest"/></span>
         </h2>
         <div className="features_bg"></div>
         <div className="features_inner">
@@ -103,8 +106,8 @@ export default () => (
       <article id="features04" className="features_contents">
         <h2>
           タスク管理
-          <span><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></span>
-          <span><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></span>
+          <span><ActorImg actor="staff"/></span>
+          <span><ActorImg actor="guest"/></span>
         </h2>
         <div className="features_bg"></div>
         <div className="features_inner">

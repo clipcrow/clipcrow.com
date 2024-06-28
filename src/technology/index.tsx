@@ -1,3 +1,4 @@
+import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
 export const title = "Essential Workware 技術的特長 | クリップクロウ合同会社";
@@ -21,11 +22,13 @@ export default () => (
     <section className="main_contents">
       <div className="mark_sample">
         <dl>
-          <dt><img src="/assets/images/common/mark_admin.png" alt="管理者" /></dt>
+          <dt><ActorImg actor="admin"/></dt>
           <dd>：管理者</dd>
-          <dt><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></dt>
+          <dt><ActorImg actor="staff"/></dt>
           <dd>：スタッフ</dd>
-          <dt><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></dt>
+          <dt><ActorImg actor="worker"/></dt>
+          <dd>：ワーカー</dd>
+          <dt><ActorImg actor="guest"/></dt>
           <dd>：ゲスト</dd>
         </dl>
       </div>
@@ -35,7 +38,7 @@ export default () => (
         <div className="technology_inner">
           <h2>
             フォームを自由に作成
-            <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+            <span><ActorImg actor="admin"/></span>
           </h2>
           <p>カード型DBのレコードとしてのカード・チャットに貼り付けるカード・タスク・プロファイルなどのあらゆる箇所で自由に入力フォームを作る機能を備えている。</p>
           <div className="technology_3column">
@@ -74,8 +77,8 @@ export default () => (
         <div className="technology_inner">
           <h2>
             打刻を記録、状態変化をリアルタイム共有
-            <span><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></span>
-            <span><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></span>
+            <span><ActorImg actor="staff"/></span>
+            <span><ActorImg actor="guest"/></span>
           </h2>
           <div className="technology_3column">
             <div className="technology_item">
@@ -114,7 +117,7 @@ export default () => (
         <div className="technology_inner">
           <h2>
             可視性を柔軟にコントロール
-            <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+            <span><ActorImg actor="admin"/></span>
           </h2>
           <div className="technology_2column">
             <div className="technology_item wide_item">
@@ -143,7 +146,7 @@ export default () => (
         <div className="technology_inner">
           <h2>
             ビジュアルの活用
-            <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+            <span><ActorImg actor="admin"/></span>
           </h2>
           <p>カードの背景に画像を表示できる。デバイスのカメラやカメラロールのほか、プロ写真家の写真やオリジナルイラストも用意している。</p>
           <div className="technology_1column">
@@ -164,8 +167,8 @@ export default () => (
         <div className="technology_inner">
           <h2>
             国際化とコンテンツ翻訳
-            <span><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></span>
-            <span><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></span>
+            <span><ActorImg actor="staff"/></span>
+            <span><ActorImg actor="guest"/></span>
           </h2>
           <p>アプリケーション全体を国際化していて、現在は、日本語・英語・ベトナム語に対応している。今後、中台韓葡西語対応を予定。</p>
           <div className="technology_2column">
@@ -203,8 +206,8 @@ export default () => (
         <div className="technology_inner">
           <h2>
             タブレットやPCの大画面にも最適化表示
-            <span><img src="/assets/images/common/mark_staff.png" alt="スタッフ" /></span>
-            <span><img src="/assets/images/common/mark_guest.png" alt="ゲスト" /></span>
+            <span><ActorImg actor="staff"/></span>
+            <span><ActorImg actor="guest"/></span>
           </h2>
           <p>同じスマホでも縦横で最適表示を自動的に行い、タブレットサイズ以上ではナビゲーション+2列表示を行う。Apple Silicon搭載Macでも動作する</p>
 
@@ -227,7 +230,7 @@ export default () => (
         <div className="technology_inner">
           <h2>
             APIとWebhookで既存システムと連携
-            <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+            <span><ActorImg actor="admin"/></span>
           </h2>
           <div className="technology_1column">
             <div className="technology_item">
@@ -244,7 +247,7 @@ export default () => (
         <div className="technology_inner">
           <h2>
             Googleの技術スタックを徹底活用
-            <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+            <span><ActorImg actor="admin"/></span>
           </h2>
           <div className="technology_3column box_content">
             <div className="technology_boxitem">
@@ -283,7 +286,7 @@ export default () => (
         <div className="technology_inner">
           <h2>
             DevOps環境
-            <span><img src="/assets/images/common/mark_admin.png" alt="管理者" /></span>
+            <span><ActorImg actor="admin"/></span>
           </h2>
           <div className="technology_1column">
             <div className="technology_item">

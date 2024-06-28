@@ -5,28 +5,28 @@ import { React } from "lume/deps/react.ts";
 export const title = "Essential Workware 活用例 | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
-const UsageBlock = (props: React.PropsWithChildren<{ id: string, title: string }>) => (
+const UsageBlock = (props: React.PropsWithChildren<{ step: number, title: string }>) => (
   <>
-    <h2><span>{props.id}</span>{props.title}</h2>
+    <h2><span>{("00" + props.step).slice(-2)}</span>{props.title}</h2>
     <div className="usage_index">
       {props.children}
     </div>
   </>
 );
 
-const UsageItem = (props: React.PropsWithChildren<{ src: string, actor: Actor }>) => (
+const UsageItem = (props: React.PropsWithChildren<{ image: string, target: Actor }>) => (
   <div className="usage_item">
     <div className="productcase_img">
-      <img src={props.src} alt="" />
-      <div className="member_icon"><ActorImg actor={props.actor} /></div>
+      <img src={props.image} alt="" />
+      <div className="member_icon"><ActorImg actor={props.target} /></div>
     </div>
     <p>{props.children}</p>
   </div>
 );
 
-const FeatureBlock = (props: React.PropsWithChildren<{ description: string }>) => (
+const FeatureBlock = (props: React.PropsWithChildren<{ body: string }>) => (
   <div className="productusage_detail">
-    <p>{props.description}</p>
+    <p>{props.body}</p>
     <h3>関係する機能や特長</h3>
     <div className="productusage_linkarea">
       {props.children}
@@ -63,17 +63,19 @@ export default () => (
           <dd>：スタッフ</dd>
           <dt><ActorImg actor="worker"/></dt>
           <dd>：ワーカー</dd>
+          <dt><ActorImg actor="guest"/></dt>
+          <dd>：ゲスト</dd>
         </dl>
       </div>
 
       <article id="usage01" className="usage_contents">
-        <UsageBlock id="01" title="野良チャットの置き換え">
-          <UsageItem src="product_case01.png" actor="admin">グループでも1on1でも使えるチャット</UsageItem>
-          <UsageItem src="product_case04.png" actor="staff">業務の役に立つチャット以上の機能</UsageItem>
-          <UsageItem src="product_case05.png" actor="admin">ビジネス用途のツールとして万全のセキュリティを確保</UsageItem>
-          <UsageItem src="product_case06.png" actor="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
+        <UsageBlock step={1} title="野良チャットの置き換え">
+          <UsageItem image="product_case01.png" target="admin">グループでも1on1でも使えるチャット</UsageItem>
+          <UsageItem image="product_case04.png" target="staff">業務の役に立つチャット以上の機能</UsageItem>
+          <UsageItem image="product_case05.png" target="admin">ビジネス用途のツールとして万全のセキュリティを確保</UsageItem>
+          <UsageItem image="product_case06.png" target="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
         </UsageBlock>
-        <FeatureBlock description="自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。">
+        <FeatureBlock body="自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。">
           <FeatureLink href="/technology/#technology02">打刻管理</FeatureLink>
           <FeatureLink href="/technology/#technology03">属性の可視化</FeatureLink>
           <FeatureLink href="/features/#features03">業務指示</FeatureLink>
@@ -83,12 +85,12 @@ export default () => (
       </article>
 
       <article id="usage02" className="usage_contents">
-        <UsageBlock id="02" title="ちいさな業務のシステム化">
-          <UsageItem src="product_case02.png" actor="worker">顧客や業務リソースなどをわかりやすくカードで表現</UsageItem>
-          <UsageItem src="product_case07.png" actor="staff">データベース基本機能としてカードの検索や更新が自在</UsageItem>
-          <UsageItem src="product_case07.png" actor="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
+        <UsageBlock step={2} title="ちいさな業務のシステム化">
+          <UsageItem image="product_case02.png" target="worker">顧客や業務リソースなどをわかりやすくカードで表現</UsageItem>
+          <UsageItem image="product_case07.png" target="staff">データベース基本機能としてカードの検索や更新が自在</UsageItem>
+          <UsageItem image="product_case07.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
         </UsageBlock>
-        <FeatureBlock description="紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。">
+        <FeatureBlock body="紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。">
           <FeatureLink href="/technology/#technology02">打刻管理</FeatureLink>
           <FeatureLink href="/features/#features04">タスクトラッキング</FeatureLink>
           <FeatureLink href="/features/#technology02">日報・伝票の自動化</FeatureLink>
@@ -97,12 +99,12 @@ export default () => (
       </article>
 
       <article id="usage03" className="usage_contents">
-        <UsageBlock id="03" title="組織内外を縦断するコミュニケーション">
-          <UsageItem src="product_case03.png" actor="admin">コミュニケーションの一元化で、複数ツールを使い分ける面倒がなくなる</UsageItem>
-          <UsageItem src="product_case08.png" actor="worker">一人の顧客をチームで応対。顧客の家族との情報共有も同時に可能</UsageItem>
-          <UsageItem src="product_case09.png" actor="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
+        <UsageBlock step={3} title="組織内外を縦断するコミュニケーション">
+          <UsageItem image="product_case03.png" target="admin">コミュニケーションの一元化で、複数ツールを使い分ける面倒がなくなる</UsageItem>
+          <UsageItem image="product_case08.png" target="worker">一人の顧客をチームで応対。顧客の家族との情報共有も同時に可能</UsageItem>
+          <UsageItem image="product_case09.png" target="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
         </UsageBlock>
-        <FeatureBlock description="情報の共有を組織内に止めることなく、ゲストユーザーとして顧客を取り込めることで、緻密なコミュニケーションを実現。組織横断かつ縦断。">
+        <FeatureBlock body="情報の共有を組織内に止めることなく、ゲストユーザーとして顧客を取り込めることで、緻密なコミュニケーションを実現。組織横断かつ縦断。">
           <FeatureLink href="/features/">キャリア指標</FeatureLink>
           <FeatureLink href="/features/#features04">タスクのテンプレート化</FeatureLink>
           <FeatureLink href="/features/#features03">サンクスカード</FeatureLink>
@@ -110,12 +112,12 @@ export default () => (
       </article>
 
       <article id="usage04" className="usage_contents">
-        <UsageBlock id="04" title="既存システムのフロントウェア">
-          <UsageItem src="product_case03.png" actor="admin">全員分のPCがなかったり、立って移動しながらの業務でもDX</UsageItem>
-          <UsageItem src="product_case03.png" actor="staff">業務の状態をリアルタイムに把握できるようになる</UsageItem>
-          <UsageItem src="product_case03.png" actor="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
+        <UsageBlock step={4} title="既存システムのフロントウェア">
+          <UsageItem image="product_case03.png" target="admin">全員分のPCがなかったり、立って移動しながらの業務でもDX</UsageItem>
+          <UsageItem image="product_case03.png" target="staff">業務の状態をリアルタイムに把握できるようになる</UsageItem>
+          <UsageItem image="product_case03.png" target="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
         </UsageBlock>
-        <FeatureBlock description="電子カルテなど既存の業務システムにAPIを利用して連携させて、携帯性の高い情報入出力機能を追加する。フロントウェアとしての使い方。">
+        <FeatureBlock body="電子カルテなど既存の業務システムにAPIを利用して連携させて、携帯性の高い情報入出力機能を追加する。フロントウェアとしての使い方。">
           <FeatureLink href="/features/">キャリア指標</FeatureLink>
           <FeatureLink href="/features/#features04">タスクのテンプレート化</FeatureLink>
           <FeatureLink href="/features/#features03">サンクスカード</FeatureLink>
