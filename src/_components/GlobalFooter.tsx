@@ -8,11 +8,11 @@ export default () => (
       <div className="inner">
         <nav>
           <ul>
+            <li><a href="/information/"><span>最新情報</span></a></li>
             <li><a href="/#business_outline"><span>事業概要</span></a></li>
-            <li><a href="/#solution"><span>ソリューション</span></a></li>
-            <li><a href="/case-study/"><span>事例概要</span></a></li>
-            <li><a href="/#company_profile"><span>会社概要</span></a></li>
-            <li><a href="/contact/"><span>お問い合わせ</span></a></li>
+            <li><a href="/#solution"><span>ご提案</span></a></li>
+            <li><a href="/case-study/"><span>事例紹介</span></a></li>
+            <li><a href="/#company_profile"><span>企業情報</span></a></li>
           </ul>
         </nav>
         <div className="product_menu">

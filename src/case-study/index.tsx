@@ -1,17 +1,17 @@
 import AnimatedCloud from "@/AnimatedCloud.tsx";
 
-export const title = "事例概要 | クリップクロウ合同会社";
+export const title = "事例紹介 | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
 export default () => (
   <main>
     <section id="contents_top">
       <div className="inner">
-        <h1><span className="txt_en">Case Study</span><span className="txt_j">事例概要</span></h1>
+        <h1><span className="txt_en">Case Study</span><span className="txt_j">事例紹介</span></h1>
         <div className="bread_crumb">
           <ul>
             <li><a href="/">TOP</a></li>
-            <li>事例概要</li>
+            <li>事例紹介</li>
           </ul>
         </div>
       </div>

@@ -41,7 +41,7 @@ export default () => (
     </section>
 
     <section id="business_outline">
-      <h2><span>Business Outline</span>事業概要</h2>
+      <h2><span>Business Outline</span>クリップクロウ事業概要</h2>
       <AnimatedCloud id={3} />
       <AnimatedCloud id={4} />
       <div className="page_mainimg animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
@@ -53,13 +53,12 @@ export default () => (
           <h3><a href="https://genkisystem.com/" target="_blank">Genki Systems</a></h3>
           <p>オフショアで高度ソフトウェア開発を行います</p>
           <ul>
-            <li>Flutter,React</li>
             <li>GCP、AWS</li>
             <li>Golang、Dart、TypeScript</li>
+            <li>Flutter、React</li>
             <li>Terraform、Docker、Kubernetes</li>
-            <li>OpenApi、Oauth、SAML</li>
-            <li>HL7 FHIR、DICOM、ORCA</li>
-            <li>位置情報、画像、DWH</li>
+            <li>OpenAPI、OAuth、SAML</li>
+            <li>HL7 FHIR、課金管理、位置情報、DWH</li>
           </ul>
         </div>
         <div className="business_item animated deley02" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
@@ -67,32 +66,31 @@ export default () => (
           <p>ゼロから開発プロジェクトを立ち上げられます</p>
           <ul>
             <li>案件コンソーシアム運営</li>
-            <li>顧客ヒアリング、フィット＆ギャップ</li>
             <li>RFP作成支援、契約クロージング</li>
             <li>開発組織の組成、メンターシップ</li>
-            <li>事業企画、製品企画、アーキテクチャ</li>
-            <li>スクラムマスター</li>
-            <li>カスタマーサクセス</li>
+            <li>顧客ヒアリング、フィット＆ギャップ</li>
+            <li>事業企画、製品企画、プロダクトマネージャー</li>
+            <li>アーキテクチャ、PMO、スクラムマスター</li>
           </ul>
         </div>
       </article>
     </section>
 
     <section id="solution">
-      <h2><span>Solution</span>SI案件のプロデュース</h2>
+      <h2><span>Solution</span>ご提案</h2>
       <p className="solution_lead">
         SaaS製品事業の創造、開発案件プロデュースを基盤に、<br className="viewpc viewtb" />
-        生活必需産業全からるIT産業まで幅広くソリューションをお届けしています。
+        生活必需産業全般からIT産業まで幅広くソリューションをお届けしています。
       </p>
       <div className="page_mainimg animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
         <img src="/assets/images/img_solution_main_pc.png" alt="独自SaaS事業の創造 SI案件プロデュース" className="switch" />
         <p className="img_cap">
-          SIで徹底的に場数をこなし、提案書とノウハウやソースコードを蓄積します。<br />
-          パートナーシップの制約下で、提案補強用にカタログ化します。
+          Essential Workware販売代理店としてリード獲得をお願いします。<br />
+          クリップクロウはお客様への提案や実装の労力を提供します。
         </p>
       </div>
       <article className="casestudy">
-        <h2><span>Case Study</span>事例紹介</h2>
+        <h2><span>Case Study</span>事例概要</h2>
         <div className="casestudy_index">
           <article className="casestudy_item animated" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
@@ -159,7 +157,7 @@ export default () => (
     </section>
 
     <section id="company_profile">
-      <h2><span>Company Profile</span>会社概要</h2>
+      <h2><span>Company Profile</span>企業情報</h2>
       <dl>
         <dt className="animated deley02" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">社名</dt>
         <dd className="animated deley02" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">クリップクロウ合同会社</dd>
