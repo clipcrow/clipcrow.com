@@ -12,7 +12,7 @@ export default () => (
       <ul>
         <li><a href="/">TOP</a></li>
         <li><a href="/product/">Essential Workware</a></li>
-        <li>Essential Workware 製品機能</li>
+        <li>製品機能</li>
       </ul>
     </div>
     <section className="product_title">

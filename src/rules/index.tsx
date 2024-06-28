@@ -11,7 +11,8 @@ export default () => (
     <div className="bread_crumb product_crumb">
       <ul>
         <li><a href="/">TOP</a></li>
-        <li>Essential Workware 利用規約</li>
+        <li><a href="/product/">Essential Workware</a></li>
+        <li>利用規約</li>
       </ul>
     </div>
     <section className="product_title">

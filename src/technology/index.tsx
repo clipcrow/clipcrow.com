@@ -1,6 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "Essential Workware技術的特長 | クリップクロウ合同会社";
+export const title = "Essential Workware 技術的特長 | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
 export default () => (

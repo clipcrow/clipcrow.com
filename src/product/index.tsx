@@ -34,7 +34,7 @@ export default () => (
             <img src="product_case02.png" alt="" />
           </div>
           <div className="productcase_txt">
-            <p>自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えなければならなくなったとき。野良チャット撲滅。</p>
+            <p>自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。</p>
           </div>
           <div className="btn_detail btn_w">
             <a href="/usage-example/#usage01">もっと詳しく</a>
@@ -47,7 +47,7 @@ export default () => (
             <img src="product_case01.png" alt="" />
           </div>
           <div className="productcase_txt">
-            <p>紙やスプレッドシートの共有で行っているような雑多でちいさな業務を、ひとつひとつシステム化するとき。使いながら業務をシステムに乗せてDX実現。
+            <p>紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。
             </p>
           </div>
           <div className="btn_detail btn_w">
