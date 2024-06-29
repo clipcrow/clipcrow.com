@@ -11,8 +11,8 @@ export default () => (
         <h1><span className="txt_en">Contact Us</span><span className="txt_j">お問い合わせ</span></h1>
         <div className="bread_crumb">
           <ul>
-            <li><a href="../top/index.html">TOP</a></li>
-            <li>お問い合わせ</li>
+            <li><a href="/">TOP</a></li>
+            <li>クリップクロウへの<br className="viewsp" />お問い合わせフォーム</li>
           </ul>
         </div>
       </div>
