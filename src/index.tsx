@@ -86,7 +86,7 @@ export default () => (
         <img src="/assets/images/img_solution_main_pc.png" alt="独自SaaS事業の創造 SI案件プロデュース" className="switch" />
         <p className="img_cap">
           Essential Workwareが示す製品開発技術を、<br />
-          御社の課題解決のためにご提供いたします。
+          御社の課題解決のために役立てます。
         </p>
       </div>
       <article className="casestudy">
