@@ -6,7 +6,7 @@ export default () => (
   <main>
     <section id="contents_top">
       <div className="inner">
-        <h1><span className="txt_en">Workware API</span><span className="txt_j">API</span></h1>
+        <h1><span className="txt_en">API</span><span className="txt_j">API</span></h1>
         <div className="bread_crumb">
           <ul>
             <li><a href="/">TOP</a></li>
