@@ -57,15 +57,15 @@ export default () => (
     </section>
 
     <section id="product_case">
-      <h2 className="product_h2">活用例</h2>
+      <h2 className="product_h2">解決する課題</h2>
       <div className="productcase_index">
-        <Usage step={1} clazz="" title="野良チャットの置き換え" image="/assets/images/illust/02.png" href="/usage-example/#usage01">
+        <Usage step={1} clazz="" title="野良チャットの置き換え" image="/assets/images/illust/14.png" href="/usage-example/#usage01">
             自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。
         </Usage>
-        <Usage step={2} clazz="deley02" title="ちいさな業務のシステム化" image="/assets/images/illust/01.png" href="/usage-example/#usage02">
+        <Usage step={2} clazz="deley02" title="ちいさな業務のシステム化" image="/assets/images/illust/04.png" href="/usage-example/#usage02">
           紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。
         </Usage>
-        <Usage step={3} clazz="deley03" title="組織内外を縦断するコミュニケーション" image="/assets/images/illust/03.png" href="/usage-example/#usage03">
+        <Usage step={3} clazz="deley03" title="組織内外を縦断するコミュニケーション" image="/assets/images/illust/08.png" href="/usage-example/#usage03">
           情報の共有を組織内に止めることなく、ゲストユーザーとして顧客を取り込めることで、緻密なコミュニケーションを実現。組織横断かつ縦断。
         </Usage>
       </div>

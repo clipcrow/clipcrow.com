@@ -39,7 +39,7 @@ serveではserve.tsを用いないため、以下を実行する。
 
 - careers.yml: 経歴のデータ
 - features.yml: 特長・機能のデータ
-- usages.yml: 活用例のデータ
+- usages.yml: 解決する課題のデータ
 
 /src/scss フォルダにはSASSファイルが格納されている。Lumeによってビルドされる。
 

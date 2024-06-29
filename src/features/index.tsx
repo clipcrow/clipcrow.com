@@ -1,7 +1,7 @@
 import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "Essential Workware 製品機能 | クリップクロウ合同会社";
+export const title = "Essential Workwareの製品機能 | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
 export default () => (
@@ -17,7 +17,7 @@ export default () => (
       </ul>
     </div>
     <section className="product_title">
-      <h1>Essential Workware <br className="viewsp" />製品機能</h1>
+      <h1>Essential Workware<br className="viewsp" />の製品機能</h1>
     </section>
     <section className="main_contents">
       <div className="mark_sample">
@@ -36,7 +36,7 @@ export default () => (
       <article id="features01" className="features_contents">
         <h2>
           ホームとチームのInfographics
-          <span><ActorImg actor="staff"/></span>
+          <span><ActorImg actor="admin"/></span>
           <span><ActorImg actor="guest"/></span>
         </h2>
         <div className="features_bg"></div>
@@ -61,7 +61,9 @@ export default () => (
       <article id="features02" className="features_contents">
         <h2>
           カード型データベース
-          <span><ActorImg actor="admin"/></span>
+          <span><ActorImg actor="staff"/></span>
+          <span><ActorImg actor="worker"/></span>
+          <span><ActorImg actor="guest"/></span>
         </h2>
         <div className="features_bg"></div>
         <div className="features_inner">
@@ -87,6 +89,7 @@ export default () => (
         <h2>
           ビジネスチャット
           <span><ActorImg actor="staff"/></span>
+          <span><ActorImg actor="worker"/></span>
           <span><ActorImg actor="guest"/></span>
         </h2>
         <div className="features_bg"></div>
@@ -107,7 +110,7 @@ export default () => (
         <h2>
           タスク管理
           <span><ActorImg actor="staff"/></span>
-          <span><ActorImg actor="guest"/></span>
+          <span><ActorImg actor="worker"/></span>
         </h2>
         <div className="features_bg"></div>
         <div className="features_inner">

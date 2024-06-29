@@ -2,7 +2,7 @@ import ActorImg, { Actor } from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 import { React } from "lume/deps/react.ts";
 
-export const title = "Essential Workware 活用例 | クリップクロウ合同会社";
+export const title = "Essential Workwareが解決する課題 | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
 const UsageBlock = (props: React.PropsWithChildren<{ step: number, title: string }>) => (
@@ -47,11 +47,11 @@ export default () => (
       <ul>
         <li><a href="/">TOP</a></li>
         <li><a href="/product/">Essential Workware</a></li>
-        <li>活用例</li>
+        <li>解決する課題</li>
       </ul>
     </div>
     <section className="product_title">
-      <h1>Essential Workware <br className="viewsp" />活用例</h1>
+      <h1>Essential Workware<br className="viewsp" />が解決する課題</h1>
     </section>
 
     <section className="main_contents">
@@ -70,57 +70,64 @@ export default () => (
 
       <article id="usage01" className="usage_contents">
         <UsageBlock step={1} title="野良チャットの置き換え">
-          <UsageItem image="/assets/images/illust/01.png" target="admin">グループでも1on1でも使えるチャット</UsageItem>
-          <UsageItem image="/assets/images/illust/04.png" target="staff">業務の役に立つチャット以上の機能</UsageItem>
-          <UsageItem image="/assets/images/illust/05.png" target="admin">ビジネス用途のツールとして万全のセキュリティを確保</UsageItem>
-          <UsageItem image="/assets/images/illust/06.png" target="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
+          <UsageItem image="/assets/images/illust/14.png" target="admin">グループでも1on1でも使えるチャット</UsageItem>
+          <UsageItem image="/assets/images/illust/01.png" target="staff">業務の役に立つチャット以上の機能</UsageItem>
+          <UsageItem image="/assets/images/illust/18.png" target="admin">ビジネス用途のツールとして万全のセキュリティを確保</UsageItem>
+          <UsageItem image="/assets/images/illust/20.png" target="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
         </UsageBlock>
         <FeatureBlock body="自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。">
-          <FeatureLink href="/technology/#technology02">打刻管理</FeatureLink>
-          <FeatureLink href="/technology/#technology03">属性の可視化</FeatureLink>
-          <FeatureLink href="/features/#features03">業務指示</FeatureLink>
-          <FeatureLink href="/features/#features04">タスクトラッキング</FeatureLink>
-          <FeatureLink href="/features/#features01">リソース可視化</FeatureLink>
+        <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/features/#features03">ビジネスチャット</FeatureLink>
+          <FeatureLink href="/technology/#technology03">可視性をコントロール</FeatureLink>
+          <FeatureLink href="/technology/#technology04">ビジュアルの活用</FeatureLink>
+          <FeatureLink href="/technology/#technology05">国際化とコンテンツ翻訳</FeatureLink>
+          <FeatureLink href="/technology/#technology06">大画面にも最適化表示</FeatureLink>
         </FeatureBlock>
       </article>
 
       <article id="usage02" className="usage_contents">
         <UsageBlock step={2} title="ちいさな業務のシステム化">
-          <UsageItem image="/assets/images/illust/02.png" target="worker">顧客や業務リソースなどをわかりやすくカードで表現</UsageItem>
-          <UsageItem image="/assets/images/illust/07.png" target="staff">データベース基本機能としてカードの検索や更新が自在</UsageItem>
-          <UsageItem image="/assets/images/illust/07.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
+          <UsageItem image="/assets/images/illust/04.png" target="worker">顧客や業務リソースなどをわかりやすくカードで表現</UsageItem>
+          <UsageItem image="/assets/images/illust/05.png" target="staff">データベース基本機能としてカードの検索や更新が自在</UsageItem>
+          <UsageItem image="/assets/images/illust/09.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。">
-          <FeatureLink href="/technology/#technology02">打刻管理</FeatureLink>
-          <FeatureLink href="/features/#features04">タスクトラッキング</FeatureLink>
-          <FeatureLink href="/features/#technology02">日報・伝票の自動化</FeatureLink>
-          <FeatureLink href="/technology/#technology07">BIツール連携</FeatureLink>
+          <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/features/#features04">タスク管理</FeatureLink>
+          <FeatureLink href="/technology/#technology01">フォームを自由に作成</FeatureLink>
+          <FeatureLink href="/technology/#technology02">リアルタイム共有</FeatureLink>
         </FeatureBlock>
       </article>
 
       <article id="usage03" className="usage_contents">
         <UsageBlock step={3} title="組織内外を縦断するコミュニケーション">
-          <UsageItem image="/assets/images/illust/03.png" target="admin">コミュニケーションの一元化で、複数ツールを使い分ける面倒がなくなる</UsageItem>
-          <UsageItem image="/assets/images/illust/08.png" target="worker">一人の顧客をチームで応対。顧客の家族との情報共有も同時に可能</UsageItem>
-          <UsageItem image="/assets/images/illust/09.png" target="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
+          <UsageItem image="/assets/images/illust/08.png" target="worker">コミュニケーションの一元化で、複数ツールを使い分ける面倒がなくなる</UsageItem>
+          <UsageItem image="/assets/images/illust/13.png" target="guest">一人の顧客をチームで応対。顧客の家族との情報共有も同時に可能</UsageItem>
+          <UsageItem image="/assets/images/illust/17.png" target="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="情報の共有を組織内に止めることなく、ゲストユーザーとして顧客を取り込めることで、緻密なコミュニケーションを実現。組織横断かつ縦断。">
-          <FeatureLink href="/features/">キャリア指標</FeatureLink>
-          <FeatureLink href="/features/#features04">タスクのテンプレート化</FeatureLink>
-          <FeatureLink href="/features/#features03">サンクスカード</FeatureLink>
+          <FeatureLink href="/features/#features01">Infographics</FeatureLink>
+          <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/features/#features03">ビジネスチャット</FeatureLink>
+          <FeatureLink href="/technology/#technology03">可視性をコントロール</FeatureLink>
+          <FeatureLink href="/technology/#technology04">ビジュアルの活用</FeatureLink>
+          <FeatureLink href="/technology/#technology05">国際化とコンテンツ翻訳</FeatureLink>
         </FeatureBlock>
       </article>
 
       <article id="usage04" className="usage_contents">
         <UsageBlock step={4} title="既存システムのフロントウェア">
-          <UsageItem image="/assets/images/illust/03.png" target="admin">全員分のPCがなかったり、立って移動しながらの業務でもDX</UsageItem>
+          <UsageItem image="/assets/images/illust/16.png" target="admin">全員分のPCがなかったり、立って移動しながらの業務でもDX</UsageItem>
           <UsageItem image="/assets/images/illust/03.png" target="staff">業務の状態をリアルタイムに把握できるようになる</UsageItem>
-          <UsageItem image="/assets/images/illust/03.png" target="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
+          <UsageItem image="/assets/images/illust/02.png" target="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
         </UsageBlock>
         <FeatureBlock body="電子カルテなど既存の業務システムにAPIを利用して連携させて、携帯性の高い情報入出力機能を追加する。フロントウェアとしての使い方。">
-          <FeatureLink href="/features/">キャリア指標</FeatureLink>
-          <FeatureLink href="/features/#features04">タスクのテンプレート化</FeatureLink>
-          <FeatureLink href="/features/#features03">サンクスカード</FeatureLink>
+          <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/features/#features04">タスク管理</FeatureLink>
+          <FeatureLink href="/technology/#technology01">フォームを自由に作成</FeatureLink>
+          <FeatureLink href="/technology/#technology02">リアルタイム共有</FeatureLink>
+          <FeatureLink href="/technology/#technology06">大画面にも最適化表示</FeatureLink>
+          <FeatureLink href="/technology/#technology07">APIとWebhook</FeatureLink>
         </FeatureBlock>
       </article>
     </section>

@@ -1,7 +1,7 @@
 import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "Essential Workware 技術的特長 | クリップクロウ合同会社";
+export const title = "Essential Workwareの技術的特長 | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 
 export default () => (
@@ -13,11 +13,11 @@ export default () => (
       <ul>
         <li><a href="/">TOP</a></li>
         <li><a href="/product/">Essential Workware</a></li>
-        <li>Essential Workware 技術的特長</li>
+        <li>技術的特長</li>
       </ul>
     </div>
     <section className="product_title">
-      <h1>Essential Workware <br className="viewsp" />技術的特長</h1>
+      <h1>Essential Workware<br className="viewsp" />の技術的特長</h1>
     </section>
     <section className="main_contents">
       <div className="mark_sample">
@@ -39,6 +39,7 @@ export default () => (
           <h2>
             フォームを自由に作成
             <span><ActorImg actor="admin"/></span>
+            <span><ActorImg actor="staff"/></span>
           </h2>
           <p>カード型DBのレコードとしてのカード・チャットに貼り付けるカード・タスク・プロファイルなどのあらゆる箇所で自由に入力フォームを作る機能を備えている。</p>
           <div className="technology_3column">
@@ -118,6 +119,9 @@ export default () => (
           <h2>
             可視性を柔軟にコントロール
             <span><ActorImg actor="admin"/></span>
+            <span><ActorImg actor="staff"/></span>
+            <span><ActorImg actor="worker"/></span>
+            <span><ActorImg actor="guest"/></span>
           </h2>
           <div className="technology_2column">
             <div className="technology_item wide_item">
@@ -146,7 +150,8 @@ export default () => (
         <div className="technology_inner">
           <h2>
             ビジュアルの活用
-            <span><ActorImg actor="admin"/></span>
+            <span><ActorImg actor="worker"/></span>
+            <span><ActorImg actor="guest"/></span>
           </h2>
           <p>カードの背景に画像を表示できる。デバイスのカメラやカメラロールのほか、プロ写真家の写真やオリジナルイラストも用意している。</p>
           <div className="technology_1column">
@@ -168,6 +173,7 @@ export default () => (
           <h2>
             国際化とコンテンツ翻訳
             <span><ActorImg actor="staff"/></span>
+            <span><ActorImg actor="worker"/></span>
             <span><ActorImg actor="guest"/></span>
           </h2>
           <p>アプリケーション全体を国際化していて、現在は、日本語・英語・ベトナム語に対応している。今後、中台韓葡西語対応を予定。</p>
@@ -206,8 +212,8 @@ export default () => (
         <div className="technology_inner">
           <h2>
             タブレットやPCの大画面にも最適化表示
+            <span><ActorImg actor="admin"/></span>
             <span><ActorImg actor="staff"/></span>
-            <span><ActorImg actor="guest"/></span>
           </h2>
           <p>同じスマホでも縦横で最適表示を自動的に行い、タブレットサイズ以上ではナビゲーション+2列表示を行う。Apple Silicon搭載Macでも動作する</p>
 
@@ -231,6 +237,7 @@ export default () => (
           <h2>
             APIとWebhookで既存システムと連携
             <span><ActorImg actor="admin"/></span>
+            <span><ActorImg actor="worker"/></span>
           </h2>
           <div className="technology_1column">
             <div className="technology_item">
