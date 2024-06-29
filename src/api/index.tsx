@@ -1,3 +1,5 @@
+import DownloadButtons from "@/DownloadButtons.tsx";
+
 export const title = "API | クリップクロウ合同会社";
 export const layout = "layouts/base.tsx";
 export const script = "/api/js/redoc.js";
@@ -17,6 +19,7 @@ export default () => (
     <section className="product_title">
       <h1>Essential Workware<br className="viewsp" />のAPI一覧</h1>
     </section>
+    <DownloadButtons />
     <div id="root"></div>
   </main>
 );
