@@ -92,7 +92,9 @@ export default () => (
           <UsageItem image="/assets/images/illust/09.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。">
+          <FeatureLink href="/features/#features01">Infographics</FeatureLink>
           <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/features/#features03">ビジネスチャット</FeatureLink>
           <FeatureLink href="/features/#features04">タスク管理</FeatureLink>
           <FeatureLink href="/technology/#technology01">フォームを自由に作成</FeatureLink>
           <FeatureLink href="/technology/#technology02">リアルタイム共有</FeatureLink>
