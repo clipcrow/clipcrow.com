@@ -63,7 +63,7 @@ export default (data: Lume.PaginateResult<Event>) => (
     <section className="main_contents">
       <AnimatedCloud id={5} />
       <div className="column_contents">
-        <h2>クリップクロウからのおしらせ</h2>
+        <h2>クリップクロウと<br className="viewsp" />Essential Workware<br className="viewsp" />の最新情報</h2>
         <div className="information_index">
           <dl>
             <EventList list={data.results} />

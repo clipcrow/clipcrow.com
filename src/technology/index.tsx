@@ -1,7 +1,7 @@
 import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "Essential Workwareの技術的特長 | クリップクロウ合同会社";
+export const title = "技術的特長 | Essential Workware";
 export const layout = "layouts/base.tsx";
 
 export default () => (

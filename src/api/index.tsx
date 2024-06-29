@@ -1,6 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "API | クリップクロウ合同会社";
+export const title = "API | Essential Workware";
 export const layout = "layouts/base.tsx";
 export const script = "/api/js/redoc.js";
 
