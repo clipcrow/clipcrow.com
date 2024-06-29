@@ -1,4 +1,4 @@
-export default () => (
+export default (props: { hideContact: boolean }) => (
   <>
     <header id="top">
       <h1><a href="/"><img src="/assets/images/common/logo_ClipCrow.svg" alt="ClipCrow" /></a></h1>
@@ -7,9 +7,7 @@ export default () => (
           <li><a href="/#business_outline">クリップクロウ事業概要</a></li>
           <li><a href="/product/">Essential Workware</a></li>
         </ul>
-        <div className="btn_contact">
-          <a href="/contact/">お問い合わせ</a>
-        </div>
+        {props.hideContact ? null : <div className="btn_contact"><a href="/contact/">お問い合わせ</a></div>}
       </nav>
     </header>
     <div className="openbtn1 viewsp">
@@ -21,9 +19,7 @@ export default () => (
         <div><a href="/#business_outline">クリップクロウ事業概要</a></div>
         <div><a href="/product/">Essential Workware</a></div>
       </div>
-      <div className="btn_contact">
-        <a href="/contact/">お問い合わせ</a>
-      </div>
+      {props.hideContact ? null : <div className="btn_contact"><a href="/contact/">お問い合わせ</a></div>}
     </nav>
   </>
 );

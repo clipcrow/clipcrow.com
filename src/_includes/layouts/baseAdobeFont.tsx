@@ -41,7 +41,7 @@ export default (data: Lume.Data) => (
     </head>
     <body className={data.bodyClass}>
       <div className="wrapper">
-        <GlobalHeader />
+        <GlobalHeader hideContact={false} />
         {data.children}
         <GlobalFooter />
       </div>

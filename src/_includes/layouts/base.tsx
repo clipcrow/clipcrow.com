@@ -30,7 +30,7 @@ export default (data: Lume.Data) => (
     </head>
     <body className={data.bodyClass}>
       <div className="wrapper">
-        <GlobalHeader />
+        <GlobalHeader hideContact={data.url === "/contact/"} />
         {data.children}
         <GlobalFooter />
       </div>
