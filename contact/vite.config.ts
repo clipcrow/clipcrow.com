@@ -1,12 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: "/contact",
   build: {
-    outDir: "../src/contact",
+    outDir: "../src/contact/js/",
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        entryFileNames: `form.js`,
+      }
+    },
   },
 });

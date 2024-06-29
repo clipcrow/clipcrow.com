@@ -14,6 +14,6 @@ site.use(jsx());
 site.copy("favicon.ico");
 site.copy("apple-touch-icon.png");
 site.copy("assets");
-site.copy([".jpg", ".png", ".svg"]);
+site.copy([".jpg", ".png", ".svg", ".js"]);
 
 export default site;

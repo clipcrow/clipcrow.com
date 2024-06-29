@@ -26,6 +26,7 @@ export default (data: Lume.Data) => (
       <link href="/assets/css/layout_sp.css" type="text/css" rel="stylesheet" />
       <link href="/assets/css/layout_tb.css" type="text/css" rel="stylesheet" />
       <link href="/assets/css/animate.css" type="text/css" rel="stylesheet" />
+      {data.script ? <script type="module" crossOrigin="anonymous" src={data.script}></script> : null }
     </head>
     <body className={data.bodyClass}>
       <div className="wrapper">
