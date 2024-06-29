@@ -12,7 +12,7 @@ export default () => (
         <div className="bread_crumb">
           <ul>
             <li><a href="/">TOP</a></li>
-            <li>クリップクロウへの<br className="viewsp" />お問い合わせフォーム</li>
+            <li>お問い合わせ</li>
           </ul>
         </div>
       </div>

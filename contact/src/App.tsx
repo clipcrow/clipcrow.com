@@ -106,7 +106,7 @@ const App = () => {
 
   return (
     <div className="column_contents contact_contents">
-      <h2>お問い合わせ</h2>
+      <h2>お問い合わせフォーム</h2>
       <p>土日祝を除く3営業日以内に担当者よりご連絡させていただきます。<br />
       お問い合わせ内容により、ご回答までにお時間をいただく場合または、ご回答が出来ない場合がございます。</p>
       <form className="contact_form" onSubmit={handleSubmit(handleSave)}>
