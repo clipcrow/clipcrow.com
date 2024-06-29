@@ -85,8 +85,8 @@ export default () => (
       <div className="page_mainimg animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
         <img src="/assets/images/img_solution_main_pc.png" alt="独自SaaS事業の創造 SI案件プロデュース" className="switch" />
         <p className="img_cap">
-          Essential Workware販売代理店としてリード獲得をお願いします。<br />
-          クリップクロウはお客様への提案や実装の労力を提供します。
+          Essential Workwareが示す製品開発技術を、<br />
+          御社の課題解決のためにご提供いたします。
         </p>
       </div>
       <article className="casestudy">
