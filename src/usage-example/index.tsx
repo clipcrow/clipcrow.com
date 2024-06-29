@@ -70,10 +70,10 @@ export default () => (
 
       <article id="usage01" className="usage_contents">
         <UsageBlock step={1} title="野良チャットの置き換え">
-          <UsageItem image="product_case01.png" target="admin">グループでも1on1でも使えるチャット</UsageItem>
-          <UsageItem image="product_case04.png" target="staff">業務の役に立つチャット以上の機能</UsageItem>
-          <UsageItem image="product_case05.png" target="admin">ビジネス用途のツールとして万全のセキュリティを確保</UsageItem>
-          <UsageItem image="product_case06.png" target="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
+          <UsageItem image="/assets/images/illust/01.png" target="admin">グループでも1on1でも使えるチャット</UsageItem>
+          <UsageItem image="/assets/images/illust/04.png" target="staff">業務の役に立つチャット以上の機能</UsageItem>
+          <UsageItem image="/assets/images/illust/05.png" target="admin">ビジネス用途のツールとして万全のセキュリティを確保</UsageItem>
+          <UsageItem image="/assets/images/illust/06.png" target="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
         </UsageBlock>
         <FeatureBlock body="自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。">
           <FeatureLink href="/technology/#technology02">打刻管理</FeatureLink>
@@ -86,9 +86,9 @@ export default () => (
 
       <article id="usage02" className="usage_contents">
         <UsageBlock step={2} title="ちいさな業務のシステム化">
-          <UsageItem image="product_case02.png" target="worker">顧客や業務リソースなどをわかりやすくカードで表現</UsageItem>
-          <UsageItem image="product_case07.png" target="staff">データベース基本機能としてカードの検索や更新が自在</UsageItem>
-          <UsageItem image="product_case07.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
+          <UsageItem image="/assets/images/illust/02.png" target="worker">顧客や業務リソースなどをわかりやすくカードで表現</UsageItem>
+          <UsageItem image="/assets/images/illust/07.png" target="staff">データベース基本機能としてカードの検索や更新が自在</UsageItem>
+          <UsageItem image="/assets/images/illust/07.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。">
           <FeatureLink href="/technology/#technology02">打刻管理</FeatureLink>
@@ -100,9 +100,9 @@ export default () => (
 
       <article id="usage03" className="usage_contents">
         <UsageBlock step={3} title="組織内外を縦断するコミュニケーション">
-          <UsageItem image="product_case03.png" target="admin">コミュニケーションの一元化で、複数ツールを使い分ける面倒がなくなる</UsageItem>
-          <UsageItem image="product_case08.png" target="worker">一人の顧客をチームで応対。顧客の家族との情報共有も同時に可能</UsageItem>
-          <UsageItem image="product_case09.png" target="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
+          <UsageItem image="/assets/images/illust/03.png" target="admin">コミュニケーションの一元化で、複数ツールを使い分ける面倒がなくなる</UsageItem>
+          <UsageItem image="/assets/images/illust/08.png" target="worker">一人の顧客をチームで応対。顧客の家族との情報共有も同時に可能</UsageItem>
+          <UsageItem image="/assets/images/illust/09.png" target="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="情報の共有を組織内に止めることなく、ゲストユーザーとして顧客を取り込めることで、緻密なコミュニケーションを実現。組織横断かつ縦断。">
           <FeatureLink href="/features/">キャリア指標</FeatureLink>
@@ -113,9 +113,9 @@ export default () => (
 
       <article id="usage04" className="usage_contents">
         <UsageBlock step={4} title="既存システムのフロントウェア">
-          <UsageItem image="product_case03.png" target="admin">全員分のPCがなかったり、立って移動しながらの業務でもDX</UsageItem>
-          <UsageItem image="product_case03.png" target="staff">業務の状態をリアルタイムに把握できるようになる</UsageItem>
-          <UsageItem image="product_case03.png" target="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
+          <UsageItem image="/assets/images/illust/03.png" target="admin">全員分のPCがなかったり、立って移動しながらの業務でもDX</UsageItem>
+          <UsageItem image="/assets/images/illust/03.png" target="staff">業務の状態をリアルタイムに把握できるようになる</UsageItem>
+          <UsageItem image="/assets/images/illust/03.png" target="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
         </UsageBlock>
         <FeatureBlock body="電子カルテなど既存の業務システムにAPIを利用して連携させて、携帯性の高い情報入出力機能を追加する。フロントウェアとしての使い方。">
           <FeatureLink href="/features/">キャリア指標</FeatureLink>

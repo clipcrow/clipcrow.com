@@ -24,7 +24,7 @@ export default () => (
       <article id="case01" className="case_item">
         <div className="case_title">
           <div className="case_title_img">
-            <img src="casestudy_img01.jpg" alt="クラウド電子カルテ開発案件" />
+            <img src="/assets/images/casestudy/img01.jpg" alt="クラウド電子カルテ開発案件" />
           </div>
           <div className="case_title_txt">
             <div className="case_title_en">Case Study01</div>
@@ -42,7 +42,7 @@ export default () => (
       <article id="case02" className="case_item">
         <div className="case_title">
           <div className="case_title_img">
-            <img src="casestudy_img02.jpg" alt="国立大学病院の治験プラットフォーム" />
+            <img src="/assets/images/casestudy/img02.jpg" alt="国立大学病院の治験プラットフォーム" />
           </div>
           <div className="case_title_txt">
             <div className="case_title_en">Case Study02</div>
@@ -67,7 +67,7 @@ export default () => (
       <article id="case03" className="case_item">
         <div className="case_title">
           <div className="case_title_img">
-            <img src="casestudy_img03.jpg" alt="開発組織のモダン化コンサルティング" />
+            <img src="/assets/images/casestudy/img03.jpg" alt="開発組織のモダン化コンサルティング" />
           </div>
           <div className="case_title_txt">
             <div className="case_title_en">Case Study03</div>
@@ -92,7 +92,7 @@ export default () => (
       <article id="case04" className="case_item">
         <div className="case_title">
           <div className="case_title_img">
-            <img src="casestudy_img04.jpg" alt="遠隔診療SaaS開発" />
+            <img src="/assets/images/casestudy/img04.jpg" alt="遠隔診療SaaS開発" />
           </div>
           <div className="case_title_txt">
             <div className="case_title_en">Case Study04</div>
@@ -116,7 +116,7 @@ export default () => (
       <article id="case05" className="case_item">
         <div className="case_title">
           <div className="case_title_img">
-            <img src="casestudy_img05.jpg" alt="福利厚生SaaS開発" />
+            <img src="/assets/images/casestudy/img05.jpg" alt="福利厚生SaaS開発" />
           </div>
           <div className="case_title_txt">
             <div className="case_title_en">Case Study05</div>
@@ -140,7 +140,7 @@ export default () => (
       <article id="case06" className="case_item">
         <div className="case_title">
           <div className="case_title_img">
-            <img src="casestudy_img06.jpg" alt="PHR製品の拡張と展開" />
+            <img src="/assets/images/casestudy/img06.jpg" alt="PHR製品の拡張と展開" />
           </div>
           <div className="case_title_txt">
             <div className="case_title_en">Case Study06</div>

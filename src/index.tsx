@@ -94,7 +94,7 @@ export default () => (
         <div className="casestudy_index">
           <article className="casestudy_item animated" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
-              <img src="/assets/images/casestudy_img01.jpg" alt="クラウド電子カルテ開発案件" />
+              <img src="/assets/images/casestudy/img01.jpg" alt="クラウド電子カルテ開発案件" />
             </div>
             <div className="casestudy_txt">
               <h4>クラウド電子カルテ<br />開発案件</h4>
@@ -104,7 +104,7 @@ export default () => (
           </article>
           <article className="casestudy_item animated deley02" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
-              <img src="/assets/images/casestudy_img02.jpg" alt="国立大学病院の治験プラットフォーム" />
+              <img src="/assets/images/casestudy/img02.jpg" alt="国立大学病院の治験プラットフォーム" />
             </div>
             <div className="casestudy_txt">
               <h4>国立大学病院の<br />治験プラットフォーム</h4>
@@ -114,7 +114,7 @@ export default () => (
           </article>
           <article className="casestudy_item animated deley03" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
-              <img src="/assets/images/casestudy_img05.jpg" alt="開発組織のモダン化コンサルティング" />
+              <img src="/assets/images/casestudy/img03.jpg" alt="開発組織のモダン化コンサルティング" />
             </div>
             <div className="casestudy_txt">
               <h4>開発組織のモダン化<br />コンサルティング</h4>
@@ -124,7 +124,7 @@ export default () => (
           </article>
           <article className="casestudy_item animated" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
-              <img src="/assets/images/casestudy_img04.jpg" alt="遠隔診療SaaS開発" />
+              <img src="/assets/images/casestudy/img04.jpg" alt="遠隔診療SaaS開発" />
             </div>
             <div className="casestudy_txt">
               <h4>遠隔診療SaaS開発</h4>
@@ -134,7 +134,7 @@ export default () => (
           </article>
           <article className="casestudy_item animated deley02" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
-              <img src="/assets/images/casestudy_img06.jpg" alt="福利厚生SaaS開発" />
+              <img src="/assets/images/casestudy/img05.jpg" alt="福利厚生SaaS開発" />
             </div>
             <div className="casestudy_txt">
               <h4>福利厚生SaaS開発</h4>
@@ -144,7 +144,7 @@ export default () => (
           </article>
           <article className="casestudy_item animated deley03" data-scroll="once toggle(.fadeInUp, .invisible) 0,0">
             <div className="casestudy_img">
-              <img src="/assets/images/casestudy_img03.jpg" alt="PHR製品の拡張と展開" />
+              <img src="/assets/images/casestudy/img06.jpg" alt="PHR製品の拡張と展開" />
             </div>
             <div className="casestudy_txt">
               <h4>PHR製品の拡張と展開</h4>
