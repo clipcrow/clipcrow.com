@@ -32,7 +32,7 @@ export default (data: Lume.Data) => (
       <div className="wrapper">
         <GlobalHeader hideContact={data.url === "/contact/"} />
         {data.children}
-        <GlobalFooter />
+        {data.url === "/api/" ? <GlobalFooter /> : null }
       </div>
     <GrobalScript />
     </body>

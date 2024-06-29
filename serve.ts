@@ -42,9 +42,16 @@ server.use(async (request, next) => {
 });
 
 server.use(async (request, next) => {
+  const { method, url } = request;
+  if (method == "GET" && url.endsWith("/api/docs.json")) {
+    return await fetch("https://api.ewware.com/docs");
+  }
+  return await next(request);
+});
+
+server.use(async (request, next) => {
   const response = await next(request);
   const { headers, status } = response;
-  headers.set("Access-Control-Allow-Origin", "*");
   if (status === 404) {
     headers.set("content-type", "text/html; charset=utf-8");
     const body = await Deno.readFile(`${Deno.cwd()}/_site/404/index.html`);
