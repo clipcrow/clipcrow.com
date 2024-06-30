@@ -96,7 +96,7 @@ const App = () => {
     maxLength: { value: 300, message: "お問い合わせ内容は300文字以内で入力してください" },
   });
 
-  const inputClass = (id: "name" | "email" | "content") => {
+  const inputClass = (id: keyof ContactForm) => {
     const list = [(id === "content" ? "input_textarea" : "input_text")];
     if (errors[id]) {
       list.push("input_error");
@@ -104,7 +104,7 @@ const App = () => {
     return list.join(" ");
   };
 
-  const labelClass = (id: "name" | "email" | "content") => {
+  const labelClass = (id: keyof ContactForm) => {
     const list = ["input_label"];
     if (focusID === id || dirtyFields[id]) {
       list.push("input_after");
