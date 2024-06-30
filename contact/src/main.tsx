@@ -30,6 +30,7 @@ const App = () => {
   const postForm = async () => {
     // Send data to Slack
     if (formData) {
+      const { name, email, business, content } = formData;
       try {
         await fetch("/slack", {
           method: "POST",
@@ -37,17 +38,12 @@ const App = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            text: `
-              お問い合わせ:
-              お名前: ${formData.name}
-              メール: ${formData.email}
-              ご用件: ${formData.business}
-              内容: ${formData.content}`,
+            text: `お問い合わせ/nお名前: ${name}/nメール: ${email}/nご用件: ${business}/n内容: ${content}`,
           }),
         });
         setStage("posted");
       } catch (error) {
-        console.error("Error sending form data to Slack:", error);
+        console.error("お問い合わせフォーム送信エラー:", error);
       }
     }
   };
