@@ -11,9 +11,9 @@ export default () => (
       <article className="topcontents">
         <div className="topcopy animated deley01" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
           <h2>システムを磨き、<br />健康で楽しく豊かに。</h2>
-          <p>医療をはじめとする生活必需サービス産業で<br />
-            データに基づく業務最適化と組織的な健康管理や<br />
-            関わる皆さまそれぞれの自己実現をお手伝いします</p>
+          <p>医療をはじめとする生活必需サービス産業において<br />
+            高付加価値ITサービスの提供でデータに基づく業務最適化を推進して、<br />
+            組織的な健康管理の実現と関わる皆さまのQuality of Life向上を目指す。</p>
         </div>
         <div className="toppg animated deley03" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
           <img src="/assets/images/topimage.png" alt="" />
@@ -30,12 +30,12 @@ export default () => (
           近年ではそれぞれ業界固有なサービス提供ノウハウの進化に加えて、情報システムへの投資が議論されるようになってきています。
         </p>
         <p className="animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
-          しかし日本の生活必需サービス産業の多くでは、クラウドやモバイルや IoT や AI など他の産業で普及しつつある新しいテクノロジーが紹介されていないために、
-          既に旧式化しているアーキテクチャで運用されていたり、そもそもに IT が導入されてないケースもあるようです。データの利活用が進まず、
+          しかし日本の生活必需サービス産業の多くでは、クラウドやモバイルやIoTやAIなど他の産業で普及しつつある新しいテクノロジーが紹介されていないために、
+          既に旧式化しているアーキテクチャで運用されていたり、そもそもにITが導入されてないケースもあるようです。データの利活用が進まず、
           業務従事者と顧客双方でユーザー体験が最適化されるのはこれからの取組み次第となっています。
         </p>
         <p className="animated deley03" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
-          クリップクロウ合同会社は、医療をはじめとする生活必需サービス産業の SI 案件プロデュースと、従業者間のコミュニケーションを円滑にする SaaS との両輪で、
+          クリップクロウ合同会社は、従業者間のコミュニケーションを円滑にするSaaS「Essential Workware」と、生活必需サービス産業向けSI案件プロデュースとの両輪で、
           データに基づく業務最適化と組織的な健康管理および、関わる皆さまそれぞれの自己実現をお手伝いします。</p>
       </div>
     </section>
@@ -79,14 +79,13 @@ export default () => (
     <section id="solution">
       <h2><span>Solution</span>ご提案</h2>
       <p className="solution_lead">
-        SaaS製品事業の創造、開発案件プロデュースを基盤に、<br className="viewpc viewtb" />
-        生活必需産業全般からIT産業まで幅広くソリューションをお届けしています。
+        独自SaaS事業の創造、SI案件のプロデュースの両輪で、<br className="viewpc viewtb" />
+        生活必需産業全般からその他産業まで幅広くソリューションをお届けしています。
       </p>
       <div className="page_mainimg animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
         <img src="/assets/images/img_solution_main_pc.png" alt="独自SaaS事業の創造 SI案件プロデュース" className="switch" />
         <p className="img_cap">
-          Essential Workwareが示す製品開発技術を、<br />
-          御社の課題解決のために役立てます。
+          Essential Workwareが示す製品開発技術を、<br className="viewpc viewtb" />御社の課題解決のために役立てます。
         </p>
       </div>
       <article className="casestudy">
