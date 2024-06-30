@@ -38,7 +38,7 @@ const App = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            text: `お問い合わせ/nお名前: ${name}/nメール: ${email}/nご用件: ${business}/n内容: ${content}`,
+            text: `お問い合わせ\nお名前: ${name}\nメール: ${email}\nご用件: ${business}\n内容: ${content}`,
           }),
         });
         setStage("posted");
