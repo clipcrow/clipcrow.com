@@ -1566,6 +1566,17 @@ main {
 					list-style-type: disc;
 				}
 			}
+			a {
+				display: inline-block;
+				font-weight: 600;
+				background: url("../images/common/icon_winopen.svg") no-repeat 97% 55%;
+				background-size: 20px;
+				padding-right: 34px;
+				transition: 0.2s all ease 0s;
+				&:hover {
+					opacity: 0.6;
+				}
+			}
 		}
 	}
 	

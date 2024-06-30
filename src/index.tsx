@@ -117,7 +117,7 @@ export default () => (
             </div>
             <div className="casestudy_txt">
               <h4>開発組織のモダン化<br />コンサルティング</h4>
-              <p>AIプラットフォーム製品の開発を行いAI活用SIを提供するスタートアップ企業へ、開発組織の様々な課題を解決するコンサルティングを提供しています。</p>
+              <p>AIプラットフォーム製品の開発を行いAI活用SIを提供するスタートアップ企業へ、開発組織の様々な課題を解決するコンサルティングを提供しました。</p>
               <div className="btn_detail_g"><a href="/case-study/#case03">詳細を見る<span className="arrow-right"></span></a></div>
             </div>
           </article>
@@ -137,7 +137,7 @@ export default () => (
             </div>
             <div className="casestudy_txt">
               <h4>福利厚生SaaS開発</h4>
-              <p>健康経営を行う大企業向けに、従業員に日々の運動をポイント付与しそのポイントをギフトに引き換えられるようにするなど、福利厚生を目的としたSaaSを開発しました。</p>
+              <p>健康経営を行う大企業向けに、従業員の日々の運動をポイント評価してそのポイントをギフトに引き換えられるようにする、福利厚生を目的としたSaaSを開発しました。</p>
               <div className="btn_detail_g"><a href="/case-study/#case05">詳細を見る<span className="arrow-right"></span></a></div>
             </div>
           </article>
@@ -147,7 +147,7 @@ export default () => (
             </div>
             <div className="casestudy_txt">
               <h4>PHR製品の拡張と展開</h4>
-              <p>MedtechスタートアップとSIパートナーシップを構築し、同社の技術フェロー(非常勤)に就任しました。PHR製品の拡張機能群を開発し、現在も引き続き実施中です。</p>
+              <p>インテグリティ・ヘルスケアとSIパートナーシップを構築し、同社の技術フェロー(非常勤)に就任しました。PHR製品の拡張機能群を開発し、現在も引き続き実施中です。</p>
               <div className="btn_detail_g"><a href="/case-study/#case06">詳細を見る<span className="arrow-right"></span></a></div>
             </div>
           </article>
