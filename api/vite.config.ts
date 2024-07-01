@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/api",
   build: {
-    outDir: "../src/api/js/",
+    outDir: "../src/product/api/js/",
     emptyOutDir: true,
     rollupOptions: {
       output: {

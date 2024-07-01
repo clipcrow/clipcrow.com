@@ -23,16 +23,16 @@ export default (props: { hideFooter: boolean }) => {
           <div className="product_menu">
             <ul>
               <li><a href="/product/"><span>Essential Workware</span></a></li>
-              <li><a href="/usage-example/"><span>解決する課題</span></a></li>
-              <li><a href="/features/"><span>製品機能</span></a></li>
-              <li><a href="/technology/"><span>技術的特長</span></a></li>
-              <li><a href="/api/"><span>API</span></a></li>
+              <li><a href="/product/usage-example/"><span>解決する課題</span></a></li>
+              <li><a href="/product/features/"><span>製品機能</span></a></li>
+              <li><a href="/product/technology/"><span>技術的特長</span></a></li>
+              <li><a href="/product/api/"><span>API</span></a></li>
             </ul>
           </div>
           <div className="product_menu">
             <ul>
-              <li><a href="/rules/"><span>利用規約</span></a></li>
-              <li><a href="/privacy/"><span>プライバシーポリシー</span></a></li>
+              <li><a href="/product/rules/"><span>利用規約</span></a></li>
+              <li><a href="/product/privacy/"><span>プライバシーポリシー</span></a></li>
             </ul>
           </div>
         </div>

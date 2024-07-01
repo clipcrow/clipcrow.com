@@ -1,7 +1,7 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
 export const title = "API | Essential Workware";
-export const script = "/api/js/redoc.js";
+export const script = "/product/api/js/redoc.js";
 
 export default () => (
   <main>

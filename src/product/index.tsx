@@ -73,16 +73,16 @@ export default () => (
     <section id="product_function">
       <h2 className="product_h2">製品の機能</h2>
       <div className="productfunction_index">
-        <Feature clazz="" title="ホームとチームのInfographics" image1="product_screen01-01.jpg" image2="product_screen01-02.jpg" href="/features/#features01">
+        <Feature clazz="" title="ホームとチームのInfographics" image1="product_screen01-01.jpg" image2="product_screen01-02.jpg" href="/product/features/#features01">
           ホームには、現在の自分の状態とチャットの未読メンションおよびブックマークしたカードを表示。チームでは、ユーザー間の連携度合いをグラフ化します。
         </Feature>
-        <Feature clazz="deley02" title="カード型データベース" image1="product_screen02-01.jpg" image2="product_screen02-02.jpg" href="/features/#features02">
+        <Feature clazz="deley02" title="カード型データベース" image1="product_screen02-01.jpg" image2="product_screen02-02.jpg" href="/product/features/#features02">
           DBカードの一覧表示、フィルター（検索）、並び替え、およびDBカードの新規作成ができます。
         </Feature>
-        <Feature clazz="" title="ビジネスチャット" image1="product_screen03-01.jpg" image2="product_screen03-02.jpg" href="/features/#features03">
+        <Feature clazz="" title="ビジネスチャット" image1="product_screen03-01.jpg" image2="product_screen03-02.jpg" href="/product/features/#features03">
           Essential Workwareのカードは、すべてチャットルームを背景に持っています。カード操作ログ、メッセージのやり取りおよび貼り付けられたカードが時系列に沿って表示されます。
         </Feature>
-        <Feature clazz="deley02" title="タスク管理" image1="product_screen04-01.jpg" image2="product_screen04-02.jpg" href="/features/#features04">
+        <Feature clazz="deley02" title="タスク管理" image1="product_screen04-01.jpg" image2="product_screen04-02.jpg" href="/product/features/#features04">
           Essential Workwareのタスク管理はTODOを備忘するだけに留まりません。進捗状態や効率まで可視化することが可能です。
         </Feature>
       </div>

@@ -75,12 +75,12 @@ export default () => (
           <UsageItem image="/assets/images/illust/20.png" target="admin">フリーミアムと利用しやすい価格体系で合理的なコスト負担</UsageItem>
         </UsageBlock>
         <FeatureBlock body="自然発生的に用いられるようになったコンシューマ向けツールをIT統制の観点より組織公式なツールに置き換えるとき。野良チャット撲滅。">
-        <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
-          <FeatureLink href="/features/#features03">ビジネスチャット</FeatureLink>
-          <FeatureLink href="/technology/#technology03">可視性をコントロール</FeatureLink>
-          <FeatureLink href="/technology/#technology04">ビジュアルの活用</FeatureLink>
-          <FeatureLink href="/technology/#technology05">国際化とコンテンツ翻訳</FeatureLink>
-          <FeatureLink href="/technology/#technology06">大画面にも最適化表示</FeatureLink>
+        <FeatureLink href="/product/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/product/features/#features03">ビジネスチャット</FeatureLink>
+          <FeatureLink href="/product/technology/#technology03">可視性をコントロール</FeatureLink>
+          <FeatureLink href="/product/technology/#technology04">ビジュアルの活用</FeatureLink>
+          <FeatureLink href="/product/technology/#technology05">国際化とコンテンツ翻訳</FeatureLink>
+          <FeatureLink href="/product/technology/#technology06">大画面にも最適化表示</FeatureLink>
         </FeatureBlock>
       </article>
 
@@ -91,12 +91,12 @@ export default () => (
           <UsageItem image="/assets/images/illust/09.png" target="staff">よく使うカードはテンプレートとして再利用できる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="紙やスプレッドシートの共有で行っているような雑多でちいさな業務をシステム化するとき。使いながら業務をシステムに乗せてDX実現。">
-          <FeatureLink href="/features/#features01">Infographics</FeatureLink>
-          <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
-          <FeatureLink href="/features/#features03">ビジネスチャット</FeatureLink>
-          <FeatureLink href="/features/#features04">タスク管理</FeatureLink>
-          <FeatureLink href="/technology/#technology01">フォームを自由に作成</FeatureLink>
-          <FeatureLink href="/technology/#technology02">リアルタイム共有</FeatureLink>
+          <FeatureLink href="/product/features/#features01">Infographics</FeatureLink>
+          <FeatureLink href="/product/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/product/features/#features03">ビジネスチャット</FeatureLink>
+          <FeatureLink href="/product/features/#features04">タスク管理</FeatureLink>
+          <FeatureLink href="/product/technology/#technology01">フォームを自由に作成</FeatureLink>
+          <FeatureLink href="/product/technology/#technology02">リアルタイム共有</FeatureLink>
         </FeatureBlock>
       </article>
 
@@ -107,12 +107,12 @@ export default () => (
           <UsageItem image="/assets/images/illust/17.png" target="staff">緻密なコミュニケーション実現で顧客満足度を向上させる</UsageItem>
         </UsageBlock>
         <FeatureBlock body="情報の共有を組織内に止めることなく、ゲストユーザーとして顧客を取り込めることで、緻密なコミュニケーションを実現。組織横断かつ縦断。">
-          <FeatureLink href="/features/#features01">Infographics</FeatureLink>
-          <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
-          <FeatureLink href="/features/#features03">ビジネスチャット</FeatureLink>
-          <FeatureLink href="/technology/#technology03">可視性をコントロール</FeatureLink>
-          <FeatureLink href="/technology/#technology04">ビジュアルの活用</FeatureLink>
-          <FeatureLink href="/technology/#technology05">国際化とコンテンツ翻訳</FeatureLink>
+          <FeatureLink href="/product/features/#features01">Infographics</FeatureLink>
+          <FeatureLink href="/product/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/product/features/#features03">ビジネスチャット</FeatureLink>
+          <FeatureLink href="/product/technology/#technology03">可視性をコントロール</FeatureLink>
+          <FeatureLink href="/product/technology/#technology04">ビジュアルの活用</FeatureLink>
+          <FeatureLink href="/product/technology/#technology05">国際化とコンテンツ翻訳</FeatureLink>
         </FeatureBlock>
       </article>
 
@@ -123,12 +123,12 @@ export default () => (
           <UsageItem image="/assets/images/illust/02.png" target="staff">必要な指示をすぐに出し、タスク割り振りもスムーズに実行</UsageItem>
         </UsageBlock>
         <FeatureBlock body="電子カルテなど既存の業務システムにAPIを利用して連携させて、携帯性の高い情報入出力機能を追加する。フロントウェアとしての使い方。">
-          <FeatureLink href="/features/#features02">カード型データベース</FeatureLink>
-          <FeatureLink href="/features/#features04">タスク管理</FeatureLink>
-          <FeatureLink href="/technology/#technology01">フォームを自由に作成</FeatureLink>
-          <FeatureLink href="/technology/#technology02">リアルタイム共有</FeatureLink>
-          <FeatureLink href="/technology/#technology06">大画面にも最適化表示</FeatureLink>
-          <FeatureLink href="/technology/#technology07">APIとWebhook</FeatureLink>
+          <FeatureLink href="/product/features/#features02">カード型データベース</FeatureLink>
+          <FeatureLink href="/product/features/#features04">タスク管理</FeatureLink>
+          <FeatureLink href="/product/technology/#technology01">フォームを自由に作成</FeatureLink>
+          <FeatureLink href="/product/technology/#technology02">リアルタイム共有</FeatureLink>
+          <FeatureLink href="/product/technology/#technology06">大画面にも最適化表示</FeatureLink>
+          <FeatureLink href="/product/technology/#technology07">APIとWebhook</FeatureLink>
         </FeatureBlock>
       </article>
     </section>
