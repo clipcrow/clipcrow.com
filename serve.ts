@@ -31,9 +31,10 @@ kv.listenQueue(async (body) => {
   }
 });
 
+const getPath = (request: Request) => (new URL(request.url).pathname);
+
 server.use(async (request, next) => {
-  const { method, url } = request;
-  if (method == "POST" && url.endsWith("/slack")) {
+  if (request.method == "POST" && getPath(request) === "/slack") {
     const body = await new Response(request.body).text();
     const result = await kv.enqueue(body);
     return new Response(body, { status: result.ok ? 200 : 500 });
@@ -42,8 +43,7 @@ server.use(async (request, next) => {
 });
 
 server.use(async (request, next) => {
-  const { method, url } = request;
-  if (method == "GET" && url.endsWith("/api/docs.json")) {
+  if (request.method == "GET" && getPath(request) === "/api/docs.json") {
     return await fetch("https://api.ewware.com/docs");
   }
   return await next(request);
