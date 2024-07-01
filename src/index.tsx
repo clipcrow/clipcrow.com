@@ -12,7 +12,7 @@ export default () => (
         <div className="topcopy animated deley01" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
           <h2>システムを磨き、<br />健康で楽しく豊かに。</h2>
           <p>データに基づいた業務最適化を推進し、<br />
-            組織的な健康管理の実現と、<br />
+            心身とも健康管理の組織的な実現と、<br />
             関わる皆さまのQuality of Life向上を目指す。</p>
         </div>
         <div className="toppg animated deley03" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
