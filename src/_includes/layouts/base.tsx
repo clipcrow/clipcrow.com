@@ -6,7 +6,7 @@ import AdobeFont from "@/AdobeFont.tsx";
 
 export default (data: Lume.Data) => (
   <html lang="ja">
-    <head>
+    <head prefix="og: https://ogp.me/ns#">
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
       <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
