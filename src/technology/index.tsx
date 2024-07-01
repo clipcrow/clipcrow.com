@@ -2,7 +2,6 @@ import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
 export const title = "技術的特長 | Essential Workware";
-export const layout = "layouts/base.tsx";
 
 export default () => (
   <main>

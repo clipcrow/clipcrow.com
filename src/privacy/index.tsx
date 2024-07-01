@@ -1,7 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
 export const title = "プライバシーポリシー | Essential Workware";
-export const layout = "layouts/base.tsx";
 
 export default () => (
   <main>

@@ -1,7 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
 export const title = "Essential Workware | クリップクロウ合同会社";
-export const layout = "layouts/baseAdobeFont.tsx";
 
 const Usage = (props: React.PropsWithChildren<{ step: number, clazz: string, title: string, image: string, href: string }>) => (
   <article className={`productcase_item animated ${props.clazz}`} data-scroll="once toggle(.fadeInUp, .invisible) 0,0">

@@ -3,7 +3,6 @@ import DownloadButtons from "@/DownloadButtons.tsx";
 import { React } from "lume/deps/react.ts";
 
 export const title = "解決する課題 | Essential Workware";
-export const layout = "layouts/base.tsx";
 
 const UsageBlock = (props: React.PropsWithChildren<{ step: number, title: string }>) => (
   <>

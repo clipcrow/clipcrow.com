@@ -1,4 +1,3 @@
-import type { Event } from "@/Type.ts";
 import AnimatedCloud from "@/AnimatedCloud.tsx";
 
 export const layout = "layouts/base.tsx";
@@ -14,6 +13,12 @@ const BreadCrumb = (props: { page: number }) => (
       </>}
   </ul>
 );
+
+interface Event {
+  year: string;
+  text: string;
+  link?: string;
+}
 
 const EventList = (props: { list: Event[] }) => (
   props.list.map((row) => (
