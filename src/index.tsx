@@ -33,7 +33,7 @@ export default () => (
           業務従事者と顧客双方でユーザー体験が最適化されるのはこれからの取組み次第となっています。
         </p>
         <p className="animated deley03" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
-          クリップクロウ合同会社は、従業者間のコミュニケーションを円滑にするSaaS「Essential Workware」と、生活必需サービス産業向けSI案件プロデュースとの両輪で、
+          クリップクロウ合同会社は、日常業務のDXと組織内外のコミュニケーションを担うSaaS「Essential Workware」と、生活必需サービス産業向けSI案件プロデュースとの両輪で、
           データに基づく業務最適化と組織的な健康管理および、関わる皆さまそれぞれの自己実現をお手伝いします。</p>
       </div>
     </section>
