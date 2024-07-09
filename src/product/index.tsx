@@ -42,11 +42,10 @@ export default () => (
           <h2 className="animated deley01" data-scroll="once toggle(.fadeIn, .invisible) 0,0"><span className="marker">心が動く、行動が変わる</span></h2>
           <div className="topcon_lead animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
             <p>Essenntial Workware は、<br />
-              スマホへのインストールだけですぐに利用開始できる、<br className="viewpc" />
-              カード型データベース＋ビジネスチャットを<br className="viewpc" />
-              フリーミアムで提供します。<br />
+              カード型データベース機能とビジネスチャット機能を、<br className="viewpc" />
+              スマホへのインストールだけですぐに利用開始できます。<br className="viewpc" />
               同時に提供するタスク管理機能は日々使ううちに<br className="viewpc" />
-              自然と業務の標準化を進めます。</p>
+              自然と業務の標準化を進めます。フリーミアムです。</p>
           </div>
         </article>
         <div className="topcon_img animated deley02" data-scroll="once toggle(.fadeIn, .invisible) 0,0">
