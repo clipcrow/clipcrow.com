@@ -6,9 +6,9 @@ const BreadCrumb = (props: { page: number }) => (
   <ul>
     <li><a href="/">TOP</a></li>
     {props.page === 1 ? 
-      <li>最新情報</li> : 
+      <li>お知らせ</li> : 
       <>
-        <li><a href="/information/">最新情報</a></li>
+        <li><a href="/information/">お知らせ</a></li>
         <li>{props.page}</li>
       </>}
   </ul>
@@ -59,7 +59,7 @@ export default (data: Lume.PaginateResult<Event>) => (
   <main>
     <section id="contents_top">
       <div className="inner">
-        <h1><span className="txt_en">Information</span><span className="txt_j">最新情報</span></h1>
+        <h1><span className="txt_en">Information</span><span className="txt_j">お知らせ</span></h1>
         <div className="bread_crumb">
           <BreadCrumb page={data.pagination.page} />
         </div>
@@ -68,7 +68,7 @@ export default (data: Lume.PaginateResult<Event>) => (
     <section className="main_contents">
       <AnimatedCloud id={5} />
       <div className="column_contents">
-        <h2>クリップクロウと<br className="viewsp" />Essential Workware<br className="viewsp" />の最新情報</h2>
+        <h2>クリップクロウと<br className="viewsp" />Essential Workware</h2>
         <div className="information_index">
           <dl>
             <EventList list={data.results} />

@@ -36,7 +36,7 @@ serveではserve.tsを用いないため、以下を実行する。
 
 サイトのコンテンツが格納されている。テンプレートにはReactを.tsxで利用している。
 
-- 最新情報のメンテナンス
+- お知らせのメンテナンス
     - /src/information/_data/information.yml を編集する
 - 代表社員経歴のメンテナンス
     - /src/leadership/_data/careers.yml を編集する  

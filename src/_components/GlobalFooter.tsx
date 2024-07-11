@@ -13,7 +13,7 @@ export default (props: { hideFooter: boolean }) => {
         <div className="inner">
           <nav>
             <ul>
-              <li><a href="/information/"><span>最新情報</span></a></li>
+              <li><a href="/information/"><span>お知らせ</span></a></li>
               <li><a href="/#business_outline"><span>事業概要</span></a></li>
               <li><a href="/#solution"><span>ご提案</span></a></li>
               <li><a href="/case-study/"><span>事例紹介</span></a></li>
