@@ -1,3 +1,7 @@
+- year: 2024/07/13
+  text: |
+    当該WEBサイトのソースコードを公開しました。CMSとしてLumeを用い、React/Type Scriptで作っています。
+  link: https://github.com/clipcrow/clipcrow.com/
 - year: 2024/07/09
   text: |
     Essential Workware v2.2.3をリリースしました。クリップクロウ合同会社のNoteを開設してリリースノートを投稿しました。
