@@ -7,10 +7,15 @@ export default () => (
   <main>
     <section id="contents_top">
       <div className="inner">
-        <h1><span className="txt_en">Contact Us</span><span className="txt_j">お問い合わせ</span></h1>
+        <h1>
+          <span className="txt_en">Contact Us</span>
+          <span className="txt_j">お問い合わせ</span>
+        </h1>
         <div className="bread_crumb">
           <ul>
-            <li><a href="/">TOP</a></li>
+            <li>
+              <a href="/">TOP</a>
+            </li>
             <li>お問い合わせ</li>
           </ul>
         </div>

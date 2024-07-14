@@ -4,13 +4,17 @@ export const layout = "layouts/base.tsx";
 
 const BreadCrumb = (props: { page: number }) => (
   <ul>
-    <li><a href="/">TOP</a></li>
-    {props.page === 1 ? 
-      <li>お知らせ</li> : 
+    <li>
+      <a href="/">TOP</a>
+    </li>
+    {props.page === 1 ? <li>お知らせ</li> : (
       <>
-        <li><a href="/information/">お知らせ</a></li>
+        <li>
+          <a href="/information/">お知らせ</a>
+        </li>
         <li>{props.page}</li>
-      </>}
+      </>
+    )}
   </ul>
 );
 
@@ -26,40 +30,49 @@ const EventList = (props: { list: Event[] }) => (
       <dt>{row.year}</dt>
       <dd>
         {row.text}
-        {(row.link) ? (
-          <div className="btn_detail btn_w">
-            <a href={row.link}>もっと詳しく</a>
-          </div>
-        ) : null}
+        {(row.link)
+          ? (
+            <div className="btn_detail btn_w">
+              <a href={row.link}>もっと詳しく</a>
+            </div>
+          )
+          : null}
       </dd>
     </div>
   ))
 );
 
-const PageNavigation = (props: {totalPages: number, page: number}) => {
+const PageNavigation = (props: { totalPages: number; page: number }) => {
   if (props.totalPages <= 1) {
     return null;
   }
   return (
     <div className="page_nav">
-      {
-        [...Array(props.totalPages)].map((_, n) => {
-          const caption = n + 1;
-          const current = caption === props.page ? " current" : "";
-          const url = caption === 1 ? "/information/" : `/information/${caption}/`; 
-          return <div className={`btn_page${current}`}><a href={url}>{caption}</a></div>;
-        })
-      }
+      {[...Array(props.totalPages)].map((_, n) => {
+        const caption = n + 1;
+        const current = caption === props.page ? " current" : "";
+        const url = caption === 1
+          ? "/information/"
+          : `/information/${caption}/`;
+        return (
+          <div className={`btn_page${current}`}>
+            <a href={url}>{caption}</a>
+          </div>
+        );
+      })}
     </div>
     //<div className="nav_dot">...</div>
-  )
-}
+  );
+};
 
 export default (data: Lume.PaginateResult<Event>) => (
   <main>
     <section id="contents_top">
       <div className="inner">
-        <h1><span className="txt_en">Information</span><span className="txt_j">お知らせ</span></h1>
+        <h1>
+          <span className="txt_en">Information</span>
+          <span className="txt_j">お知らせ</span>
+        </h1>
         <div className="bread_crumb">
           <BreadCrumb page={data.pagination.page} />
         </div>
@@ -68,13 +81,15 @@ export default (data: Lume.PaginateResult<Event>) => (
     <section className="main_contents">
       <AnimatedCloud id={5} />
       <div className="column_contents">
-        <h2>クリップクロウと<br className="viewsp" />Essential Workware</h2>
+        <h2>
+          クリップクロウと<br className="viewsp" />Essential Workware
+        </h2>
         <div className="information_index">
           <dl>
             <EventList list={data.results} />
           </dl>
-          <PageNavigation {... data.pagination}/>
-        </div>    
+          <PageNavigation {...data.pagination} />
+        </div>
       </div>
     </section>
   </main>

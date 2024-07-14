@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         entryFileNames: `form.js`,
-      }
+      },
     },
   },
 });

@@ -8,17 +8,14 @@ const server = new Server({
   root: `${Deno.cwd()}/_site`,
 });
 
-const kv = await Deno.openKv();
+const getPath = (request: Request) => (new URL(request.url).pathname);
+const slackWebhookURL = Deno.env.get("SLACK_WEBHOOK_URL") ||
+  env["SLACK_WEBHOOK_URL"];
 
-function isBody(test: unknown): test is string {
-  return test !== undefined && typeof test === "string";
-}
-
-kv.listenQueue(async (body) => {
-  if (isBody(body)) {
-    const webhookURL = Deno.env.get("SLACK_WEBHOOK_URL") ||
-    env["SLACK_WEBHOOK_URL"];
-    const response = await fetch(webhookURL, {
+server.use(async (request, next) => {
+  if (request.method == "POST" && getPath(request) === "/slack") {
+    const body = await request.text();
+    const response = await fetch(slackWebhookURL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,16 +25,7 @@ kv.listenQueue(async (body) => {
     if (!response.ok) {
       console.error(response);
     }
-  }
-});
-
-const getPath = (request: Request) => (new URL(request.url).pathname);
-
-server.use(async (request, next) => {
-  if (request.method == "POST" && getPath(request) === "/slack") {
-    const body = await new Response(request.body).text();
-    const result = await kv.enqueue(body);
-    return new Response(body, { status: result.ok ? 200 : 500 });
+    return new Response(body, { status: response.ok ? 200 : 500 });
   }
   return await next(request);
 });

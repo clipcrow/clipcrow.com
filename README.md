@@ -29,7 +29,7 @@ SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシ�
 serveではserve.tsを用いないため、以下を実行する。
 
 ```sh
-% deno run -A --unstable-kv serve.ts
+% deno run -A serve.ts
 ```
 
 ### /src
@@ -37,9 +37,9 @@ serveではserve.tsを用いないため、以下を実行する。
 サイトのコンテンツが格納されている。テンプレートにはReactを.tsxで利用している。
 
 - お知らせのメンテナンス
-    - /src/information/_data/information.yml を編集する
+  - /src/information/_data/information.yml を編集する
 - 代表社員経歴のメンテナンス
-    - /src/leadership/_data/careers.yml を編集する  
+  - /src/leadership/_data/careers.yml を編集する
 
 ### /contact
 
@@ -56,15 +56,19 @@ APIドキュメントを提供するSPA。
 - ローカル環境にプルした後、apiフォルダに移動して、npm installを実行
 - npm run build を実行すると、/src/product/api/js にSPAを出力する
 - 画面上のReDoc Reactコンポーネントでドキュメントを生成する。
-- APIドキュメントの元となるJSONは、/api/docs.json をserve.ts経由でapi.ewware.comより取得する
-
+- APIドキュメントの元となるJSONは、/api/docs.json
+  をserve.ts経由でapi.ewware.comより取得する
 
 ### /.github/workflows
 
-GitHub Actionで、リポジトリへのプッシュがあったときにDeno Deployへ自動配置するようにしている。
+GitHub Actionで、リポジトリへのプッシュがあったときにDeno
+Deployへ自動配置するようにしている。
 
 - GitHub Action の Dockerコンテナ上に、ソースコードをクローンする。
-- Node.js 環境を自動構築して /contact のお問い合わせReactアプリをコンパイルする。
+- Node.js 環境を自動構築して /contact
+  のお問い合わせReactアプリをコンパイルする。
 - Node.js 環境を自動構築して /api のAPIドキュメントReactアプリをコンパイルする。
-- Dockerコンテナ上で Lume を自動実行する。このタイミングでWEBサイト構成物が生成される。
-- denoland/deployctl プラグインを利用して、すべてのWEBサイト構成物をDeno Deployにアップロードする。
+- Dockerコンテナ上で Lume
+  を自動実行する。このタイミングでWEBサイト構成物が生成される。
+- denoland/deployctl プラグインを利用して、すべてのWEBサイト構成物をDeno
+  Deployにアップロードする。
