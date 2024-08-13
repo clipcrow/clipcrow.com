@@ -1,3 +1,7 @@
+- year: 2024/08/13
+  text: |
+    Essential Workware v2.3をリリースしました。アプリ横断でのカード検索ビューとSPA組み込み機能を追加しています。
+  link: https://note.com/clipcrow/n/nd989f3e75c0b
 - year: 2024/07/13
   text: |
     当該WEBサイトのソースコードを公開しました。静的サイトジェネレーターとしてLumeを用い、React/TypeScriptで作っています。
