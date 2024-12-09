@@ -9,6 +9,7 @@
     "std/": "https://deno.land/std@0.224.0/",
     "@/": "./src/_components/"
   },
+  "lock": false,
   "compilerOptions": {
     "types": [
       "lume/types.ts",
