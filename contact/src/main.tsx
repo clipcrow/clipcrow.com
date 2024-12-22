@@ -199,10 +199,10 @@ const App = () => {
             <input
               type="radio"
               id="info"
-              value="Essential Workwareについて"
+              value="ClipCrowについて"
               {...businessBinder}
             />
-            <label htmlFor="info">Essential Workwareについて</label>
+            <label htmlFor="info">ClipCrowについて</label>
           </div>
           <div className="radio_section">
             <input type="radio" id="other" value="その他" {...businessBinder} />

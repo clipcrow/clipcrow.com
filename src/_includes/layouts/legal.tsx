@@ -5,7 +5,7 @@ export const layout = "layouts/base.tsx";
 export default (data: Lume.Data) => (
   <main>
     <section id="product_top">
-      <h1>Essential Workware</h1>
+      <h1>ClipCrow</h1>
     </section>
     <div className="bread_crumb product_crumb">
       <ul>
@@ -13,14 +13,14 @@ export default (data: Lume.Data) => (
           <a href="/">TOP</a>
         </li>
         <li>
-          <a href="/product/">Essential Workware</a>
+          <a href="/product/">ClipCrow</a>
         </li>
         <li>{data.title}</li>
       </ul>
     </div>
     <section className="product_title">
       <h1>
-        Essential Workware <br className="viewsp" />{data.title}
+        ClipCrow <br className="viewsp" />{data.title}
       </h1>
     </section>
 

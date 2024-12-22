@@ -15,7 +15,7 @@ export default () => (
             システムを磨き、<br />健康で楽しく豊かに。
           </h2>
           <p>
-            "Essential Workware"とSI案件プロデュースで<br />
+            SaaS製品"ClipCrow"とSI案件プロデュースで<br />
             データに基づいた業務最適化を推進し、<br />
             心身ともに健康管理の組織的な実現と<br />
             関わる皆さまのQuality of Life向上を目指します。
@@ -58,8 +58,8 @@ export default () => (
           className="animated deley03"
           data-scroll="once toggle(.fadeIn, .invisible) 0,0"
         >
-          クリップクロウ合同会社は、日常業務のDXと組織内外のコミュニケーションを担うSaaS「Essential
-          Workware」と、生活必需サービス産業向けSI案件プロデュースとの両輪で、
+          クリップクロウ合同会社は、日常業務のDXと組織内外のコミュニケーションを担うSaaS製品"ClipCrow"と、
+          生活必需サービス産業向けSI案件プロデュースとの両輪で、
           データに基づく業務最適化と組織的な健康管理および、関わる皆さまそれぞれの自己実現をお手伝いします。
         </p>
       </div>
@@ -140,8 +140,7 @@ export default () => (
           className="switch"
         />
         <p className="img_cap">
-          Essential
-          Workwareが示す製品開発技術を、<br className="viewpc viewtb" />御社の課題解決のために役立てます。
+          ClipCrowが示す製品開発技術を、<br className="viewpc viewtb" />御社の課題解決のために役立てます。
         </p>
       </div>
       <article className="casestudy">

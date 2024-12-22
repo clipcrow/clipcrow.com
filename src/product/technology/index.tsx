@@ -1,12 +1,12 @@
 import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "技術的特長 | Essential Workware";
+export const title = "技術的特長 | ClipCrow";
 
 export default () => (
   <main>
     <section id="product_top">
-      <h1>Essential Workware</h1>
+      <h1>ClipCrow</h1>
     </section>
     <div className="bread_crumb product_crumb">
       <ul>
@@ -14,14 +14,14 @@ export default () => (
           <a href="/">TOP</a>
         </li>
         <li>
-          <a href="/product/">Essential Workware</a>
+          <a href="/product/">ClipCrow</a>
         </li>
         <li>技術的特長</li>
       </ul>
     </div>
     <section className="product_title">
       <h1>
-        Essential Workware<br className="viewsp" />の技術的特長
+        ClipCrow<br className="viewsp" />の技術的特長
       </h1>
     </section>
     <section className="main_contents">
@@ -218,8 +218,7 @@ export default () => (
               </div>
               <div className="technology_txt">
                 <p>
-                  フォトストックサービスの「Unsplash」や、<br />Essential
-                  Workwareを彩る独自キャラクターが登場。
+                  フォトストックサービスの「Unsplash」や、<br />ClipCrowを彩る独自キャラクターが登場。
                 </p>
               </div>
             </div>

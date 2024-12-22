@@ -57,7 +57,7 @@ export default (props: { hideFooter: boolean }) => {
             <ul>
               <li>
                 <a href="/product/">
-                  <span>Essential Workware</span>
+                  <span>ClipCrow</span>
                 </a>
               </li>
               <li>

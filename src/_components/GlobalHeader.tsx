@@ -15,7 +15,7 @@ export default (props: { hideContact: boolean }) => (
             <a href="/#business_outline">事業概要</a>
           </li>
           <li>
-            <a href="/product/">Essential Workware</a>
+            <a href="/product/">ClipCrow</a>
           </li>
         </ul>
         {props.hideContact ? null : (
@@ -38,7 +38,7 @@ export default (props: { hideContact: boolean }) => (
           <a href="/#business_outline">事業概要</a>
         </div>
         <div>
-          <a href="/product/">Essential Workware</a>
+          <a href="/product/">ClipCrow</a>
         </div>
       </div>
       {props.hideContact ? null : (

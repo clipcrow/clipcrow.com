@@ -1,6 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "Essential Workware | クリップクロウ合同会社";
+export const title = "ClipCrow | クリップクロウ合同会社";
 
 const Usage = (
   props: React.PropsWithChildren<
@@ -69,7 +69,7 @@ export default () => (
             className="animated"
             data-scroll="once toggle(.fadeIn, .invisible) 0,0"
           >
-            Essential Workware
+            SaaS製品"ClipCrow"
           </h1>
           <h2
             className="animated deley01"
@@ -82,7 +82,7 @@ export default () => (
             data-scroll="once toggle(.fadeIn, .invisible) 0,0"
           >
             <p>
-              Essenntial Workware は、<br />
+              クリップクロウ合同会社が開発・販売するClipCrowは、<br />
               カード型データベース機能とビジネスチャット機能を、<br className="viewpc" />
               スマホへのインストールだけですぐに利用開始できます。<br className="viewpc" />
               同時に提供するタスク管理機能は日々使ううちに<br className="viewpc" />
@@ -160,8 +160,7 @@ export default () => (
           image2="product_screen03-02.jpg"
           href="/product/features/#features03"
         >
-          Essential
-          Workwareのカードは、すべてチャットルームを背景に持っています。カード操作ログ、メッセージのやり取りおよび貼り付けられたカードが時系列に沿って表示されます。
+          ClipCrowのカードは、すべてチャットルームを背景に持っています。カード操作ログ、メッセージのやり取りおよび貼り付けられたカードが時系列に沿って表示されます。
         </Feature>
         <Feature
           clazz="deley02"
@@ -170,8 +169,7 @@ export default () => (
           image2="product_screen04-02.jpg"
           href="/product/features/#features04"
         >
-          Essential
-          Workwareのタスク管理はTODOを備忘するだけに留まりません。進捗状態や効率まで可視化することが可能です。
+          ClipCrowのタスク管理はTODOを備忘するだけに留まりません。進捗状態や効率まで可視化することが可能です。
         </Feature>
       </div>
     </section>
@@ -190,7 +188,7 @@ export default () => (
           className="animated deley01"
           data-scroll="once toggle(.fadeIn, .invisible) 0,0"
         >
-          Essenntial Workware はフリーミアム。<br />
+          ClipCrowはフリーミアム。<br />
           App Store / Google
           Playから今すぐインストールして、気軽に試使用できます。
         </p>

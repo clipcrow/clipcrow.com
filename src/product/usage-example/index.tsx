@@ -2,7 +2,7 @@ import ActorImg, { Actor } from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 import { React } from "lume/deps/react.ts";
 
-export const title = "解決する課題 | Essential Workware";
+export const title = "解決する課題 | ClipCrow";
 
 const UsageBlock = (
   props: React.PropsWithChildren<{ step: number; title: string }>,
@@ -51,7 +51,7 @@ const FeatureLink = (props: React.PropsWithChildren<{ href: string }>) => (
 export default () => (
   <main>
     <section id="product_top">
-      <h1>Essential Workware</h1>
+      <h1>ClipCrow</h1>
     </section>
     <div className="bread_crumb product_crumb">
       <ul>
@@ -59,14 +59,14 @@ export default () => (
           <a href="/">TOP</a>
         </li>
         <li>
-          <a href="/product/">Essential Workware</a>
+          <a href="/product/">ClipCrow</a>
         </li>
         <li>解決する課題</li>
       </ul>
     </div>
     <section className="product_title">
       <h1>
-        Essential Workware<br className="viewsp" />が解決する課題
+        ClipCrow<br className="viewsp" />が解決する課題
       </h1>
     </section>
 

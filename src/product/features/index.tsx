@@ -1,12 +1,12 @@
 import ActorImg from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "製品機能 | Essential Workware";
+export const title = "製品機能 | ClipCrow";
 
 export default () => (
   <main>
     <section id="product_top">
-      <h1>Essential Workware</h1>
+      <h1>ClipCrow</h1>
     </section>
     <div className="bread_crumb product_crumb">
       <ul>
@@ -14,14 +14,14 @@ export default () => (
           <a href="/">TOP</a>
         </li>
         <li>
-          <a href="/product/">Essential Workware</a>
+          <a href="/product/">ClipCrow</a>
         </li>
         <li>製品機能</li>
       </ul>
     </div>
     <section className="product_title">
       <h1>
-        Essential Workware<br className="viewsp" />の製品機能
+        ClipCrow<br className="viewsp" />の製品機能
       </h1>
     </section>
     <section className="main_contents">
@@ -105,7 +105,7 @@ export default () => (
               DBカードのファシリテーターに含まれているユーザーもしくはタグの保有者だけが、カードを編集できる。
             </p>
             <p>
-              Essential Workwareではすべての DB
+              ClipCrowではすべての DB
               カードにチャットルームが自動的に用意される。
             </p>
             <p>
@@ -149,8 +149,7 @@ export default () => (
               カード操作ログ、メッセージのやりとりおよび貼り付けられたカードが時系列に沿って表示される。
             </p>
             <p>
-              Essential Workware
-              のカードはすべてチャットルームを背後に持つ。<br />
+              ClipCrowのカードはすべてチャットルームを背後に持つ。<br />
               <br />
               チャットルームに表示されるログ・メッセージ・カードすべてにリアクション等の操作が可能。
             </p>
