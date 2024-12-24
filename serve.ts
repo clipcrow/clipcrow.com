@@ -31,7 +31,7 @@ server.use(async (request, next) => {
 
 server.use(async (request, next) => {
   if (request.method == "GET" && getPath(request) === "/api/docs.json") {
-    return await fetch("https://api.ewware.com/docs");
+    return await fetch("https://api.clipcrow.net/docs");
   }
   return await next(request);
 });
