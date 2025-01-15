@@ -1,5 +1,9 @@
 - year: 2024/12/24
   text: |
+    ClipCrow v2.11をリリースしました。フリーミアムなワークスペースのAPIに対する制限を撤廃しました。
+  link: https://note.com/clipcrow/n/n4af31ad3082c
+- year: 2025/1/15
+  text: |
     ClipCrow v2.10をリリースしました。ユーザーの写真アイコンをクリックしたときの画面を整備しました。
     今回バージョンから製品名を変更して、会社名と同じ「ClipCrow」としています。
   link: https://note.com/clipcrow/n/nccf22b014d7b
