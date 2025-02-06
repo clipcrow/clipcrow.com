@@ -1,3 +1,8 @@
+- year: 2025/02/05
+  text: |
+    ClipCrow v22.12をリリースしました。設定画面の再編とオブジェクトのログの詳細化を行いました。
+  link: https://note.com/clipcrow/n/n8675a43d09e7
+
 - year: 2024/12/24
   text: |
     ClipCrow v2.11をリリースしました。フリーミアムなワークスペースのAPIに対する制限を撤廃しました。
