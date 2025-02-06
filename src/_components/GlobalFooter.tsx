@@ -94,6 +94,11 @@ export default (props: { hideFooter: boolean }) => {
                   <span>プライバシーポリシー</span>
                 </a>
               </li>
+              <li>
+                <a href="/product/sales/">
+                  <span>特定商取引法に基づく表記</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
