@@ -14,10 +14,11 @@ layout: "layouts/legal.tsx"
 代表社員 栗原 傑享
 
 ## <span>ホームページ</span>
-https://www.clipcrow.com/product/
+[https://www.clipcrow.com/product/](https://www.clipcrow.com/product/
+)
 
 ## <span>お問い合わせ</span>
-[お問い合わせフォーム](https://www.clipcrow.com/contact/)
+[お問い合わせフォーム: https://www.clipcrow.com/contact/](https://www.clipcrow.com/contact/)
 
 ## <span>販売価格</span>
 商品・サービスごとに販売価格（消費税等含む）を設定し、該当ページで表示します。
