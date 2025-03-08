@@ -12,10 +12,10 @@
   "lock": false,
   "compilerOptions": {
     "types": [
-      "lume/types.ts",
-      "https://unpkg.com/@types/react@18.3.1/index.d.ts"
+      "lume/types.ts"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:react@18.3.1"
+    "jsxImportSource": "npm:react",
+    "jsxImportSourceTypes": "npm:@types/react"
   }
 }
