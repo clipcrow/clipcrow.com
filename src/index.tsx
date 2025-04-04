@@ -108,7 +108,7 @@ export default () => (
           className="business_item animated deley02"
           data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
         >
-          <h3>ClipCrow</h3>
+          <h3>クリップクロウ</h3>
           <p>ゼロから開発プロジェクトを立ち上げられます</p>
           <ul>
             <li>案件コンソーシアム運営</li>
