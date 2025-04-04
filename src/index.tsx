@@ -58,7 +58,7 @@ export default () => (
           className="animated deley03"
           data-scroll="once toggle(.fadeIn, .invisible) 0,0"
         >
-          クリップクロウ合同会社は、日常業務のDXと組織内外のコミュニケーションを担うSaaS製品"ClipCrow"と、
+          クリップクロウは、日常業務のDXと組織内外のコミュニケーションを担うSaaS製品"ClipCrow"と、
           生活必需サービス産業向けSI案件プロデュースとの両輪で、
           データに基づく業務最適化と組織的な健康管理および、関わる皆さまそれぞれの自己実現をお手伝いします。
         </p>
@@ -293,7 +293,88 @@ export default () => (
 
     <section id="company_profile">
       <h2>
-        <span>Company Profile</span>企業情報
+        <span>Company Profile 1</span>企業情報 - 独自SaaS事業の創造
+      </h2>
+      <dl>
+        <dt
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          社名
+        </dt>
+        <dd
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          クリップクロウ株式会社
+        </dd>
+        <dt
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          設立年月日
+        </dt>
+        <dd
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          2025年4月1日
+        </dd>
+        <dt
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          代表社員
+        </dt>
+        <dd
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          栗原傑享/くりはらまさたか<div className="btn_detail">
+            <a href="/leadership/">
+              詳細<span className="arrow-right"></span>
+            </a>
+          </div>
+        </dd>
+        <dt
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          住所
+        </dt>
+        <dd
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          〒158-0083 東京都世田谷区奥沢1-37-2
+        </dd>
+        <dt
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          定款記載の目的
+        </dt>
+        <dd
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          <ul>
+            <li>
+              コンピューターソフトウェア及びハードウェアの企画、研究、開発、設計、製造、
+              販売、保守、リース、賃貸、輸出入並びにこれらに関するコンサルティング業務
+            </li>
+            <li>
+              情報の収集、分析、管理及び処理サービス業、情報提供サービス業並びに情報処理に関する研究開発
+            </li>
+            <li>前各号に附帯関連する一切の事業</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <br/>
+
+      <h2>
+        <span>Company Profile 2</span>企業情報 - SI案件プロデュース
       </h2>
       <dl>
         <dt

@@ -82,7 +82,7 @@ export default (data: Lume.PaginateResult<Event>) => (
       <AnimatedCloud id={5} />
       <div className="column_contents">
         <h2>
-          クリップクロウ合同会社と<br className="viewsp" />”ClipCrow"
+          クリップクロウと<br className="viewsp" />”ClipCrow"
         </h2>
         <div className="information_index">
           <dl>

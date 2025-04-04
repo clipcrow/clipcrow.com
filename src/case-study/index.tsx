@@ -1,6 +1,6 @@
 import AnimatedCloud from "@/AnimatedCloud.tsx";
 
-export const title = "事例紹介 | クリップクロウ合同会社";
+export const title = "事例紹介 | クリップクロウ";
 
 export default () => (
   <main>

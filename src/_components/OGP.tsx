@@ -3,15 +3,15 @@ export default (
 ) => (
   <>
     <title>{props.title}</title>
-    <meta name="Author" content="ClipCrow LLC." />
+    <meta name="Author" content="ClipCrow Co. Ltd." />
     <meta
       name="description"
       content={props.description?.replaceAll(/[\n\r]/g, "")}
     />
-    <meta property="og:site_name" content="クリップクロウ合同会社" />
+    <meta property="og:site_name" content="クリップクロウ株式会社" />
     <meta
       property="og:title"
-      content={props.title || "クリップクロウ合同会社"}
+      content={props.title || "クリップクロウ株式会社"}
     />
     <meta
       property="og:url"

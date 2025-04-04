@@ -1,6 +1,6 @@
 import AnimatedCloud from "@/AnimatedCloud.tsx";
 
-export const title = "お問い合わせ | クリップクロウ合同会社";
+export const title = "お問い合わせ | クリップクロウ";
 export const script = "/contact/js/form.js";
 
 export default () => (

@@ -17,12 +17,10 @@ export default (props: { hideFooter: boolean }) => {
           <a href="/">
             <img
               src="/assets/images/common/logo_ClipCrow_w.svg"
-              alt="クリップクロウ合同会社"
+              alt="クリップクロウ"
             />
           </a>
         </h2>
-        <p className="company_address">クリップクロウ合同会社</p>
-
         <div className="inner">
           <nav>
             <ul>
@@ -97,6 +95,11 @@ export default (props: { hideFooter: boolean }) => {
               <li>
                 <a href="/product/sales/">
                   <span>特定商取引法に基づく表記</span>
+                </a>
+              </li>
+              <li>
+                <a href="/security/">
+                  <span>情報セキュリティ方針</span>
                 </a>
               </li>
             </ul>

@@ -15,7 +15,7 @@ export default function* (data: InformationData) {
     })
   ) {
     const n = page.pagination.page;
-    page.title = `お知らせ${n === 1 ? "" : `(${n})`} | クリップクロウ合同会社`;
+    page.title = `お知らせ${n === 1 ? "" : `(${n})`} | クリップクロウ`;
     page.layout = "layouts/information.tsx";
     page.description = `${latest.year}: ${latest.text}`;
     yield page;

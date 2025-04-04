@@ -5,13 +5,13 @@ layout: "layouts/legal.tsx"
 ---
 
 ## <span>販売事業者名</span>
-クリップクロウ合同会社
+クリップクロウ株式会社
 
 ## <span>販売事業者所在地</span>
 東京都世田谷区奥沢1-37-2
 
 ## <span>代表者</span>
-代表社員 栗原 傑享
+代表取締役 栗原 傑享
 
 ## <span>ホームページ</span>
 [https://www.clipcrow.com/product/](https://www.clipcrow.com/product/

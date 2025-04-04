@@ -1,6 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "404 ページが見つかりません | クリップクロウ合同会社";
+export const title = "404 ページが見つかりません | クリップクロウ";
 
 export default () => (
   <main>

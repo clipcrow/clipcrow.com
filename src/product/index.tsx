@@ -1,6 +1,6 @@
 import DownloadButtons from "@/DownloadButtons.tsx";
 
-export const title = "ClipCrow | クリップクロウ合同会社";
+export const title = "ClipCrow | クリップクロウ";
 
 const Usage = (
   props: React.PropsWithChildren<
@@ -82,7 +82,7 @@ export default () => (
             data-scroll="once toggle(.fadeIn, .invisible) 0,0"
           >
             <p>
-              クリップクロウ合同会社が開発・販売するClipCrowは、<br />
+              クリップクロウが開発・販売する"ClipCrow"は、<br />
               カード型データベース機能とビジネスチャット機能を、<br className="viewpc" />
               スマホへのインストールだけですぐに利用開始できます。<br className="viewpc" />
               同時に提供するタスク管理機能は日々使ううちに<br className="viewpc" />

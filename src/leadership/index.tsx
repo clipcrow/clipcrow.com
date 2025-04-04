@@ -1,6 +1,6 @@
 import AnimatedCloud from "@/AnimatedCloud.tsx";
 
-export const title = "代表社員経歴 | クリップクロウ合同会社";
+export const title = "代表社員経歴 | クリップクロウ";
 
 interface CareersData extends Lume.Data {
   careers: {
