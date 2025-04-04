@@ -92,7 +92,7 @@ export default () => (
           data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
         >
           <h3>
-            <a href="https://genkisystem.com/" target="_blank">Genki Systems</a>
+            <a href="https://genkisystem.com/" target="_blank">GENKI SYSTEM</a>
           </h3>
           <p>オフショアで高度ソフトウェア開発を行います</p>
           <ul>
