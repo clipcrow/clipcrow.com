@@ -324,7 +324,7 @@ export default () => (
           className="animated deley02"
           data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
         >
-          代表社員
+          代表取締役
         </dt>
         <dd
           className="animated deley02"
