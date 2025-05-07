@@ -1,3 +1,7 @@
+- year: 2025/04/28
+  text: |
+    ClipCrow v2.18をリリースしました。画面の実装基盤の刷新と、基盤ゆえにQAにいつもより時間を割きました
+  link: https://note.com/clipcrow/n/na3df3e852c64
 - year: 2025/04/15
   text: |
     ClipCrow v2.17をリリースしました。カード詳細とチャットの行き来のUXを改善しました。
