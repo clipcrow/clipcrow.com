@@ -1,3 +1,7 @@
+- year: 2025/05/13
+  text: |
+    ClipCrow v2.19をリリースしました。チャットボットと連続した会話を行うための基盤を備えました。
+  link: https://note.com/clipcrow/n/n51bb8fff5bfa
 - year: 2025/04/28
   text: |
     ClipCrow v2.18をリリースしました。画面の実装基盤の刷新と、基盤ゆえにQAにいつもより時間を割きました
