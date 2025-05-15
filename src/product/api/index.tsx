@@ -21,7 +21,7 @@ export default () => (
     </div>
     <section className="product_title">
       <h1>
-      ClipCrow<br className="viewsp" />のAPI一覧
+        ClipCrow<br className="viewsp" />のAPI一覧
       </h1>
     </section>
     <DownloadButtons />

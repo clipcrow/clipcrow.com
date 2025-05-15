@@ -12,7 +12,9 @@ export default (data: Lume.Data) => (
         </h1>
         <div className="bread_crumb">
           <ul>
-            <li><a href="/">TOP</a></li>
+            <li>
+              <a href="/">TOP</a>
+            </li>
             <li>{data.title}</li>
           </ul>
         </div>

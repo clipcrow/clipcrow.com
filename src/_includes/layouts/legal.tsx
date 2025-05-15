@@ -20,7 +20,8 @@ export default (data: Lume.Data) => (
     </div>
     <section className="product_title">
       <h1>
-        ClipCrow <br className="viewsp" />{data.title}
+        ClipCrow <br className="viewsp" />
+        {data.title}
       </h1>
     </section>
 

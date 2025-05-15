@@ -371,7 +371,7 @@ export default () => (
         </dd>
       </dl>
 
-      <br/>
+      <br />
 
       <h2>
         <span>Company Profile 2</span>企業情報 - SI案件プロデュース

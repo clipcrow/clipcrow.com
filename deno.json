@@ -5,10 +5,11 @@
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.2.1/",
+    "lume/": "https://deno.land/x/lume@v2.5.3/",
     "std/": "https://deno.land/std@0.224.0/",
     "@/": "./src/_components/"
   },
+  "unstable": ["temporal"],
   "lock": false,
   "compilerOptions": {
     "types": [

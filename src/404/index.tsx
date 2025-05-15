@@ -11,7 +11,7 @@ export default () => (
       <article className="inner notfound_contents">
         <div className="notfound_txt">
           <p>
-              SaaS製品"ClipCrow"に関して、<br className="viewsp" />くわしくは<a href="/product/">
+            SaaS製品"ClipCrow"に関して、<br className="viewsp" />くわしくは<a href="/product/">
               こちら
             </a>をご覧ください。
           </p>

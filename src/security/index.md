@@ -24,8 +24,6 @@ layout: "layouts/corporate.tsx"
 
 <br/>
 
-クリップクロウ株式会社 代表取締役 栗原傑享
-{.align_right}
+クリップクロウ株式会社 代表取締役 栗原傑享 {.align_right}
 
-2025年04月01日 制定・施行
-{.align_right}
+2025年04月01日 制定・施行 {.align_right}
