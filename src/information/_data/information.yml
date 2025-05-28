@@ -1,3 +1,7 @@
+- year: 2025/05/28
+  text: |
+    ClipCrow v2.20をリリースしました。データベース画面の遷移の改善とチャットメッセージのMarkdown対応を行いました。
+  link: https://note.com/clipcrow/n/n38528e63bbd4
 - year: 2025/05/13
   text: |
     ClipCrow v2.19をリリースしました。チャットボットと連続した会話を行うための基盤を備えました。
