@@ -3,9 +3,13 @@ import DownloadButtons from "@/DownloadButtons.tsx";
 export const title = "ClipCrow | クリップクロウ";
 
 const Usage = (
-  props: React.PropsWithChildren<
-    { step: number; clazz: string; title: string; image: string; href: string }
-  >,
+  props: {
+    children: JSX.Children;
+    step: number;
+    clazz: string;
+    title: string;
+    image: string;
+    href: string }
 ) => (
   <article
     className={`productcase_item animated ${props.clazz}`}
@@ -28,15 +32,14 @@ const Usage = (
 );
 
 const Feature = (
-  props: React.PropsWithChildren<
-    {
-      clazz: string;
-      title: string;
-      image1: string;
-      image2: string;
-      href: string;
-    }
-  >,
+  props: {
+    children: JSX.Children;
+    clazz: string;
+    title: string;
+    image1: string;
+    image2: string;
+    href: string;
+  }
 ) => (
   <article
     className={`productfunction_item animated ${props.clazz}`}

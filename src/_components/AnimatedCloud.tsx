@@ -9,7 +9,8 @@ export default (props: { id: number }) => {
           height="250"
           viewBox="0 0 330 214"
         >
-          <path fill="#6C848D" fillOpacity="0.5">
+          <path fill="#6C848D" fill-opacity="0.5">
+            {/* ReactのJSXランタイムではfillOpacityだったが、SSXではfill-opacityに修正されていた */}
             <animate
               attributeName="d"
               dur="6s"
@@ -37,7 +38,7 @@ export default (props: { id: number }) => {
           viewBox="0 0 371 318"
           fill="none"
         >
-          <path fill="white" fillOpacity="0.47">
+          <path fill="white" fill-opacity="0.47">
             <animate
               attributeName="d"
               dur="8s"
@@ -65,7 +66,7 @@ export default (props: { id: number }) => {
           viewBox="0 0 254 292"
           fill="none"
         >
-          <path fill="#AFBBBF" fillOpacity="0.4">
+          <path fill="#AFBBBF" fill-opacity="0.4">
             <animate
               attributeName="d"
               dur="6s"
@@ -93,7 +94,7 @@ export default (props: { id: number }) => {
           viewBox="0 0 291 321"
           fill="none"
         >
-          <path fill="#6C848D" fillOpacity="0.2">
+          <path fill="#6C848D" fill-opacity="0.2">
             <animate
               attributeName="d"
               dur="8s"
@@ -121,7 +122,7 @@ export default (props: { id: number }) => {
           viewBox="0 0 573 502"
           fill="none"
         >
-          <path fill="#AFBBBF" fillOpacity="0.2">
+          <path fill="#AFBBBF" fill-opacity="0.2">
             <animate
               attributeName="d"
               dur="8s"
@@ -149,7 +150,7 @@ export default (props: { id: number }) => {
           viewBox="0 0 350 292"
           fill="none"
         >
-          <path fill="#6C848D" fillOpacity="0.1">
+          <path fill="#6C848D" fill-opacity="0.1">
             <animate
               attributeName="d"
               dur="4s"
@@ -177,7 +178,7 @@ export default (props: { id: number }) => {
           viewBox="0 0 573 502"
           fill="none"
         >
-          <path fill="#AFBBBF" fillOpacity="0.2">
+          <path fill="#AFBBBF" fill-opacity="0.2">
             <animate
               attributeName="d"
               dur="6s"

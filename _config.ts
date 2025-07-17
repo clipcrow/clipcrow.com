@@ -11,9 +11,9 @@ const site = lume({
 
 site.use(jsx());
 
-site.copy("favicon.ico");
-site.copy("apple-touch-icon.png");
-site.copy("assets");
-site.copy([".jpg", ".png", ".svg", ".js"]);
+site.add("favicon.ico");
+site.add("apple-touch-icon.png");
+site.add("assets");
+site.add([".jpg", ".png", ".svg", ".js"]);
 
 export default site;

@@ -1,11 +1,14 @@
 import ActorImg, { Actor } from "@/ActorImg.tsx";
 import DownloadButtons from "@/DownloadButtons.tsx";
-import { React } from "lume/deps/react.ts";
 
 export const title = "解決する課題 | ClipCrow";
 
 const UsageBlock = (
-  props: React.PropsWithChildren<{ step: number; title: string }>,
+  props: {
+    children: JSX.Children;
+    step: number;
+    title: string
+  }
 ) => (
   <>
     <h2>
@@ -19,7 +22,11 @@ const UsageBlock = (
 );
 
 const UsageItem = (
-  props: React.PropsWithChildren<{ image: string; target: Actor }>,
+  props: {
+    children: JSX.Children;
+    image: string;
+    target: Actor
+  }
 ) => (
   <div className="usage_item">
     <div className="productcase_img">
@@ -32,7 +39,7 @@ const UsageItem = (
   </div>
 );
 
-const FeatureBlock = (props: React.PropsWithChildren<{ body: string }>) => (
+const FeatureBlock = (props: { children: JSX.Children, body: string }) => (
   <div className="productusage_detail">
     <p>{props.body}</p>
     <h3>関係する機能や特長</h3>
@@ -42,7 +49,7 @@ const FeatureBlock = (props: React.PropsWithChildren<{ body: string }>) => (
   </div>
 );
 
-const FeatureLink = (props: React.PropsWithChildren<{ href: string }>) => (
+const FeatureLink = (props: {  children: JSX.Children, href: string }) => (
   <div className="productusage_btn">
     <a href={props.href}>{props.children}</a>
   </div>

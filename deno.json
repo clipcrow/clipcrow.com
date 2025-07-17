@@ -5,18 +5,26 @@
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.5.3/",
+    "lume/": "https://deno.land/x/lume@v3.0.4/",
     "std/": "https://deno.land/std@0.224.0/",
-    "@/": "./src/_components/"
+    "@/": "./src/_components/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.10/jsx-runtime.ts"
   },
-  "unstable": ["temporal"],
+  "unstable": [
+    "temporal",
+    "fmt-component"
+  ],
   "lock": false,
   "compilerOptions": {
     "types": [
       "lume/types.ts"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:react",
-    "jsxImportSourceTypes": "npm:@types/react"
+    "jsxImportSource": "lume"
+  },
+  "lint": {
+    "plugins": [
+      "https://deno.land/x/lume@v3.0.4/lint.ts"
+    ]
   }
 }
