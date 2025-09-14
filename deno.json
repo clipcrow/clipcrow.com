@@ -2,10 +2,12 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
-    "serve": "deno task lume -s"
+    "serve": "deno task lume -s",
+    "cms": "deno task lume cms"
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v3.0.6/",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.12.5/",
     "std/": "https://deno.land/std@0.224.0/",
     "@/": "./src/_components/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.12/jsx-runtime.ts"

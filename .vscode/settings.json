@@ -1,5 +1,5 @@
 {
   "deno.enable": true,
   "deno.config": "deno.json",
-  "deno.enablePaths": ["serve.ts", "_config.ts", "src"]
+  "deno.enablePaths": ["serve.ts", "_config.ts", "_cms.ts", "src"]
 }
