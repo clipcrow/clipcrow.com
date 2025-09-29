@@ -7,9 +7,13 @@ interface InformationData extends Lume.Data {
 }
 
 export default function* (data: InformationData) {
-  const latest = data.information[0];
+  const sorted = data.information.sort((a, b) => (
+    Date.parse(b.year) - Date.parse(a.year)
+  ));
+
+  const latest = sorted[0];
   for (
-    const page of data.paginate(data.information, {
+    const page of data.paginate(sorted, {
       url: (n) => (n === 1 ? "/information/" : `/information/${n}/`),
       size: 10,
     })
