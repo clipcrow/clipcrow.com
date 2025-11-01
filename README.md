@@ -12,7 +12,7 @@ SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシ�
 を使用して構築されたサイト。以下の手順に従ってメンテナンスや操作を行える。
 
 - Deno をインストールする
-  [reference](https://deno.com/manual@v1.34.3/getting_started/installation)
+  [reference](https://docs.deno.com/runtime/getting_started/installation/)
 - このリポジトリをローカル環境にCloneする。リポジトリのルートフォルダに移動する
 - 下記コマンドを実行する。WEBブラウザが自動的に開き、WEBサイトをプレビューできる
 
@@ -20,7 +20,7 @@ SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシ�
 % deno task serve
 ```
 
-お問い合わせSPAからの送信は、serve.ts で受診している。以下の設定を行う。
+お問い合わせSPAからの送信は、serve.ts で受信している。以下の設定を行う。
 
 - .envファイルを用意して、"SLACK_WEBHOOK_URL"キーにSlack Webhook URLを記載する。
 - Deno Deployに、同上のキーを用意する。
@@ -35,11 +35,6 @@ serveではserve.tsを用いないため、以下を実行する。
 ### /src
 
 サイトのコンテンツが格納されている。テンプレートにはReactを.tsxで利用している。
-
-- お知らせのメンテナンス
-  - /src/information/_data/information.yml を編集する
-- 代表社員経歴のメンテナンス
-  - /src/leadership/_data/careers.yml を編集する
 
 ### /contact
 
@@ -76,3 +71,8 @@ Deployへ自動配置するようにしている。
 ## CMS機能
 
 deno task serveで起動したデバッグサーバーで、/admin にアクセスするとCMS機能でコンテンツをメンテンナスできる。
+
+- お知らせ
+  - /src/information/_data/information.yml を保存先としている
+- 代表社員経歴
+  - /src/leadership/_data/careers.yml を保存先としている
