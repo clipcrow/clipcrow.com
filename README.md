@@ -72,3 +72,7 @@ Deployへ自動配置するようにしている。
   を自動実行する。このタイミングでWEBサイト構成物が生成される。
 - denoland/deployctl プラグインを利用して、すべてのWEBサイト構成物をDeno
   Deployにアップロードする。
+
+## CMS機能
+
+deno task serveで起動したデバッグサーバーで、/admin にアクセスするとCMS機能でコンテンツをメンテンナスできる。

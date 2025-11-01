@@ -2,23 +2,25 @@ import lumeCMS from "lume/cms/mod.ts";
 
 const cms = lumeCMS();
 
-cms.document("お知らせ", "src:information/_data/information.yml", [{
-    name: "[]",
+cms.document({
+    name: "お知らせ",
+    store: "src:information/_data/information.yml",
     type: "object-list",
     fields: [
         "year: text",
         "text: textarea",
         "link: url",
-    ]}],
-);
+    ],
+});
 
-cms.document("代表社員経歴", "src:leadership/_data/careers.yml", [{
-    name: "[]",
+cms.document({
+    name: "代表社員経歴",
+    store: "src:leadership/_data/careers.yml",
     type: "object-list",
     fields: [
         "year: text",
         "text: textarea",
-    ]}],
-);
+    ],
+});
 
 export default cms;
