@@ -4,108 +4,111 @@
   text: Essential Workware v2.2.2をリリースしました。
 - year: 2024/07/09
   text: Essential Workware v2.2.3をリリースしました。クリップクロウ合同会社のNoteを開設してリリースノートを投稿しました。
-  link: 'https://note.com/clipcrow/n/nde692c2e5d78'
+  link: https://note.com/clipcrow/n/nde692c2e5d78
 - year: 2024/07/13
   text: クリップクロウ内部で利用していたSlackボットのソースコードを公開しました。プルリクエストのレビューを可視化するツールです。
-  link: 'https://github.com/clipcrow/pr2slack/'
+  link: https://github.com/clipcrow/pr2slack/
 - year: 2024/07/13
   text: 当該WEBサイトのソースコードを公開しました。静的サイトジェネレーターとしてLumeを用い、React/TypeScriptで作っています。
-  link: 'https://github.com/clipcrow/clipcrow.com/'
+  link: https://github.com/clipcrow/clipcrow.com/
 - year: 2024/08/13
   text: Essential Workware v2.3をリリースしました。アプリ横断でのカード検索ビューとSPA組み込み機能を追加しています。
-  link: 'https://note.com/clipcrow/n/nd989f3e75c0b'
+  link: https://note.com/clipcrow/n/nd989f3e75c0b
 - year: 2024/09/02
   text: Essential Workware v2.4をリリースしました。タスクを複数担当者で実行する際に設定で完了条件を変えられます。
-  link: 'https://note.com/clipcrow/n/nf626044fa540'
+  link: https://note.com/clipcrow/n/nf626044fa540
 - year: 2024/10/02
   text: Essential Workware v2.5をリリースしました。汎用の検索機能と、チャットにスレッド返信などの諸機能を追加しています。
-  link: 'https://note.com/clipcrow/n/n4c2b25d59997'
+  link: https://note.com/clipcrow/n/n4c2b25d59997
 - year: 2024/10/24
   text: Essential Workware v2.6をリリースしました。カードの定義とインスタンス一覧をまとめて「データベース」機能へ。
-  link: 'https://note.com/clipcrow/n/nd74ccb266f99'
+  link: https://note.com/clipcrow/n/nd74ccb266f99
 - year: 2024/11/08
   text: Essential Workware v2.7をリリースしました。ユーザー毎に可変なナビゲーションを設定する。DAO対応機能 (1)
-  link: 'https://note.com/clipcrow/n/n2203b84f6105'
+  link: https://note.com/clipcrow/n/n2203b84f6105
 - year: 2024/11/27
   text: Essential Workware v2.8をリリースしました。担当者が大人数になったタスクの操作。DAO対応機能 (2)
-  link: 'https://note.com/clipcrow/n/n0002d694cd81'
+  link: https://note.com/clipcrow/n/n0002d694cd81
 - year: 2024/12/11
   text: Essential Workware v2.9をリリースしました。カードに追加されたWebHookを通じて生成AIボットと連携する。
-  link: 'https://note.com/clipcrow/n/nb380163cb182'
+  link: https://note.com/clipcrow/n/nb380163cb182
 - year: 2024/12/24
   text: |
     ClipCrow v2.10をリリースしました。ユーザーの写真アイコンをクリックしたときの画面を整備しました。
     今回バージョンから製品名を変更して、会社名と同じ「ClipCrow」としています。
-  link: 'https://note.com/clipcrow/n/nccf22b014d7b'
+  link: https://note.com/clipcrow/n/nccf22b014d7b
 - year: 2025/01/15
   text: ClipCrow v2.11をリリースしました。フリーミアムなワークスペースのAPIに対する制限を撤廃しました。
-  link: 'https://note.com/clipcrow/n/n4af31ad3082c'
+  link: https://note.com/clipcrow/n/n4af31ad3082c
 - year: 2025/02/05
   text: ClipCrow v2.12をリリースしました。設定画面の再編とオブジェクトのログの詳細化を行いました。
-  link: 'https://note.com/clipcrow/n/n8675a43d09e7'
+  link: https://note.com/clipcrow/n/n8675a43d09e7
 - year: 2025/02/18
   text: ClipCrow v2.13をリリースしました。ブラウザ版をリリース、クレジットカード決済によるシート販売開始。
-  link: 'https://note.com/clipcrow/n/n8eb90a7d0cb5'
+  link: https://note.com/clipcrow/n/n8eb90a7d0cb5
 - year: 2025/03/05
   text: ClipCrow v2.14をリリースしました。カードをアーカイブする機能を追加しました。
-  link: 'https://note.com/clipcrow/n/nfd9108687751'
+  link: https://note.com/clipcrow/n/nfd9108687751
 - year: 2025/03/27
   text: ClipCrow v2.15をリリースしました。新仕様ゲスト権限として統合されたCRM機能を提供しました。
-  link: 'https://note.com/clipcrow/n/n47e4bbe62f23'
+  link: https://note.com/clipcrow/n/n47e4bbe62f23
 - year: 2025/04/01
   text: クリップクロウ"株式会社"を2025年4月1日に設立しました。
-  link: 'https://note.com/clipcrow/n/n01e35d863c6d'
+  link: https://note.com/clipcrow/n/n01e35d863c6d
 - year: 2025/04/01
   text: ClipCrow v2.16をリリースしました。メッセージへのリアクションで用いる絵文字の関連を改善しました。
-  link: 'https://note.com/clipcrow/n/nfbeb7089d15f'
+  link: https://note.com/clipcrow/n/nfbeb7089d15f
 - year: 2025/04/15
   text: ClipCrow v2.17をリリースしました。カード詳細とチャットの行き来のUXを改善しました。
-  link: 'https://note.com/clipcrow/n/n660e8310a653'
+  link: https://note.com/clipcrow/n/n660e8310a653
 - year: 2025/04/28
   text: ClipCrow v2.18をリリースしました。画面の実装基盤の刷新と、基盤ゆえにQAにいつもより時間を割きました
-  link: 'https://note.com/clipcrow/n/na3df3e852c64'
+  link: https://note.com/clipcrow/n/na3df3e852c64
 - year: 2025/05/13
   text: ClipCrow v2.19をリリースしました。チャットボットと連続した会話を行うための基盤を備えました。
-  link: 'https://note.com/clipcrow/n/n51bb8fff5bfa'
+  link: https://note.com/clipcrow/n/n51bb8fff5bfa
 - year: 2025/05/28
   text: ClipCrow v2.20をリリースしました。データベース画面の遷移の改善とチャットメッセージのMarkdown対応を行いました。
-  link: 'https://note.com/clipcrow/n/n38528e63bbd4'
+  link: https://note.com/clipcrow/n/n38528e63bbd4
 - year: 2025/06/11
   text: ClipCrow v2.21をリリースしました。メンションUIの改善と実装の最適化を行いました。
-  link: 'https://note.com/clipcrow/n/n4417750989f0'
+  link: https://note.com/clipcrow/n/n4417750989f0
 - year: 2025/06/25
   text: ClipCrow v2.22をリリースしました。「通知」画面を仕様から見直してチャットの表示体裁にあわせました。
-  link: 'https://note.com/clipcrow/n/nc3747d9d01bd'
+  link: https://note.com/clipcrow/n/nc3747d9d01bd
 - year: 2025/07/08
   text: ClipCrow v2.23をリリースしました。フリーミアム版の機能制限を撤廃しました。
-  link: 'https://note.com/clipcrow/n/n43fdda5f6d90'
+  link: https://note.com/clipcrow/n/n43fdda5f6d90
 - year: 2025/07/25
   text: ClipCrow v2.24をリリースしました。利用しているAndroidとGo言語のバージョン更新。事業面ではシードラウンド完了。
-  link: 'https://note.com/clipcrow/n/n874673c04c57'
+  link: https://note.com/clipcrow/n/n874673c04c57
 - year: 2025/08/06
   text: ClipCrow v2.25をリリースしました。特定利用条件下でのみ発生する課題への対応を行っています。
-  link: 'https://note.com/clipcrow/n/n654e5fd3dce2'
+  link: https://note.com/clipcrow/n/n654e5fd3dce2
 - year: 2025/08/20
   text: ClipCrow v2.26をリリースしました。ゲストチャットにおいてリアルタイム性にともなう問題を修正しました。
-  link: 'https://note.com/clipcrow/n/n56257501e77b'
+  link: https://note.com/clipcrow/n/n56257501e77b
 - year: 2025/09/03
   text: ClipCrow v2.27をリリースしました。ClipCrow v2のマイルストーンとなるリリースを行いました。
-  link: 'https://note.com/clipcrow/n/n625f6c59cef6'
+  link: https://note.com/clipcrow/n/n625f6c59cef6
 - year: 2025/09/22
   text: ClipCrow v3.0をリリースしました。カードの項目およびチャットへの貼付けでファイルを共有する。
-  link: 'https://note.com/clipcrow/n/n452d0ea35698'
+  link: https://note.com/clipcrow/n/n452d0ea35698
 - year: 2025/10/01
   text: ClipCrow v3.1をリリースしました。通し番号でカードの参照を投稿するのと、タグを用いたメンション
-  link: 'https://note.com/clipcrow/n/nf5c19c5924d0'
+  link: https://note.com/clipcrow/n/nf5c19c5924d0
 - year: 2025/10/14
   text: ClipCrow v3.2をリリースしました。ファイル共有機能とカード参照の投稿とに便利機能を追加しました
-  link: 'https://note.com/clipcrow/n/n4e69533ebc30'
+  link: https://note.com/clipcrow/n/n4e69533ebc30
 - year: 2025/10/29
   text: ClipCrow v3.3をリリースしました。詳細画面とチャット画面の遷移に3D効果を付与しました
-  link: 'https://note.com/clipcrow/n/nb118245dac29'
+  link: https://note.com/clipcrow/n/nb118245dac29
 - year: 2025/11/12
   text: ClipCrow v3.4をリリースしました。大画面時の表示とカード一覧のフィルタに機能を追加しました
-  link: 'https://note.com/clipcrow/n/nb2e854f6772a'
+  link: https://note.com/clipcrow/n/nb2e854f6772a
 - year: 2025/11/25
   text: ClipCrow v3.5をリリースしました。「フォルダ」と「テンプレート」のデザインを改良しました
-  link: 'https://note.com/clipcrow/n/n70822a7f0987'
+  link: https://note.com/clipcrow/n/n70822a7f0987
+- year: 2025/12/17
+  text: ClipCrow v3.6をリリースしました。生成AIエージェントをBOTアカウントに組み込み、ワンストップで実現しました
+  link: https://note.com/clipcrow/n/nb77b94f17dc3
