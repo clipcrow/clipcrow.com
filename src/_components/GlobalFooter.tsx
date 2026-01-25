@@ -73,11 +73,7 @@ export default (props: { hideFooter: boolean }) => {
                   <span>技術的特長</span>
                 </a>
               </li>
-              <li>
-                <a href="/product/api/">
-                  <span>API</span>
-                </a>
-              </li>
+
             </ul>
           </div>
           <div className="product_menu">
