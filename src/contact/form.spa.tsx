@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
@@ -86,10 +86,10 @@ const App = () => {
             <div className="confirm_text">{formData?.content}</div>
           </div>
           <div className="btn_area">
-            <button onClick={() => setStage("input")} className="back_button">
+            <button type="button" onClick={() => setStage("input")} className="back_button">
               戻る
             </button>
-            <button onClick={postForm} className="submit_button">送信</button>
+            <button type="button" onClick={postForm} className="submit_button">送信</button>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@ const App = () => {
     return list.join(" ");
   };
 
-  const submitForm = handleSubmit((data) => {
+  const submitForm = handleSubmit((data: ContactForm) => {
     setFormData(data);
     setStage("submitted");
   });
@@ -236,8 +236,11 @@ const App = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+const rootEl = document.getElementById("root");
+if (rootEl) {
+    createRoot(rootEl).render(
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>,
+    );
+}
