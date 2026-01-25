@@ -20,39 +20,25 @@ SSGとDevOps/CDを利用して、リポジトリにコンテンツをプッシ�
 % deno task serve
 ```
 
-お問い合わせSPAからの送信は、serve.ts で受信している。以下の設定を行う。
+お問い合わせSPAからの送信は、Lumeプラグインとして作ったSPA Proxyで受信している。
+Deno Deploy上では同等機能の、serve.tsを用いて動作する。以下の設定を行う。
 
-- .envファイルを用意して、"SLACK_WEBHOOK_URL"キーにSlack Webhook URLを記載する。
-- Deno Deployに、同上のキーを用意する。
-
-ローカルでSlackポストをテストする場合は、deno task
-serveではserve.tsを用いないため、以下を実行する。
-
-```sh
-% deno run -A serve.ts
-```
+- DEV: .envファイルを用意して、"SLACK_WEBHOOK_URL"キーにSlack Webhook
+  URLを記載する。
+- PROD: Deno Deployに、同上のキーを用意する。
 
 ### /src
 
 サイトのコンテンツが格納されている。テンプレートにはReactを.tsxで利用している。
 
-### /contact
+### /src/contact
 
 お問い合わせの機能を提供するSPA。
 
-- ローカル環境にプルした後、contactフォルダに移動して、npm installを実行
-- npm run build を実行すると、/src/contact/js にSPAを出力する
-- お問い合わせを操作すると、"/slack"へ入力内容を送信する。serve.tsで受信して処理を行う
-
-### /api
-
-APIドキュメントを提供するSPA。
-
-- ローカル環境にプルした後、apiフォルダに移動して、npm installを実行
-- npm run build を実行すると、/src/product/api/js にSPAを出力する
-- 画面上のReDoc Reactコンポーネントでドキュメントを生成する。
-- APIドキュメントの元となるJSONは、/api/docs.json
-  をserve.ts経由でapi.ewware.comより取得する
+- Lumeプラグインを用いて、deno bundleを実行している。
+- SPAとしての依存関係は、/src/contact/deno.json で定義されている。
+- お問い合わせを操作すると、"/slack"へ入力内容を送信する。SPA
+  Proxyもしくはserve.tsで受信して処理を行う
 
 ### /.github/workflows
 
@@ -60,19 +46,7 @@ GitHub Actionで、リポジトリへのプッシュがあったときにDeno
 Deployへ自動配置するようにしている。
 
 - GitHub Action の Dockerコンテナ上に、ソースコードをクローンする。
-- Node.js 環境を自動構築して /contact
-  のお問い合わせReactアプリをコンパイルする。
-- Node.js 環境を自動構築して /api のAPIドキュメントReactアプリをコンパイルする。
 - Dockerコンテナ上で Lume
   を自動実行する。このタイミングでWEBサイト構成物が生成される。
 - denoland/deployctl プラグインを利用して、すべてのWEBサイト構成物をDeno
   Deployにアップロードする。
-
-## CMS機能
-
-deno task serveで起動したデバッグサーバーで、/admin にアクセスするとCMS機能でコンテンツをメンテンナスできる。
-
-- お知らせ
-  - /src/information/_data/information.yml を保存先としている
-- 代表社員経歴
-  - /src/leadership/_data/careers.yml を保存先としている
