@@ -115,3 +115,6 @@
 - year: 2026/01/13
   text: ClipCrow v3.7およびv3.8をリリースしました。ClipCrow機能のMCPサーバー化と「RAG機能」を全ユーザーへ開放しています
   link: https://note.com/clipcrow/n/nab85a9fcbc4c
+- year: 2026/01/28
+  text: ClipCrow v3.9をリリースしました。MCP設定の自動同期と、HMAC署名で、外部連携のセキュリティ向上
+  link: https://note.com/clipcrow/n/nd43c9f1821e1
