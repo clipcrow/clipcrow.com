@@ -30,22 +30,22 @@ export default (props: { hideFooter: boolean }) => {
                 </a>
               </li>
               <li>
-                <a href="/#business_outline">
+                <a href="/corporate/#business_outline">
                   <span>事業概要</span>
                 </a>
               </li>
               <li>
-                <a href="/#solution">
+                <a href="/corporate/#solution">
                   <span>ご提案</span>
                 </a>
               </li>
               <li>
-                <a href="/case-study/">
+                <a href="/corporate/case-study/">
                   <span>事例紹介</span>
                 </a>
               </li>
               <li>
-                <a href="/#company_profile">
+                <a href="/corporate/#company_profile">
                   <span>企業情報</span>
                 </a>
               </li>

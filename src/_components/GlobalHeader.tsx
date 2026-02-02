@@ -12,7 +12,7 @@ export default (props: { hideContact: boolean }) => (
             <a href="/information/">お知らせ</a>
           </li>
           <li>
-            <a href="/#business_outline">事業概要</a>
+            <a href="/corporate/#business_outline">事業概要</a>
           </li>
           <li>
             <a href="/product/">ClipCrow</a>
@@ -35,7 +35,7 @@ export default (props: { hideContact: boolean }) => (
           <a href="/information/">お知らせ</a>
         </div>
         <div>
-          <a href="/#business_outline">事業概要</a>
+          <a href="/corporate/#business_outline">事業概要</a>
         </div>
         <div>
           <a href="/product/">ClipCrow</a>
