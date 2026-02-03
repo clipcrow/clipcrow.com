@@ -1,0 +1,223 @@
+/* Product LP Specific Styles */
+
+/* Main Visual */
+.lp_hero {
+  padding: 80px 0 60px;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.lp_hero h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.lp_hero .hero_copy {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.lp_hero .hero_visual {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lp_hero .hero_visual img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+.lp_section {
+  padding: 80px 0;
+}
+
+.lp_intro {
+  background-color: #fff;
+  text-align: center;
+}
+
+.lp_intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.lp_intro p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.lp_intro .emphasis {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+/* Core Concept */
+.lp_concept {
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.lp_card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Transformation (Chat & Task) */
+.lp_transform {
+  background-color: #fff;
+}
+
+.lp_transform_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.lp_feature_card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 30px;
+  background: #fafafa;
+  transition: transform 0.3sEase;
+}
+
+.lp_feature_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.lp_feature_card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #00acc1;
+}
+
+/* 3 Steps */
+.lp_steps {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.lp_steps h2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.lp_step_grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.lp_step_item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.lp_step_num {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.lp_step_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Security & Cost */
+.lp_security {
+  background-color: #fff;
+  text-align: center;
+}
+
+.lp_security_list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.lp_sec_item {
+  flex: 1;
+  min-width: 280px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.lp_sec_item h3 {
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Closing */
+.lp_closing {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #e0f7fa 0%, #fff 100%);
+}
+
+.lp_closing h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.lp_contact_link {
+  margin-top: 40px;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: underline;
+}
+
+/* Utilities */
+.txt_marker {
+  background: linear-gradient(transparent 60%, #fff176 60%);
+}
+
+/* SP Adjustments */
+@media screen and (max-width: 768px) {
+  .lp_hero h1 {
+    font-size: 2rem;
+  }
+  .lp_step_grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -25,7 +25,7 @@ export default () => (
           className="toppg animated deley03"
           data-scroll="once toggle(.fadeIn, .invisible) 0,0"
         >
-          <img src="/assets/images/topimage.png" alt="" />
+          <img src="topimage.png" alt="" />
         </div>
       </article>
       <AnimatedCloud id={2} />
@@ -76,7 +76,7 @@ export default () => (
         data-scroll="once toggle(.fadeIn, .invisible) 0,0"
       >
         <img
-          src="/assets/images/img_business_main_pc.png"
+          src="img_business_main_pc.png"
           alt="独自SaaS事業の創造 SI案件プロデュース"
           className="switch"
         />
@@ -135,7 +135,7 @@ export default () => (
         data-scroll="once toggle(.fadeIn, .invisible) 0,0"
       >
         <img
-          src="/assets/images/img_solution_main_pc.png"
+          src="img_solution_main_pc.png"
           alt="独自SaaS事業の創造 SI案件プロデュース"
           className="switch"
         />
