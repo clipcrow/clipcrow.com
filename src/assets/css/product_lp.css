@@ -57,14 +57,43 @@ body {
 }
 
 /* Specific positions for each cloud ID to create variety */
-.img_am01 { top: -20px; left: -50px; opacity: 0.6; }
-.img_am02 { top: 100px; right: -80px; opacity: 0.6; }
-.img_am03 { top: 10%; right: 0; width: 200px; opacity: 0.4; } /* Right edge cut -> anchor Right */
-.img_am04 { bottom: 10%; left: 0; width: 250px; opacity: 0.4; } /* Left edge cut -> anchor Left */
-.img_am05 { top: 40%; left: -100px; opacity: 0.3; }
-.img_am06 { bottom: -50px; left: 20%; opacity: 0.3; }
-.img_am07 { top: 20%; right: 10%; opacity: 0.3; }
-
+.img_am01 {
+  top: -20px;
+  left: -50px;
+  opacity: 0.6;
+}
+.img_am02 {
+  top: 100px;
+  right: -80px;
+  opacity: 0.6;
+}
+.img_am03 {
+  top: 10%;
+  right: 0;
+  width: 200px;
+  opacity: 0.4;
+} /* Right edge cut -> anchor Right */
+.img_am04 {
+  bottom: 10%;
+  left: 0;
+  width: 250px;
+  opacity: 0.4;
+} /* Left edge cut -> anchor Left */
+.img_am05 {
+  top: 40%;
+  left: -100px;
+  opacity: 0.3;
+}
+.img_am06 {
+  bottom: -50px;
+  left: 20%;
+  opacity: 0.3;
+}
+.img_am07 {
+  top: 20%;
+  right: 10%;
+  opacity: 0.3;
+}
 
 .lp_hero .inner {
   position: relative;
@@ -126,48 +155,84 @@ body {
 
 .btn_hero.secondary {
   background: #fff;
-  color: var(--c-primary) !important; /* Force primary text color for secondary button */
+  color: var(--c-primary)
+    !important; /* Force primary text color for secondary button */
   border: 2px solid var(--c-primary);
 }
 
 /* =========================================
-   2. Introduction (Problem)
+   2. Merged Content (formerly Intro)
    ========================================= */
-.lp_intro {
-  padding: 120px 0;
-  background-color: #fff;
-  text-align: center;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
-}
-
-.lp_intro .inner {
+.lp_section_merged {
+  margin-top: 80px;
   position: relative;
   z-index: 2;
+  text-align: left; /* Align text left for readablity in columns */
 }
 
-.lp_intro h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 50px;
-  color: var(--c-primary);
-}
-
-.lp_intro_text {
-  font-size: 1.25rem;
-  line-height: 2.2;
-  color: var(--c-text);
-  max-width: 840px;
+/* Grid Container */
+.lp_merged_grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-.lp_intro .emphasis {
+/* Left Column: Problem Statement */
+.lp_merged_left {
+  flex: 1;
+}
+
+.lp_merged_left p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--c-text);
+  margin-bottom: 0px; /* Adjust spacing via inline styles or remove inline styles if prefered */
+}
+
+/* Right Column: Solution / Emphasis */
+.lp_merged_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp_section_merged .emphasis {
   display: block;
-  margin-top: 40px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  color: var(--c-accent); /* Teal accent */
+  color: var(--c-accent);
+  line-height: 1.5;
+  text-align: left; /* Keep left aligned or center? User asked for layout, usually solution text is punchy */
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05); /* Slight card effect for emphasis */
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 900px) {
+  .lp_merged_grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .lp_section_merged {
+    text-align: center;
+  }
+  
+  .lp_merged_left p {
+    text-align: left; /* Or center? Left is usually better for reading */
+  }
+  
+  .lp_section_merged .emphasis {
+    text-align: center;
+    font-size: 1.4rem;
+  }
 }
 
 /* =========================================

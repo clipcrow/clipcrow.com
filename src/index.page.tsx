@@ -24,47 +24,33 @@ export default () => (
           />
         </div>
 
-        <div className="lp_hero_actions animated fadeInUp deley02">
-           <a href="https://apps.apple.com/jp/app/clipcrow/id6448666384" className="btn_hero">
-             App Storeから入手
-           </a>
-           <a href="/contact/" className="btn_hero secondary">
-             お問い合わせ
-           </a>
-        </div>
-      </div>
-    </section>
-
-    {/* 2. Introduction */}
-    <section className="lp_intro">
-      <AnimatedCloud id={3} /> {/* Added cloud 3 (top left) */}
-      <div className="inner">
-        <h2 
-          className="animated" 
-          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
-        >
-          AIへの期待と「実装」の壁
-        </h2>
-        <div 
-          className="lp_intro_text animated"
-          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
-        >
-          <p>
-            「AIで業務が変わる」と誰もが言います。<br />
-            しかし、あなたのチャット画面にAIの居場所はありますか？
-          </p>
-          <p style={{ marginTop: "30px" }}>
-            多くの組織が生成AIを導入しながら、<br />
-            結局は個人のブラウザ上で「検索の代わり」に使うだけに留まっています。
-          </p>
-          <p style={{ marginTop: "30px" }}>
-            組織の本当の課題は、個人の知識ではなく、<br />
-            チーム全体の「実行力」と「共通認識」にあるはずです。
-          </p>
-          <span className="emphasis">
-            ClipCrowはついにAIを「ツール」から<br />
-            「チームメンバー」へと昇華させました。
-          </span>
+        {/* Merged Intro Content */}
+        <div className="lp_section_merged">
+          <div
+            className="lp_merged_grid animated"
+            data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+          >
+            <div className="lp_merged_left">
+              <p>
+                「AIで業務が変わる」と誰もが言います。<br />
+                しかし、あなたのチャット画面にAIの居場所はありますか？
+              </p>
+              <p style={{ marginTop: "30px" }}>
+                多くの組織が生成AIを導入しながら、<br />
+                結局は個人のブラウザ上で「検索の代わり」に使うだけに留まっています。
+              </p>
+              <p style={{ marginTop: "30px" }}>
+                組織の本当の課題は、個人の知識ではなく、<br />
+                チーム全体の「実行力」と「共通認識」にあるはずです。
+              </p>
+            </div>
+            <div className="lp_merged_right">
+              <span className="emphasis">
+                ClipCrowはついにAIを「ツール」から<br />
+                「チームメンバー」へと昇華させました。
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
