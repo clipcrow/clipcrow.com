@@ -118,3 +118,6 @@
 - year: 2026/01/28
   text: ClipCrow v3.9をリリースしました。MCP設定の自動同期と、HMAC署名で、外部連携のセキュリティ向上
   link: https://note.com/clipcrow/n/nd43c9f1821e1
+- year: 2026/02/12
+  text: ClipCrow v3.10をリリースしました。組み込みSPAの信頼性向上と、実務に即したAIエージェントの精緻化
+  link: https://note.com/clipcrow/n/ne6fbc0535b76
