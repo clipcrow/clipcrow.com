@@ -392,7 +392,7 @@ export default () => (
               <p>認証範囲: SaaS型グループウェア製品に係る事業</p>
             </div>
             <div className="btn_detail">
-              <a href="/security/">
+              <a href="/security/#isms">
                 詳細<span className="arrow-right"></span>
               </a>
             </div>

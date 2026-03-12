@@ -28,7 +28,7 @@ layout: "layouts/corporate.tsx"
 
 2025年04月01日 制定・施行 {.align_right}
 
-## <span>ISMS認証</span>
+## <span id="isms">ISMS認証</span>
 
 <div class="isms_certification">
   <img src="/assets/images/common/iso27001.jpg" alt="ISMS ISO/IEC 27001 認証マーク" class="isms_mark" width="100" />
