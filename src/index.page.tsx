@@ -384,6 +384,7 @@ export default () => (
               src="/assets/images/common/iso27001.jpg"
               alt="ISMS ISO/IEC 27001 認証マーク"
               className="isms_mark"
+              width={100}
             />
             <div className="isms_detail">
               <p>認証番号: IR0250</p>
