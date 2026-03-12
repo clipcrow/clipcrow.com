@@ -391,6 +391,11 @@ export default () => (
               <p>審査基準: JIS Q 27001:2023 (ISO/IEC 27001:2022)</p>
               <p>認証範囲: SaaS型グループウェア製品に係る事業</p>
             </div>
+            <div className="btn_detail">
+              <a href="/security/">
+                詳細<span className="arrow-right"></span>
+              </a>
+            </div>
           </div>
         </dd>
       </dl>
