@@ -369,6 +369,29 @@ export default () => (
             <li>前各号に附帯関連する一切の事業</li>
           </ul>
         </dd>
+        <dt
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          ISMS認証
+        </dt>
+        <dd
+          className="animated deley02"
+          data-scroll="once toggle(.fadeInUp, .invisible) 0,0"
+        >
+          <div className="isms_certification">
+            <img
+              src="/assets/images/common/iso27001.jpg"
+              alt="ISMS ISO/IEC 27001 認証マーク"
+              className="isms_mark"
+            />
+            <div className="isms_detail">
+              <p>認証番号: IR0250</p>
+              <p>審査基準: JIS Q 27001:2023 (ISO/IEC 27001:2022)</p>
+              <p>認証範囲: SaaS型グループウェア製品に係る事業</p>
+            </div>
+          </div>
+        </dd>
       </dl>
 
       <br />

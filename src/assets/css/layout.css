@@ -925,6 +925,47 @@ main {
   }
 }
 
+/* ISMS認証 */
+.isms_certification {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.isms_mark {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+}
+.isms_detail {
+  p {
+    margin-bottom: 4px;
+    line-height: 1.6;
+  }
+  table {
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    th, td {
+      text-align: left;
+      padding: 6px 12px 6px 0;
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    th {
+      white-space: nowrap;
+      font-weight: 600;
+      padding-right: 24px;
+    }
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 12px;
+    li {
+      list-style-type: disc;
+      line-height: 1.8;
+    }
+  }
+}
+
 /* leadership / contact / information */
 
 /* ================

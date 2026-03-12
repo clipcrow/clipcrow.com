@@ -27,3 +27,25 @@ layout: "layouts/corporate.tsx"
 クリップクロウ株式会社 代表取締役 栗原傑享 {.align_right}
 
 2025年04月01日 制定・施行 {.align_right}
+
+## <span>ISMS認証</span>
+
+<div class="isms_certification">
+  <img src="/assets/images/common/iso27001.jpg" alt="ISMS ISO/IEC 27001 認証マーク" class="isms_mark" />
+  <div class="isms_detail">
+    <table>
+      <tr><th>認証番号</th><td>IR0250</td></tr>
+      <tr><th>認証組織</th><td>クリップクロウ株式会社 東京都世田谷区奥沢 1-37-2</td></tr>
+      <tr><th>審査基準</th><td>JIS Q 27001:2023 (ISO/IEC 27001:2022)</td></tr>
+      <tr><th>認証範囲</th><td>SaaS型グループウェア製品に係る事業</td></tr>
+    </table>
+    <p>認証範囲の詳細:</p>
+    <ul>
+      <li>製品の開発</li>
+      <li>製品の保守運用</li>
+      <li>製品の導入コンサルテーション</li>
+      <li>製品に連携する受託開発</li>
+    </ul>
+    <p>適用宣言書: 第 1.0 版</p>
+  </div>
+</div>
