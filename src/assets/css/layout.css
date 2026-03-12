@@ -928,9 +928,12 @@ main {
 /* ISMS認証 */
 .isms_certification {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  .btn_detail {
+    align-self: center;
+  }
 }
 .isms_mark {
   width: 100px;
