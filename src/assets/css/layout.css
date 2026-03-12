@@ -933,6 +933,7 @@ main {
 }
 .isms_mark {
   width: 100px;
+  max-width: 100px;
   height: auto;
   flex-shrink: 0;
 }

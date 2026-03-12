@@ -31,7 +31,7 @@ layout: "layouts/corporate.tsx"
 ## <span>ISMS認証</span>
 
 <div class="isms_certification">
-  <img src="/assets/images/common/iso27001.jpg" alt="ISMS ISO/IEC 27001 認証マーク" class="isms_mark" />
+  <img src="/assets/images/common/iso27001.jpg" alt="ISMS ISO/IEC 27001 認証マーク" class="isms_mark" width="100" />
   <div class="isms_detail">
     <table>
       <tr><th>認証番号</th><td>IR0250</td></tr>
